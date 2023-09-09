@@ -1,18 +1,12 @@
 package com.example.unquote;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.DialogInterface;
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.Objects;
 import android.widget.VideoView;
 import android.net.Uri;
 import android.content.Intent;
@@ -22,15 +16,12 @@ import android.animation.Animator;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.view.animation.AccelerateDecelerateInterpolator;
-import android.animation.ValueAnimator;
-import android.widget.FrameLayout;
-
 
 
 public class MainActivity extends AppCompatActivity {
     public static MediaPlayer mediaPlayer;
     private VideoView videoView;
-    private ImageButton playPauseButton;
+    public static boolean musicPaused = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,12 +36,14 @@ public class MainActivity extends AppCompatActivity {
 
         Button startButton = findViewById(R.id.start_button);
         mediaPlayer = MediaPlayer.create(this, R.raw.aylex_fighter);
-        ImageButton playPauseButton = findViewById(R.id.music_toggle);
+        ImageButton playPauseButton = findViewById(R.id.music_toggle_start);
 
-
-
+        if (musicPaused) {
+            playPauseButton.setImageResource(R.drawable.volume_off_24px);
+        }
+        
         // Initialize the VideoView and set the video source
-        videoView = findViewById(R.id.videoView);
+        videoView = findViewById(R.id.startMenuVideoView);
         Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.start_background);
         videoView.setVideoURI(videoUri);
 
@@ -72,14 +65,18 @@ public class MainActivity extends AppCompatActivity {
                 if (mediaPlayer.isPlaying()) {
                     playPauseButton.setImageResource(R.drawable.volume_off_24px);
                     mediaPlayer.pause();
+                    musicPaused = true;
                 } else {
                     playPauseButton.setImageResource(R.drawable.volume_up_24px);
                     mediaPlayer.start();
+                    musicPaused = false;
                 }
             }
         });
 
-        mediaPlayer.start();
+        if (!musicPaused) {
+            mediaPlayer.start();
+        }
 
         ImageView titleImage = findViewById(R.id.titleImage);
 
@@ -140,7 +137,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume(){
         super.onResume();
         videoView.start();
-        mediaPlayer.start();
+        if (!musicPaused) {
+            mediaPlayer.start();
+        }
 
     }
 

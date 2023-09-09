@@ -5,14 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.VideoView;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class GameActivity extends AppCompatActivity {
 
@@ -31,6 +34,8 @@ public class GameActivity extends AppCompatActivity {
     View answer3Button;
     View submitButton;
 
+    private VideoView videoView;
+
     @Override
     public void onBackPressed() {
         //To cancel back button
@@ -40,9 +45,17 @@ public class GameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        MainActivity.mediaPlayer.start();
-
         setContentView(R.layout.activity_game);
+
+        ImageButton playPauseButton = findViewById(R.id.music_toggle_game);
+
+        if (MainActivity.musicPaused) {
+            playPauseButton.setImageResource(R.drawable.volume_off_24px);
+        } else {
+            MainActivity.mediaPlayer.start();
+        }
+
+
 
         // TODO 2-G: Show app icon in ActionBar
 
@@ -55,6 +68,29 @@ public class GameActivity extends AppCompatActivity {
         answer2Button = findViewById(R.id.btn_main_answer_2);
         answer3Button = findViewById(R.id.btn_main_answer_3);
         submitButton = findViewById(R.id.btn_main_submit_answer);
+
+        videoView = findViewById(R.id.gameVideoView);
+        Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.game_background);
+        videoView.setVideoURI(videoUri);
+
+        // Start playing the video in a loop
+        videoView.start();
+        videoView.setOnPreparedListener(mp -> mp.setLooping(true));
+
+        playPauseButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (MainActivity.mediaPlayer.isPlaying()) {
+                    playPauseButton.setImageResource(R.drawable.volume_off_24px);
+                    MainActivity.mediaPlayer.pause();
+                    MainActivity.musicPaused = true;
+                } else {
+                    playPauseButton.setImageResource(R.drawable.volume_up_24px);
+                    MainActivity.mediaPlayer.start();
+                    MainActivity.musicPaused = false;
+                }
+            }
+        });
 
 
         // TODO 4-E: set onClickListener for each answer Button
@@ -244,6 +280,23 @@ public class GameActivity extends AppCompatActivity {
             return "You got all " + totalQuestions + " right! You won!";
         } else {
             return "You got " + totalCorrect + " right out of " + totalQuestions + ". Better luck next time!";
+        }
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        videoView.pause();
+        MainActivity.mediaPlayer.pause();
+
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        videoView.start();
+        if (!MainActivity.musicPaused) {
+            MainActivity.mediaPlayer.start();
         }
     }
 
