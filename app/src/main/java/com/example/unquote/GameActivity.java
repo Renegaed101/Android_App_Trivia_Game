@@ -40,6 +40,8 @@ public class GameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        MainActivity.mediaPlayer.start();
+
         setContentView(R.layout.activity_game);
 
         // TODO 2-G: Show app icon in ActionBar

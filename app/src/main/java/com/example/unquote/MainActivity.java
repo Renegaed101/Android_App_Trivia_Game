@@ -23,10 +23,13 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.animation.ValueAnimator;
+import android.widget.FrameLayout;
+
 
 
 public class MainActivity extends AppCompatActivity {
-    private MediaPlayer mediaPlayer;
+    public static MediaPlayer mediaPlayer;
+    private VideoView videoView;
     private ImageButton playPauseButton;
 
     @Override
@@ -47,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Initialize the VideoView and set the video source
-        VideoView videoView = findViewById(R.id.videoView);
+        videoView = findViewById(R.id.videoView);
         Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.start_background);
         videoView.setVideoURI(videoUri);
 
@@ -121,10 +124,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Start the animation
         scaleAnim.start();
 
+    }
 
+    @Override
+    protected void onPause(){
+     super.onPause();
+     videoView.pause();
+     mediaPlayer.pause();
+
+    }
+
+    @Override
+    protected void onResume(){
+        super.onResume();
+        videoView.start();
+        mediaPlayer.start();
 
     }
 
