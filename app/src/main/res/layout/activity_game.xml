@@ -32,33 +32,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/iv_main_question_image"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="12dp"
-        android:layout_marginRight="12dp"
-        android:adjustViewBounds="true"
-        app:layout_constraintBottom_toTopOf="@+id/tv_main_question_title"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/tv_main_question_title"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="32dp"
-        android:textColor="#FBFAFA"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@id/ll_main_first_row_buttons"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:text="How much wood would a wood chuck chuck if a wood chuck could chuck wood?" />
 
     <TextView
         android:id="@+id/tv_main_questions_remaining_count"
@@ -81,43 +54,43 @@
         app:layout_constraintLeft_toRightOf="@id/tv_main_questions_remaining_count"
         app:layout_constraintTop_toTopOf="@id/tv_main_questions_remaining_count" />
 
+
     <Button
         android:id="@+id/btn_main_submit_answer"
-        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:text="submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tv_main_questions_remaining_count" />
+        app:layout_constraintTop_toTopOf="@id/tv_main_questions_remaining_count"
+        app:rippleColor="@color/white" />
 
     <LinearLayout
         android:id="@+id/ll_main_first_row_buttons"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@id/ll_main_second_row_buttons"
+        app:layout_constraintBottom_toTopOf="@+id/ll_main_second_row_buttons"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent">
 
         <Button
             android:id="@+id/btn_main_answer_0"
-            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:scaleX="0.95"
+            app:rippleColor="@color/white"
             tools:text="Answer 0" />
 
         <Button
             android:id="@+id/btn_main_answer_1"
-            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+
+            android:scaleX="0.95"
+            app:rippleColor="@color/white"
             tools:text="Answer 1" />
 
     </LinearLayout>
@@ -126,30 +99,40 @@
         android:id="@+id/ll_main_second_row_buttons"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@id/btn_main_submit_answer"
+        app:layout_constraintBottom_toTopOf="@+id/btn_main_submit_answer"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent">
 
         <Button
             android:id="@+id/btn_main_answer_2"
-            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:scaleX="0.95"
+            app:rippleColor="@color/white"
             tools:text="Answer 2" />
 
         <Button
             android:id="@+id/btn_main_answer_3"
-            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:scaleX="0.95"
+            app:rippleColor="@color/white"
             tools:text="Answer 3" />
 
     </LinearLayout>
+
+    <include
+        android:id="@+id/question_card"
+        layout="@layout/card_view_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/ll_main_first_row_buttons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gameVideoView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

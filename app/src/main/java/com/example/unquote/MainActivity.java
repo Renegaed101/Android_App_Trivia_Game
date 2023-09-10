@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         if (musicPaused) {
             playPauseButton.setImageResource(R.drawable.volume_off_24px);
         }
-        
+
         // Initialize the VideoView and set the video source
         videoView = findViewById(R.id.startMenuVideoView);
         Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.start_background);
