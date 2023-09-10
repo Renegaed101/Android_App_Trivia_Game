@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -33,6 +34,7 @@ public class GameActivity extends AppCompatActivity {
     View answer2Button;
     View answer3Button;
     View submitButton;
+
 
     private VideoView videoView;
 
@@ -154,31 +156,23 @@ public class GameActivity extends AppCompatActivity {
     void onAnswerSelected(int answerSelected) {
         Question currentQuestion = getCurrentQuestion();
         currentQuestion.playerAnswer = answerSelected;
+        ((Button)answer0Button).setBackgroundColor(getColor(R.color.notSelectedButtonColor));
+        ((Button)answer1Button).setBackgroundColor(getColor(R.color.notSelectedButtonColor));
+        ((Button)answer2Button).setBackgroundColor(getColor(R.color.notSelectedButtonColor));
+        ((Button)answer3Button).setBackgroundColor(getColor(R.color.notSelectedButtonColor));
         switch (answerSelected) {
             case 0:
-                ((Button)answer0Button).setText("✔" + currentQuestion.answer0);
-                ((Button)answer1Button).setText(currentQuestion.answer1);
-                ((Button)answer2Button).setText(currentQuestion.answer2);
-                ((Button)answer3Button).setText(currentQuestion.answer3);
+                ((Button)answer0Button).setBackgroundColor(getColor(R.color.selectedButtonColor));
                 break;
             case 1:
-                ((Button)answer0Button).setText(currentQuestion.answer0);
-                ((Button)answer1Button).setText("✔" + currentQuestion.answer1);
-                ((Button)answer2Button).setText(currentQuestion.answer2);
-                ((Button)answer3Button).setText(currentQuestion.answer3);
+                ((Button)answer1Button).setBackgroundColor(getColor(R.color.selectedButtonColor));
                 break;
             case 2:
-                ((Button)answer0Button).setText(currentQuestion.answer0);
-                ((Button)answer1Button).setText(currentQuestion.answer1);
-                ((Button)answer2Button).setText("✔" + currentQuestion.answer2);
-                ((Button)answer3Button).setText(currentQuestion.answer3);
+                ((Button)answer2Button).setBackgroundColor(getColor(R.color.selectedButtonColor));
                 break;
 
             case 3:
-                ((Button)answer0Button).setText(currentQuestion.answer0);
-                ((Button)answer1Button).setText(currentQuestion.answer1);
-                ((Button)answer2Button).setText(currentQuestion.answer2);
-                ((Button)answer3Button).setText("✔" + currentQuestion.answer3);
+                ((Button)answer3Button).setBackgroundColor(getColor(R.color.selectedButtonColor));
                 break;
         }
 

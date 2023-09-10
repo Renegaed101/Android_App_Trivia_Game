@@ -2,8 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="colorPrimary">#4B4848</color>
+    <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryVariant">#3F51B5</color>
-    <color name="startButtonColor">#707177</color>
+    <color name="selectedButtonColor">#4CAF50</color>
+    <color name="notSelectedButtonColor">#000000</color>
+    <color name="correctButtonColor">#707177</color>
+    <color name="wrongButtonColor">#707177</color>
 
 </resources>
