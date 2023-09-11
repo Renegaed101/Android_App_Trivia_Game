@@ -5,10 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -17,6 +15,8 @@ import android.widget.TextView;
 import android.widget.VideoView;
 
 import java.util.ArrayList;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 
 public class GameActivity extends AppCompatActivity {
 
@@ -33,10 +33,15 @@ public class GameActivity extends AppCompatActivity {
     View answer1Button;
     View answer2Button;
     View answer3Button;
-    View submitButton;
+
+    Button submitButton;
+
+    Animation pulseAnimation;
 
 
-    private VideoView videoView;
+    private VideoView background;
+
+    private VideoView cardBorderAnimation;
 
     @Override
     public void onBackPressed() {
@@ -57,7 +62,11 @@ public class GameActivity extends AppCompatActivity {
             MainActivity.mediaPlayer.start();
         }
 
-
+        cardBorderAnimation = findViewById(R.id.questionCardVideoView);
+        Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.question_card_background);
+        cardBorderAnimation.setVideoURI(videoUri);
+        cardBorderAnimation.start();
+        cardBorderAnimation.setOnPreparedListener(mp -> mp.setLooping(true));
 
         // TODO 2-G: Show app icon in ActionBar
 
@@ -71,13 +80,13 @@ public class GameActivity extends AppCompatActivity {
         answer3Button = findViewById(R.id.btn_main_answer_3);
         submitButton = findViewById(R.id.btn_main_submit_answer);
 
-        videoView = findViewById(R.id.gameVideoView);
-        Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.game_background);
-        videoView.setVideoURI(videoUri);
+        background = findViewById(R.id.gameVideoView);
+        videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.game_background);
+        background.setVideoURI(videoUri);
 
         // Start playing the video in a loop
-        videoView.start();
-        videoView.setOnPreparedListener(mp -> mp.setLooping(true));
+        background.start();
+        background.setOnPreparedListener(mp -> mp.setLooping(true));
 
         playPauseButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,25 +105,25 @@ public class GameActivity extends AppCompatActivity {
 
 
         // TODO 4-E: set onClickListener for each answer Button
-        ((Button)answer0Button).setOnClickListener(new View.OnClickListener() {
+        answer0Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onAnswerSelected(0);
             }
         });
-        ((Button)answer1Button).setOnClickListener(new View.OnClickListener() {
+        answer1Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onAnswerSelected(1);
             }
         });
-        ((Button)answer2Button).setOnClickListener(new View.OnClickListener() {
+        answer2Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onAnswerSelected(2);
             }
         });
-        ((Button)answer3Button).setOnClickListener(new View.OnClickListener() {
+        answer3Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onAnswerSelected(3);
@@ -124,7 +133,7 @@ public class GameActivity extends AppCompatActivity {
 
         // TODO 5-A: set onClickListener for the submit answer Button
 
-        ((Button)submitButton).setOnClickListener(new View.OnClickListener() {
+        submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onAnswerSubmission();
@@ -143,6 +152,23 @@ public class GameActivity extends AppCompatActivity {
         ((Button)answer1Button).setText(question.answer1);
         ((Button)answer2Button).setText(question.answer2);
         ((Button)answer3Button).setText(question.answer3);
+        answer0Button.setBackgroundColor(getColor(R.color.notSelectedButtonColor));
+        answer1Button.setBackgroundColor(getColor(R.color.notSelectedButtonColor));
+        answer2Button.setBackgroundColor(getColor(R.color.notSelectedButtonColor));
+        answer3Button.setBackgroundColor(getColor(R.color.notSelectedButtonColor));
+        ((Button)answer0Button).setTextColor(getColor(R.color.white));
+        ((Button)answer1Button).setTextColor(getColor(R.color.white));
+        ((Button)answer2Button).setTextColor(getColor(R.color.white));
+        ((Button)answer3Button).setTextColor(getColor(R.color.white));
+        answer0Button.clearAnimation();
+        answer1Button.clearAnimation();
+        answer2Button.clearAnimation();
+        answer3Button.clearAnimation();
+        submitButton.setAlpha(0.3f);
+        answer0Button.setAlpha(1.0f);
+        answer1Button.setAlpha(1.0f);
+        answer2Button.setAlpha(1.0f);
+        answer3Button.setAlpha(1.0f);
 
     }
 
@@ -154,25 +180,44 @@ public class GameActivity extends AppCompatActivity {
 
     // TODO 4-A: onAnswerSelected(int answerSelected) {...}
     void onAnswerSelected(int answerSelected) {
+        if (getCurrentQuestion().answered){return;}
         Question currentQuestion = getCurrentQuestion();
+        submitButton.setAlpha(1.0f);
         currentQuestion.playerAnswer = answerSelected;
-        ((Button)answer0Button).setBackgroundColor(getColor(R.color.notSelectedButtonColor));
-        ((Button)answer1Button).setBackgroundColor(getColor(R.color.notSelectedButtonColor));
-        ((Button)answer2Button).setBackgroundColor(getColor(R.color.notSelectedButtonColor));
-        ((Button)answer3Button).setBackgroundColor(getColor(R.color.notSelectedButtonColor));
+        pulseAnimation = AnimationUtils.loadAnimation(this, R.anim.pulse_animation);
+        answer0Button.setBackgroundColor(getColor(R.color.notSelectedButtonColor));
+        answer1Button.setBackgroundColor(getColor(R.color.notSelectedButtonColor));
+        answer2Button.setBackgroundColor(getColor(R.color.notSelectedButtonColor));
+        answer3Button.setBackgroundColor(getColor(R.color.notSelectedButtonColor));
+        ((Button)answer0Button).setTextColor(getColor(R.color.white));
+        ((Button)answer1Button).setTextColor(getColor(R.color.white));
+        ((Button)answer2Button).setTextColor(getColor(R.color.white));
+        ((Button)answer3Button).setTextColor(getColor(R.color.white));
+        answer0Button.clearAnimation();
+        answer1Button.clearAnimation();
+        answer2Button.clearAnimation();
+        answer3Button.clearAnimation();
         switch (answerSelected) {
             case 0:
-                ((Button)answer0Button).setBackgroundColor(getColor(R.color.selectedButtonColor));
+                answer0Button.setBackgroundColor(getColor(R.color.selectedButtonColor));
+                ((Button)answer0Button).setTextColor(getColor(R.color.black));
+                answer0Button.startAnimation(pulseAnimation);
                 break;
             case 1:
-                ((Button)answer1Button).setBackgroundColor(getColor(R.color.selectedButtonColor));
+                answer1Button.setBackgroundColor(getColor(R.color.selectedButtonColor));
+                ((Button)answer1Button).setTextColor(getColor(R.color.black));
+                answer1Button.startAnimation(pulseAnimation);
                 break;
             case 2:
-                ((Button)answer2Button).setBackgroundColor(getColor(R.color.selectedButtonColor));
+                answer2Button.setBackgroundColor(getColor(R.color.selectedButtonColor));
+                ((Button)answer2Button).setTextColor(getColor(R.color.black));
+                answer2Button.startAnimation(pulseAnimation);
                 break;
 
             case 3:
-                ((Button)answer3Button).setBackgroundColor(getColor(R.color.selectedButtonColor));
+                answer3Button.setBackgroundColor(getColor(R.color.selectedButtonColor));
+                ((Button)answer3Button).setTextColor(getColor(R.color.black));
+                answer3Button.startAnimation(pulseAnimation);
                 break;
         }
 
@@ -182,9 +227,98 @@ public class GameActivity extends AppCompatActivity {
         if (currentQuestion.playerAnswer == -1) {
             return;
         }
+        currentQuestion.answered = true;
+        answer0Button.setAlpha(0.3f);
+        answer1Button.setAlpha(0.3f);
+        answer2Button.setAlpha(0.3f);
+        answer3Button.setAlpha(0.3f);
         if (currentQuestion.isCorrect()) {
             totalCorrect = totalCorrect + 1;
+            switch (currentQuestion.playerAnswer) {
+                case 0:
+                    answer0Button.setBackgroundColor(getColor(R.color.correctButtonColor));
+                    ((Button) answer0Button).setTextColor(getColor(R.color.white));
+                    answer0Button.setAlpha(1.0f);
+                    break;
+                case 1:
+                    answer1Button.setBackgroundColor(getColor(R.color.correctButtonColor));
+                    ((Button) answer1Button).setTextColor(getColor(R.color.white));
+                    answer1Button.setAlpha(1.0f);
+                    break;
+                case 2:
+                    answer2Button.setBackgroundColor(getColor(R.color.correctButtonColor));
+                    ((Button) answer2Button).setTextColor(getColor(R.color.white));
+                    answer2Button.setAlpha(1.0f);
+                    break;
+
+                case 3:
+                    answer3Button.setBackgroundColor(getColor(R.color.correctButtonColor));
+                    ((Button) answer3Button).setTextColor(getColor(R.color.white));
+                    answer3Button.setAlpha(1.0f);
+                    break;
+            }
+        } else {
+            switch (currentQuestion.playerAnswer) {
+                case 0:
+                    answer0Button.setBackgroundColor(getColor(R.color.wrongButtonColor));
+                    ((Button) answer0Button).setTextColor(getColor(R.color.black));
+                    answer0Button.setAlpha(1.0f);
+                    break;
+                case 1:
+                    answer1Button.setBackgroundColor(getColor(R.color.wrongButtonColor));
+                    ((Button) answer1Button).setTextColor(getColor(R.color.black));
+                    answer1Button.setAlpha(1.0f);
+                    break;
+                case 2:
+                    answer2Button.setBackgroundColor(getColor(R.color.wrongButtonColor));
+                    ((Button) answer2Button).setTextColor(getColor(R.color.black));
+                    answer2Button.setAlpha(1.0f);
+                    break;
+
+                case 3:
+                    answer3Button.setBackgroundColor(getColor(R.color.wrongButtonColor));
+                    ((Button) answer3Button).setTextColor(getColor(R.color.black));
+                    answer3Button.setAlpha(1.0f);
+                    break;
+            }
+            switch (currentQuestion.correctAnswer) {
+                case 0:
+                    answer0Button.setBackgroundColor(getColor(R.color.correctButtonColor));
+                    ((Button) answer0Button).setTextColor(getColor(R.color.white));
+                    answer0Button.setAlpha(1.0f);
+                    break;
+                case 1:
+                    answer1Button.setBackgroundColor(getColor(R.color.correctButtonColor));
+                    ((Button) answer1Button).setTextColor(getColor(R.color.white));
+                    answer1Button.setAlpha(1.0f);
+                    break;
+                case 2:
+                    answer2Button.setBackgroundColor(getColor(R.color.correctButtonColor));
+                    ((Button) answer2Button).setTextColor(getColor(R.color.white));
+                    answer2Button.setAlpha(1.0f);
+                    break;
+
+                case 3:
+                    answer3Button.setBackgroundColor(getColor(R.color.correctButtonColor));
+                    ((Button) answer3Button).setTextColor(getColor(R.color.white));
+                    answer3Button.setAlpha(1.0f);
+                    break;
+            }
         }
+
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                moveToNextQuestion(currentQuestion);
+            }
+        });
+        submitButton.setText("Continue");
+
+    }
+
+    void moveToNextQuestion(Question currentQuestion) {
+
+
         questions.remove(currentQuestion);
 
         // TODO 3-D.i: Uncomment the line below after implementing displayQuestionsRemaining(int)
@@ -219,6 +353,13 @@ public class GameActivity extends AppCompatActivity {
 
             // TODO 3-H.i: uncomment after implementing displayQuestion(Question)
             displayQuestion(getCurrentQuestion());
+            submitButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    onAnswerSubmission();
+                }
+            });
+            submitButton.setText("Submit");
         }
     }
 
@@ -280,7 +421,8 @@ public class GameActivity extends AppCompatActivity {
     @Override
     public void onPause() {
         super.onPause();
-        videoView.pause();
+        background.pause();
+        cardBorderAnimation.pause();
         MainActivity.mediaPlayer.pause();
 
     }
@@ -288,7 +430,8 @@ public class GameActivity extends AppCompatActivity {
     @Override
     public void onResume() {
         super.onResume();
-        videoView.start();
+        background.start();
+        cardBorderAnimation.start();
         if (!MainActivity.musicPaused) {
             MainActivity.mediaPlayer.start();
         }

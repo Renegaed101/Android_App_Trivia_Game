@@ -4,9 +4,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryVariant">#3F51B5</color>
-    <color name="selectedButtonColor">#4CAF50</color>
+    <color name="selectedButtonColor">#FFEB3B</color>
     <color name="notSelectedButtonColor">#000000</color>
-    <color name="correctButtonColor">#707177</color>
-    <color name="wrongButtonColor">#707177</color>
+    <color name="correctButtonColor">#28E630</color>
+    <color name="wrongButtonColor">#FF1200</color>
 
 </resources>

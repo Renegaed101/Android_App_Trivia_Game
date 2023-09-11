@@ -9,6 +9,7 @@ public class Question {
     String answer3;
     int correctAnswer;
     int playerAnswer;
+    boolean answered;
 
     public Question(int imageIdentifier,
                     String questionString,
