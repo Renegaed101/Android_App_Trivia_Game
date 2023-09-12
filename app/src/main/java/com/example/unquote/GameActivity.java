@@ -1,9 +1,7 @@
 package com.example.unquote;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -21,8 +19,8 @@ import android.view.animation.AnimationUtils;
 public class GameActivity extends AppCompatActivity {
 
     int currentQuestionIndex;
-    int totalCorrect;
-    int totalQuestions;
+    static public int totalCorrect;
+    static public int totalQuestions;
     ArrayList<Question> questions;
 
     // TODO 3-A: Declare View member variables
@@ -37,6 +35,7 @@ public class GameActivity extends AppCompatActivity {
     Button submitButton;
 
     Animation pulseAnimation;
+    Animation fadeAnimation;
 
 
     private VideoView background;
@@ -60,6 +59,7 @@ public class GameActivity extends AppCompatActivity {
             playPauseButton.setImageResource(R.drawable.volume_off_24px);
         } else {
             MainActivity.mediaPlayer.start();
+            MainActivity.mediaPlayer.setLooping(true);
         }
 
         cardBorderAnimation = findViewById(R.id.questionCardVideoView);
@@ -67,6 +67,10 @@ public class GameActivity extends AppCompatActivity {
         cardBorderAnimation.setVideoURI(videoUri);
         cardBorderAnimation.start();
         cardBorderAnimation.setOnPreparedListener(mp -> mp.setLooping(true));
+
+        pulseAnimation = AnimationUtils.loadAnimation(this, R.anim.pulse_animation);
+        fadeAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_animation);
+
 
         // TODO 2-G: Show app icon in ActionBar
 
@@ -81,7 +85,7 @@ public class GameActivity extends AppCompatActivity {
         submitButton = findViewById(R.id.btn_main_submit_answer);
 
         background = findViewById(R.id.gameVideoView);
-        videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.game_background);
+        videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.game_background_dark);
         background.setVideoURI(videoUri);
 
         // Start playing the video in a loop
@@ -98,6 +102,7 @@ public class GameActivity extends AppCompatActivity {
                 } else {
                     playPauseButton.setImageResource(R.drawable.volume_up_24px);
                     MainActivity.mediaPlayer.start();
+                    MainActivity.mediaPlayer.setLooping(true);
                     MainActivity.musicPaused = false;
                 }
             }
@@ -169,6 +174,9 @@ public class GameActivity extends AppCompatActivity {
         answer1Button.setAlpha(1.0f);
         answer2Button.setAlpha(1.0f);
         answer3Button.setAlpha(1.0f);
+        submitButton.setTextColor(getColor(R.color.white));
+        submitButton.setBackgroundColor(getColor(R.color.black));
+        submitButton.clearAnimation();
 
     }
 
@@ -184,7 +192,6 @@ public class GameActivity extends AppCompatActivity {
         Question currentQuestion = getCurrentQuestion();
         submitButton.setAlpha(1.0f);
         currentQuestion.playerAnswer = answerSelected;
-        pulseAnimation = AnimationUtils.loadAnimation(this, R.anim.pulse_animation);
         answer0Button.setBackgroundColor(getColor(R.color.notSelectedButtonColor));
         answer1Button.setBackgroundColor(getColor(R.color.notSelectedButtonColor));
         answer2Button.setBackgroundColor(getColor(R.color.notSelectedButtonColor));
@@ -312,6 +319,9 @@ public class GameActivity extends AppCompatActivity {
                 moveToNextQuestion(currentQuestion);
             }
         });
+        submitButton.setBackgroundColor(getColor(R.color.white));
+        submitButton.setTextColor(getColor(R.color.black));
+        submitButton.startAnimation(fadeAnimation);
         submitButton.setText("Continue");
 
     }
@@ -325,6 +335,10 @@ public class GameActivity extends AppCompatActivity {
         displayQuestionsRemaining(questions.size());
 
         if (questions.size() == 0) {
+
+            /* Old implementation, game over now has its own activity.
+
+
             String gameOverMessage = getGameOverMessage(totalCorrect, totalQuestions);
 
             // TODO 5-D: Show a popup instead
@@ -347,6 +361,10 @@ public class GameActivity extends AppCompatActivity {
 
 
             gameOverDialogBuilder.create().show();
+
+            */
+
+            startActivity(new Intent(getApplicationContext(),GameOverActivity.class));
 
         } else {
             chooseNewQuestion();
@@ -434,6 +452,7 @@ public class GameActivity extends AppCompatActivity {
         cardBorderAnimation.start();
         if (!MainActivity.musicPaused) {
             MainActivity.mediaPlayer.start();
+            MainActivity.mediaPlayer.setLooping(true);
         }
     }
 

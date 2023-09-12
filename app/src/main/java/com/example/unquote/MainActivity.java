@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -37,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
         Button startButton = findViewById(R.id.start_button);
         mediaPlayer = MediaPlayer.create(this, R.raw.aylex_fighter);
         ImageButton playPauseButton = findViewById(R.id.music_toggle_start);
+        Animation pulseAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_animation);
+
+        startButton.startAnimation(pulseAnimation);
 
         if (musicPaused) {
             playPauseButton.setImageResource(R.drawable.volume_off_24px);
@@ -69,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     playPauseButton.setImageResource(R.drawable.volume_up_24px);
                     mediaPlayer.start();
+                    mediaPlayer.setLooping(true);
                     musicPaused = false;
                 }
             }
@@ -76,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (!musicPaused) {
             mediaPlayer.start();
+            mediaPlayer.setLooping(true);
         }
 
         ImageView titleImage = findViewById(R.id.titleImage);
@@ -139,6 +146,7 @@ public class MainActivity extends AppCompatActivity {
         videoView.start();
         if (!musicPaused) {
             mediaPlayer.start();
+            mediaPlayer.setLooping(true);
         }
 
     }
