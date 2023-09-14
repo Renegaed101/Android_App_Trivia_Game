@@ -1,0 +1,20 @@
+geo1|What is the capital of France?|London|Berlin|Madrid|Paris|3
+geo2|Which river runs through Egypt?|Nile|Amazon|Mississippi|Danube|0
+geo3|What is the largest continent by land area?|Africa|Asia|North America|Europe|1
+geo4|Which mountain range separates Europe from Asia?|Andes|Rocky Mountains|Himalayas|Ural Mountains|3
+geo5|Which ocean is the largest by surface area?|Atlantic Ocean|Indian Ocean|Arctic Ocean|Pacific Ocean|3
+geo6|What country is known as the Land of the Rising Sun?|China|South Korea|Japan|Thailand|2
+geo7|Which desert is the largest in the world?|Gobi Desert|Kalahari Desert|Sahara Desert|Atacama Desert|2
+geo8|What is the tallest waterfall in the world?|Niagara Falls|Victoria Falls|Angel Falls|Iguazu Falls|2
+geo9|In which country can you find the ancient city of Petra?|Greece|Egypt|Jordan|Turkey|2
+geo10|Which two countries share the longest international border?|USA and Canada|China and Russia|India and Pakistan|Brazil and Argentina|0
+geo11|What is the southernmost continent on Earth?|Australia|South America|Antarctica|Africa|2
+geo12|Which canal connects the Mediterranean Sea to the Red Sea?|Suez Canal|Panama Canal|Mariana Canal|Erie Canal|0
+geo13|Which European country is known for its fjords?|Norway|Sweden|Denmark|Finland|0
+geo14|What is the largest island in the Caribbean?|Cuba|Puerto Rico|Jamaica|Hispaniola|0
+geo15|Which U.S. state is known as the Sunshine State?|California|Texas|Florida|Hawaii|2
+geo16|What is the currency of Japan?|Dollar|Yen|Euro|Pound|1
+geo17|What is the highest peak in Africa?|Mount Everest|Mount Kilimanjaro|Mount Fuji|Mount McKinley|1
+geo18|Which country is famous for the Amazon Rainforest?|Brazil|Australia|Canada|Russia|0
+geo19|Which river flows through the Grand Canyon?|Mississippi River|Colorado River|Amazon River|Nile River|1
+geo20|What is the smallest independent country in the world by land area?|Monaco|Vatican City|San Marino|Liechtenstein|1

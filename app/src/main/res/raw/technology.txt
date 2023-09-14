@@ -1,0 +1,20 @@
+tech1|Who co-founded Microsoft alongside Bill Gates?|Steve Jobs|Elon Musk|Steve Wozniak|Paul Allen|3
+tech2|What does CPU stand for in computing?|Central Processing Unit|Computer Processor Unit|Central Program Unit|Computer Power Unit|0
+tech3|Which company is known for its iPhone and MacBook products?|Samsung|Google|Apple|Microsoft|2
+tech4|What does "www" stand for in a website address?|World Wide Web|Web Workstation|Web Widget Wizard|Webpage Writer|0
+tech5|What is the main programming language used for developing Android apps?|Java|Python|C++|Swift|0
+tech6|What does "HTML" stand for in web development?|Hyper Text Markup Language|High Tech Machine Learning|Hyper Transfer Markup Language|Human Tech Management Language|0
+tech7|Which social media platform is known for its character limit in tweets?|Facebook|Instagram|Twitter|LinkedIn|2
+tech8|What is the term for a software program that replicates itself and spreads to other computers?|Virus|Trojan Horse|Worm|Spyware|2
+tech9|Which company is known for its search engine and online advertising services?|Apple|Microsoft|Google|Amazon|2
+tech10|What is the name of the programming language used for artificial intelligence and machine learning?|Python|Java|C#|Ruby|0
+tech11|Which technology company is headquartered in Cupertino, California?|Microsoft|Amazon|Apple|Google|2
+tech12|What is the most widely used web browser in the world?|Firefox|Safari|Chrome|Internet Explorer|2
+tech13|What does "URL" stand for in computing?|Universal Resource Locator|Uniform Reference Language|Unified Resolution Link|Unique Request Line|0
+tech14|Which computer scientist is considered the father of the World Wide Web?|Alan Turing|Tim Berners-Lee|Steve Jobs|Elon Musk|1
+tech15|What is the term for a small piece of code that performs a specific function and can be added to a web page?|Snippet|Gadget|Widget|Plugin|2
+tech16|Which company is known for its gaming platform, Xbox?|Sony|Nintendo|Microsoft|Sega|2
+tech17|What is the process of converting data into a code to prevent unauthorized access called?|Encoding|Decoding|Encryption|Decryption|2
+tech18|Which operating system is developed by Apple Inc. for its Macintosh computers?|Windows|Linux|iOS|Android|2
+tech19|What does "IoT" stand for in the context of technology?|Internet of Things|Innovative Operating Technology|Integrated Office Technology|Internet on Time|0
+tech20|What is the term for a set of instructions that a computer can execute to perform a specific task?|Program|App|Script|Algorithm|3

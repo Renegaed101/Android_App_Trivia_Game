@@ -1,0 +1,20 @@
+animal1|What is the largest mammal on Earth?|Blue whale|Elephant|Giraffe|Dolphin|0
+animal2|Which big cat is known for its distinctive black mane?|Cheetah|Leopard|Tiger|Lion|3
+animal3|What is the national bird of the United States?|Pigeon|Sparrow|Bald eagle|Hawk|2
+animal4|Which animal is known as the "ship of the desert"?|Zebra|Camel|Kangaroo|Giraffe|1
+animal5|What is the largest species of penguin?|Emperor penguin|Little blue penguin|King penguin|Macaroni penguin|0
+animal6|Which animal has the longest lifespan on Earth?|Elephant|Tortoise|Parrot|Dolphin|1
+animal7|What is the fastest land animal in the world?|Cheetah|Lion|Kangaroo|Giraffe|0
+animal8|What is the natural habitat of a panda?|Grasslands|Desert|Rainforest|Bamboo forest|3
+animal9|Which insect is known for its bioluminescence?|Firefly|Ladybug|Dragonfly|Butterfly|0
+animal10|Which of the following is not a species of venomous snake?|Cobra|Rattlesnake|Python|Viper|2
+animal11|How many legs does a spider typically have?|4|6|8|10|2
+animal12|What is the largest species of shark?|Hammerhead shark|Great white shark|Bull shark|Whale shark|3
+animal13|Which bird is known for its mimicry of other sounds, including human speech?|Parrot|Pigeon|Sparrow|Crow|0
+animal14|What is the smallest breed of dog?|Golden Retriever|Chihuahua|Labrador Retriever|German Shepherd|1
+animal15|Which animal is a marsupial native to Australia?|Lemur|Koala|Capybara|Meerkat|1
+animal16|What is the largest species of deer?|Moose|Elk|Reindeer|White-tailed deer|0
+animal17|Which sea creature is known for its ability to change color to blend into its surroundings?|Dolphin|Sea turtle|Octopus|Seahorse|2
+animal18|What is the national symbol of Australia?|Kangaroo|Platypus|Wombat|Emu|0
+animal19|Which bird is famous for its distinctive call that sounds like "who cooks for you"?|Pigeon|Sparrow|Owl|Crow|2
+animal20|What is the largest species of land turtle?|Tortoise|Terrapin|Box turtle|Snapping turtle|0

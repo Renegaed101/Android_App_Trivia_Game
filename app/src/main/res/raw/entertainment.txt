@@ -1,0 +1,20 @@
+mov1|Who played the character of Jack Dawson in the movie "Titanic"?|Tom Hanks|Leonardo DiCaprio|Brad Pitt|Johnny Depp|1
+mov2|What is the name of the magical school in the "Harry Potter" series?|Hogwarts|Beauxbatons|Durmstrang|Ilvermorny|0
+mov3|Which actor played James Bond in the film "Casino Royale" (2006)?|Pierce Brosnan|Roger Moore|Sean Connery|Daniel Craig|3
+mov4|In which film did Heath Ledger play the Joker?|Batman Begins|The Dark Knight|Justice League|Suicide Squad|1
+mov5|Who directed the movie "Jurassic Park"?|Steven Spielberg|James Cameron|Quentin Tarantino|Martin Scorsese|0
+mov6|Which animated film features a character named Simba?|Shrek|The Lion King|Finding Nemo|Toy Story|1
+mov7|What is the highest-grossing film of all time (unadjusted for inflation)?|Avatar|Titanic|Avengers: Endgame|Star Wars: The Force Awakens|2
+mov8|Which actress played Katniss Everdeen in "The Hunger Games" series?|Jennifer Aniston|Jennifer Lawrence|Emma Watson|Natalie Portman|1
+mov9|Who portrayed Forrest Gump in the film "Forrest Gump"?|Tom Cruise|Tom Hanks|Brad Pitt|Matt Damon|1
+mov10|What is the name of the fictional wizard created by J.K. Rowling?|Gandalf|Dumbledore|Merlin|Hagrid|1
+mov11|Which film won the Academy Award for Best Picture in 1994?|Forrest Gump|Schindler's List|Pulp Fiction|The Shawshank Redemption|0
+mov12|Who is the voice actor for Woody in the "Toy Story" series?|Tim Allen|Tom Hanks|Billy Crystal|John Goodman|1
+mov13|Which actor played Neo in "The Matrix" trilogy?|Keanu Reeves|Laurence Fishburne|Hugo Weaving|Carrie-Anne Moss|0
+mov14|Which film features a computer program named "Tron"?|The Matrix|Avatar|Tron|Inception|2
+mov15|Who directed the "Lord of the Rings" film trilogy?|Steven Spielberg|James Cameron|Peter Jackson|George Lucas|2
+mov16|Which movie features a character named Captain Jack Sparrow?|Pirates of the Caribbean|Gladiator|Braveheart|The Avengers|0
+mov17|What is the name of the character played by Scarlett Johansson in the Marvel Cinematic Universe?|Black Widow|Scarlet Witch|Spider-Woman|She-Hulk|0
+mov18|Which film is known for the line "Here's looking at you, kid"?|Casablanca|Gone with the Wind|The Godfather|Schindler's List|0
+mov19|Who directed the science fiction film "Interstellar"?|Christopher Nolan|James Cameron|Ridley Scott|Michael Bay|0
+mov20|Which actor played the role of Tony Stark/Iron Man in the Marvel Cinematic Universe?|Chris Hemsworth|Chris Evans|Robert Downey Jr.|Mark Ruffalo|2

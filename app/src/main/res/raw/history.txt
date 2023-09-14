@@ -1,0 +1,20 @@
+hist1|In which year did Christopher Columbus first reach the Americas?|1492|1607|1776|1865|0
+hist2|Who was the first President of the United States?|Thomas Jefferson|John Adams|George Washington|Benjamin Franklin|2
+hist3|Which war is known as the "War of 1812"?|American Civil War|World War I|World War II|War of 1812|3
+hist4|Who wrote the "Declaration of Independence"?|Thomas Jefferson|Alexander Hamilton|John Adams|George Washington|0
+hist5|Which ancient civilization built the Great Wall of China?|Greek|Roman|Chinese|Egyptian|2
+hist6|What was the name of the ship that carried the Pilgrims to America in 1620?|Mayflower|Santa Maria|Nina|Victoria|0
+hist7|Which U.S. President issued the Emancipation Proclamation?|Thomas Jefferson|Andrew Jackson|Abraham Lincoln|Theodore Roosevelt|2
+hist8|What was the primary cause of the French Revolution?|Economic inequality|Religious conflict|Foreign invasion|Natural disaster|0
+hist9|In which year did the Titanic sink?|1912|1921|1930|1945|0
+hist10|Who was the leader of the Soviet Union during the Cuban Missile Crisis?|Vladimir Putin|Joseph Stalin|Leon Trotsky|Nikita Khrushchev|3
+hist11|Which famous speech began with the words "I have a dream"?|Martin Luther King Jr.|John F. Kennedy|Abraham Lincoln|Winston Churchill|0
+hist12|What event marked the beginning of World War I?|The sinking of the Lusitania|The assassination of Archduke Franz Ferdinand|The signing of the Treaty of Versailles|The Russian Revolution|1
+hist13|Which ancient wonder of the world was a lighthouse?|Great Pyramid of Giza|Hanging Gardens of Babylon|Colossus of Rhodes|Lighthouse of Alexandria|3
+hist14|Who was the first woman to fly solo across the Atlantic Ocean?|Amelia Earhart|Bessie Coleman|Harriet Quimby|Sally Ride|0
+hist15|What was the name of the ship that carried the first English settlers to Jamestown, Virginia?|Mayflower|Santa Maria|Susan Constant|Discovery|2
+hist16|Who was the first person to set foot on the moon?|Buzz Aldrin|Yuri Gagarin|John Glenn|Neil Armstrong|3
+hist17|Which civilization built the city of Machu Picchu?|Inca|Aztec|Maya|Egyptian|0
+hist18|Which country was divided into North and South during the Cold War?|Germany|Italy|Japan|France|0
+hist19|Who was the first woman to win a Nobel Prize?|Rosa Parks|Marie Curie|Amelia Earhart|Eleanor Roosevelt|1
+hist20|Which ancient city was destroyed by a volcanic eruption in 79 AD?|Pompeii|Athens|Troy|Carthage|0

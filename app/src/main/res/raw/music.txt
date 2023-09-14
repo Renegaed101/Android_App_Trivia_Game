@@ -1,0 +1,20 @@
+music1|Which band is known for their hit song "Bohemian Rhapsody"?|The Beatles|Queen|Led Zeppelin|The Rolling Stones|1
+music2|Who is often referred to as the "King of Pop"?|Elvis Presley|Prince|Michael Jackson|David Bowie|2
+music3|Which artist released the album "Thriller" in 1982?|Prince|David Bowie|Michael Jackson|Elton John|2
+music4|Which rock band released the album "The Wall" in 1979?|The Rolling Stones|The Who|Pink Floyd|The Doors|2
+music5|What is the name of Beyoncé's alter ego?|Sasha Fierce|Lady Gaga|Adele|Taylor Swift|0
+music6|Which female artist sang "Rolling in the Deep"?|Katy Perry|Adele|Taylor Swift|Rihanna|1
+music7|Who wrote the song "Imagine"?|Bob Dylan|John Lennon|Elton John|David Bowie|1
+music8|Which artist is known for the album "Legend," featuring reggae hits like "One Love" and "No Woman, No Cry"?|Bob Marley|Sting|Jimmy Cliff|Peter Tosh|0
+music9|What was the name of Elvis Presley's home in Memphis, Tennessee?|Graceland|Neverland|Elvis Manor|Rock 'n' Roll Ranch|0
+music10|Which rock band is famous for their concept album "Dark Side of the Moon"?|The Who|Pink Floyd|Led Zeppelin|The Rolling Stones|1
+music11|Who sang "Like a Rolling Stone"?|Bob Dylan|The Beatles|The Rolling Stones|Elvis Presley|0
+music12|Which artist is known for the hit song "Shape of You"?|Adele|Ed Sheeran|Taylor Swift|Bruno Mars|1
+music13|What is the name of the famous music festival held in the 1960s that featured performances by artists like Jimi Hendrix and The Who?|Woodstock|Coachella|Glastonbury|Lollapalooza|0
+music14|Who was the lead guitarist for the rock band Queen?|Jimmy Page|Brian May|Angus Young|Jimi Hendrix|1
+music15|Which female artist released the album "1989" in 2014?|Adele|Taylor Swift|Katy Perry|Beyoncé|1
+music16|What is the name of Michael Jackson's iconic ranch in California?|Neverland Ranch|Graceland|Elvis Manor|King's Palace|0
+music17|Which artist is known for the song "Hotel California"?|The Rolling Stones|Led Zeppelin|The Eagles|The Who|2
+music18|Who is often referred to as the "Rocket Man"?|David Bowie|Elton John|Sting|Freddie Mercury|1
+music19|Which artist released the album "Purple Rain" in 1984?|Prince|Michael Jackson|Elvis Presley|David Bowie|0
+music20|Who was known as the "Queen of Soul"?|Whitney Houston|Tina Turner|Aretha Franklin|Diana Ross|2

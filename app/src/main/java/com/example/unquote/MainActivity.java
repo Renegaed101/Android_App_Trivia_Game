@@ -2,6 +2,8 @@ package com.example.unquote;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.AudioAttributes;
+import android.media.SoundPool;
 import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
@@ -25,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
     private VideoView videoView;
     public static boolean musicPaused = false;
 
+    public static SoundPool soundPool;
+    public static int soundCorrectAnswer;
+    public static int soundWrongAnswer;
+    public static int soundNextQuestion;
+    public static int soundTapAnswer;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         //To clean up prev running audio
@@ -36,10 +44,25 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
+        AudioAttributes audioAttributes = new AudioAttributes.Builder()
+                .setUsage(AudioAttributes.USAGE_GAME)
+                .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                .build();
+
+        SoundPool.Builder builder = new SoundPool.Builder();
+        builder.setAudioAttributes(audioAttributes).setMaxStreams(4); // Maximum simultaneous streams
+        soundPool = builder.build();
+
+        soundCorrectAnswer = soundPool.load(this,R.raw.sound_correct_answer,1);
+        soundWrongAnswer = soundPool.load(this,R.raw.sound_wrong_answer,1);
+        soundNextQuestion = soundPool.load(this,R.raw.sound_next_question,1);
+        soundTapAnswer = soundPool.load(this,R.raw.sound_tap_button,1);
+
         Button startButton = findViewById(R.id.start_button);
-        mediaPlayer = MediaPlayer.create(this, R.raw.aylex_fighter);
+        mediaPlayer = MediaPlayer.create(this, R.raw.space_pirates);
         ImageButton playPauseButton = findViewById(R.id.music_toggle_start);
         Animation pulseAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_animation);
+
 
         startButton.startAnimation(pulseAnimation);
 
@@ -81,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         if (!musicPaused) {
+            mediaPlayer.setVolume(0.1f,0.1f);
             mediaPlayer.start();
             mediaPlayer.setLooping(true);
         }
@@ -157,6 +181,10 @@ public class MainActivity extends AppCompatActivity {
         if (mediaPlayer != null) {
             mediaPlayer.release();
             mediaPlayer = null;
+        }
+
+        if (soundPool != null) {
+            soundPool.release();
         }
     }
 

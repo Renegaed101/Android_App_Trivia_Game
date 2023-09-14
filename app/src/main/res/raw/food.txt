@@ -1,0 +1,20 @@
+food1|What is the main ingredient in traditional Japanese miso soup?|Tofu|Rice|Seaweed|Miso paste|3
+food2|Which fruit is known as the "king of fruits" and has a strong odor?|Banana|Apple|Durian|Pineapple|2
+food3|What type of pasta is shaped like small rice grains and is often used in soups?|Spaghetti|Fettuccine|Orzo|Rotini|2
+food4|What is the primary ingredient in hummus?|Tomatoes|Chickpeas|Eggplant|Cucumbers|1
+food5|Which spice is known as "the king of spices" and is derived from the flower buds of a tree?|Turmeric|Cumin|Cinnamon|Cloves|3
+food6|What is the national dish of Spain, consisting of saffron-flavored rice with various ingredients such as seafood, vegetables, and chicken?|Lasagna|Sushi|Paella|Pasta|2
+food7|Which type of bread is typically used for making a sandwich called a "BLT"?|Sourdough|Baguette|Rye|White|0
+food8|What is the main ingredient in the Indian dish "samosa"?|Potato|Lamb|Chicken|Tofu|0
+food9|Which vegetable is known as "lady's fingers" in some English-speaking countries?|Eggplant|Okra|Zucchini|Cucumber|1
+food10|What is the primary ingredient in the Middle Eastern dish "tabbouleh"?|Bulgur wheat|Quinoa|Rice|Couscous|0
+food11|Which type of cheese is known for its blue veins and pungent aroma?|Cheddar|Swiss|Feta|Blue cheese|3
+food12|Which spice is derived from the dried stigma of a flower and is one of the most expensive spices by weight?|Cinnamon|Saffron|Paprika|Nutmeg|1
+food13|What is the traditional Japanese seasoning made from fermented soybeans?|Wasabi|Soy sauce|Miso|Teriyaki sauce|2
+food14|Which fruit is known as the "queen of fruits" and is often used in desserts and smoothies?|Mango|Strawberry|Pineapple|Kiwi|0
+food15|What is the primary ingredient in the Mexican dish "guacamole"?|Pineapple|Avocado|Cilantro|Tomato|1
+food16|Which nut is often used to make marzipan and is native to the Mediterranean region?|Cashew|Almond|Pecan|Pistachio|1
+food17|What is the main ingredient in the Indian dish "saag paneer"?|Lamb|Chicken|Tofu|Spinach and cheese|3
+food18|What is the primary ingredient in the Italian dish "risotto"?|Rice|Pasta|Couscous|Quinoa|0
+food19|Which type of pasta is shaped like small rice grains and is often used in salads?|Spaghetti|Fettuccine|Orzo|Rotini|2
+food20|Which type of cuisine is known for its use of raw fish and rice, often served with soy sauce and wasabi?|Mexican|Chinese|Italian|Japanese|3

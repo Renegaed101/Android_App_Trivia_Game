@@ -3,8 +3,10 @@ package com.example.unquote;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.SoundPool;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Pair;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -13,6 +15,8 @@ import android.widget.TextView;
 import android.widget.VideoView;
 
 import java.util.ArrayList;
+import java.util.List;
+
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
@@ -38,6 +42,7 @@ public class GameActivity extends AppCompatActivity {
     Animation fadeAnimation;
 
 
+
     private VideoView background;
 
     private VideoView cardBorderAnimation;
@@ -61,6 +66,7 @@ public class GameActivity extends AppCompatActivity {
             MainActivity.mediaPlayer.start();
             MainActivity.mediaPlayer.setLooping(true);
         }
+
 
         cardBorderAnimation = findViewById(R.id.questionCardVideoView);
         Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.question_card_background);
@@ -228,6 +234,9 @@ public class GameActivity extends AppCompatActivity {
                 break;
         }
 
+        MainActivity.soundPool.play(MainActivity.soundTapAnswer, 1.0f, 1.0f, 1, 0, 1.0f);
+
+
     }
     void onAnswerSubmission() {
         Question currentQuestion = getCurrentQuestion();
@@ -264,6 +273,9 @@ public class GameActivity extends AppCompatActivity {
                     answer3Button.setAlpha(1.0f);
                     break;
             }
+
+            MainActivity.soundPool.play(MainActivity.soundCorrectAnswer, 1.5f, 1.5f, 1, 0, 1.0f);
+
         } else {
             switch (currentQuestion.playerAnswer) {
                 case 0:
@@ -311,11 +323,15 @@ public class GameActivity extends AppCompatActivity {
                     answer3Button.setAlpha(1.0f);
                     break;
             }
+
+            MainActivity.soundPool.play(MainActivity.soundWrongAnswer, 0.08f, 0.08f, 1, 0, 1.0f);
+
         }
 
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                MainActivity.soundPool.play(MainActivity.soundNextQuestion, 1.5f, 1.5f, 1, 0, 1.0f);
                 moveToNextQuestion(currentQuestion);
             }
         });
@@ -382,8 +398,15 @@ public class GameActivity extends AppCompatActivity {
     }
 
     void startNewGame() {
-        questions = new ArrayList<>();
+        List<Pair<Integer, Integer>> filesAndQuestions = new ArrayList<>();
+        filesAndQuestions.add(new Pair<>(R.raw.animals, 10)); // File 1, 10 questions
+        //filesAndQuestions.add(new Pair<>("animals2.txt", 5));  // File 2, 5 questions
 
+        // Pass the Resources instance to the method (replace "your.package.name" with your actual package name)
+        questions = TriviaQuestionParser.parseTriviaQuestionsFromFiles(filesAndQuestions, getResources(),getPackageName());
+
+
+        /*
         // TODO 2-H: Provide actual drawables for each of these questions!
         Question question0 = new Question(R.drawable.img_quote_0, "Pretty good advice, and perhaps a scientist did say it... Who actually did?", "Albert Einstein", "Isaac Newton", "Rita Mae Brown", "Rosalind Franklin", 2);
         Question question1 = new Question(R.drawable.img_quote_1, "Was honest Abe honestly quoted? Who authored this pithy bit of wisdom?", "Edward Stieglitz", "Maya Angelou", "Abraham Lincoln", "Ralph Waldo Emerson", 0);
@@ -398,6 +421,9 @@ public class GameActivity extends AppCompatActivity {
         questions.add(question3);
         questions.add(question4);
         questions.add(question5);
+
+
+        */
 
         totalCorrect = 0;
         totalQuestions = questions.size();

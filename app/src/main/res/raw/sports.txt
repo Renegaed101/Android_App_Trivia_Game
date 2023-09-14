@@ -1,0 +1,20 @@
+sports1|Which country won the FIFA World Cup in 2018?|Germany|Argentina|France|Brazil|2
+sports2|In which sport do teams compete for the Stanley Cup?|Soccer|Basketball|Ice Hockey|Baseball|2
+sports3|Who holds the record for the most career home runs in Major League Baseball (MLB)?|Babe Ruth|Hank Aaron|Barry Bonds|Willie Mays|2
+sports4|Which country has won the most Olympic gold medals?|USA|China|Russia|Germany|0
+sports5|In which sport is the Davis Cup awarded?|Tennis|Golf|Cricket|Rugby|0
+sports6|Who is the all-time leading scorer in the NBA?|Kobe Bryant|LeBron James|Michael Jordan|Kareem Abdul-Jabbar|3
+sports7|Which country is famous for its dominance in the sport of cricket?|England|Australia|India|South Africa|2
+sports8|What is the name of the annual championship game in the NFL?|Super Bowl|World Series|NBA Finals|Stanley Cup Finals|0
+sports9|Which athlete is known as "The Fastest Man on Earth"?|Usain Bolt|Carl Lewis|Jesse Owens|Michael Johnson|0
+sports10|In which sport did Muhammad Ali become a legendary figure?|Golf|Soccer|Boxing|Tennis|2
+sports11|Which country won the most gold medals in the 2016 Summer Olympics?|USA|China|Russia|Great Britain|0
+sports12|What is the national sport of Canada?|Lacrosse|Hockey|Baseball|Soccer|1
+sports13|Which sport is associated with Wimbledon?|Tennis|Golf|Cricket|Rugby|0
+sports14|Who is considered the greatest swimmer of all time with 23 Olympic gold medals?|Michael Phelps|Ian Thorpe|Mark Spitz|Ryan Lochte|0
+sports15|What is the term for a perfect score in bowling?|Strike|Spare|Turkey|Bullseye|0
+sports16|Which country won the 2019 Rugby World Cup?|South Africa|New Zealand|Australia|England|0
+sports17|In which sport can you perform a slam dunk?|Soccer|Baseball|Basketball|Volleyball|2
+sports18|Who is the most decorated Olympian of all time with 28 Olympic medals?|Michael Phelps|Usain Bolt|Carl Lewis|Jesse Owens|0
+sports19|What is the national sport of Japan?|Sumo wrestling|Karate|Baseball|Judo|0
+sports20|Which country won the 2018 Winter Olympics in Pyeongchang?|USA|Russia|South Korea|Norway|3

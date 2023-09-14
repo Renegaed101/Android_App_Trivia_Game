@@ -1,0 +1,20 @@
+sci1|What is the chemical symbol for gold?|Gd|Ag|Au|Fe|2
+sci2|Which gas do plants absorb from the atmosphere during photosynthesis?|Carbon dioxide|Oxygen|Nitrogen|Hydrogen|0
+sci3|What is the process by which plants make their own food using sunlight?|Respiration|Fermentation|Photosynthesis|Oxidation|2
+sci4|What is the chemical symbol for water?|H2O|CO2|O2|NaCl|0
+sci5|What is the smallest unit of matter that retains the properties of an element?|Molecule|Atom|Proton|Neutron|1
+sci6|Which planet is known as the "Red Planet"?|Earth|Venus|Mars|Jupiter|2
+sci7|What is the largest organ in the human body?|Heart|Brain|Skin|Liver|2
+sci8|What gas do plants release during photosynthesis?|Carbon dioxide|Oxygen|Nitrogen|Hydrogen|1
+sci9|What is the process by which plants lose water vapor through small openings in their leaves?|Transpiration|Respiration|Photosynthesis|Evaporation|0
+sci10|What is the chemical symbol for oxygen?|O2|C|H2O|O|3
+sci11|What is the study of the Earth's atmosphere and weather?|Geology|Biology|Meteorology|Astronomy|2
+sci12|Which gas do humans primarily exhale when breathing?|Carbon dioxide|Oxygen|Nitrogen|Hydrogen|0
+sci13|What is the chemical symbol for helium?|H|He|Li|Be|1
+sci14|What is the closest star to Earth?|Sirius|Proxima Centauri|Vega|Betelgeuse|1
+sci15|Which gas is responsible for the Earth's ozone layer?|Carbon dioxide|Oxygen|Nitrogen|Ozone|3
+sci16|What is the chemical symbol for carbon dioxide?|CO|CO2|O2|C2|1
+sci17|What is the process by which an organism's genetic material is copied and passed on to its offspring?|Evolution|Photosynthesis|Replication|Mutation|2
+sci18|Which planet is known for its prominent ring system?|Saturn|Jupiter|Uranus|Mars|0
+sci19|What is the chemical symbol for nitrogen?|N|Ni|Na|Ne|0
+sci20|What is the smallest planet in our solar system?|Venus|Earth|Mars|Mercury|3

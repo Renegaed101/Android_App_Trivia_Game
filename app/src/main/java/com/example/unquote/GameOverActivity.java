@@ -21,6 +21,11 @@ public class GameOverActivity extends AppCompatActivity {
     private VideoView background;
 
     @Override
+    public void onBackPressed() {
+        //To cancel back button
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -31,12 +36,15 @@ public class GameOverActivity extends AppCompatActivity {
         Button mainMenuButton = findViewById(R.id.main_menu_button);
         RatingBar ratingBar = findViewById(R.id.ratingBar);
         Animation pulseAnimation = AnimationUtils.loadAnimation(this, R.anim.pulse_animation);
+        Animation fadeAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_animation);
         TextView score = findViewById(R.id.score);
         TextView numCorrect = findViewById(R.id.numberOfCorrect);
         TextView numIncorrect = findViewById(R.id.numberOfIncorrect);
         TextView accuracy = findViewById(R.id.accuracy);
-        playAgainButton.startAnimation(pulseAnimation);
-        mainMenuButton.startAnimation(pulseAnimation);
+
+
+        playAgainButton.startAnimation(fadeAnimation);
+        mainMenuButton.startAnimation(fadeAnimation);
         ratingBar.startAnimation(pulseAnimation);
 
         double totalCorrect = GameActivity.totalCorrect;
@@ -87,8 +95,9 @@ public class GameOverActivity extends AppCompatActivity {
             }
         });
 
+
         background = findViewById(R.id.gameOverVideoView);
-        Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.game_over_background);
+        Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.game_background_dark);
         background.setVideoURI(videoUri);
 
         // Start playing the video in a loop
