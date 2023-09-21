@@ -26,8 +26,6 @@ public class GameActivity extends AppCompatActivity {
     static public int totalCorrect;
     static public int totalQuestions;
     ArrayList<Question> questions;
-
-    // TODO 3-A: Declare View member variables
     View questionImageView;
     View questionTextView;
     View questionRemainingTextView;
@@ -35,9 +33,7 @@ public class GameActivity extends AppCompatActivity {
     View answer1Button;
     View answer2Button;
     View answer3Button;
-
     Button submitButton;
-
     Animation pulseAnimation;
     Animation fadeAnimation;
 
@@ -78,9 +74,6 @@ public class GameActivity extends AppCompatActivity {
         fadeAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_animation);
 
 
-        // TODO 2-G: Show app icon in ActionBar
-
-        // TODO 3-B: assign View member variables
         questionImageView = findViewById(R.id.iv_main_question_image);
         questionTextView = findViewById(R.id.tv_main_question_title);
         questionRemainingTextView = findViewById(R.id.tv_main_questions_remaining_count);
@@ -114,8 +107,6 @@ public class GameActivity extends AppCompatActivity {
             }
         });
 
-
-        // TODO 4-E: set onClickListener for each answer Button
         answer0Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -142,8 +133,6 @@ public class GameActivity extends AppCompatActivity {
         });
 
 
-        // TODO 5-A: set onClickListener for the submit answer Button
-
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -154,7 +143,6 @@ public class GameActivity extends AppCompatActivity {
         startNewGame();
     }
 
-    // TODO 3-F: displayQuestion(Question question) {...}
 
     void displayQuestion(Question question){
         ((ImageView)questionImageView).setImageResource(question.imageId);
@@ -186,13 +174,10 @@ public class GameActivity extends AppCompatActivity {
 
     }
 
-    // TODO 3-C: displayQuestionsRemaining(int questionRemaining) {...}
-
     void displayQuestionsRemaining(int questionRemaining) {
         ((TextView)questionRemainingTextView).setText(String.valueOf(questionRemaining));
     }
 
-    // TODO 4-A: onAnswerSelected(int answerSelected) {...}
     void onAnswerSelected(int answerSelected) {
         if (getCurrentQuestion().answered){return;}
         Question currentQuestion = getCurrentQuestion();
@@ -347,7 +332,6 @@ public class GameActivity extends AppCompatActivity {
 
         questions.remove(currentQuestion);
 
-        // TODO 3-D.i: Uncomment the line below after implementing displayQuestionsRemaining(int)
         displayQuestionsRemaining(questions.size());
 
         if (questions.size() == 0) {
@@ -385,7 +369,6 @@ public class GameActivity extends AppCompatActivity {
         } else {
             chooseNewQuestion();
 
-            // TODO 3-H.i: uncomment after implementing displayQuestion(Question)
             displayQuestion(getCurrentQuestion());
             submitButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -398,42 +381,20 @@ public class GameActivity extends AppCompatActivity {
     }
 
     void startNewGame() {
-        List<Pair<Integer, Integer>> filesAndQuestions = new ArrayList<>();
-        filesAndQuestions.add(new Pair<>(R.raw.animals, 10)); // File 1, 10 questions
-        //filesAndQuestions.add(new Pair<>("animals2.txt", 5));  // File 2, 5 questions
+
+        List<Pair<Integer, Integer>> filesAndQuestions = selectQuestions();
 
         // Pass the Resources instance to the method (replace "your.package.name" with your actual package name)
         questions = TriviaQuestionParser.parseTriviaQuestionsFromFiles(filesAndQuestions, getResources(),getPackageName());
 
-
-        /*
-        // TODO 2-H: Provide actual drawables for each of these questions!
-        Question question0 = new Question(R.drawable.img_quote_0, "Pretty good advice, and perhaps a scientist did say it... Who actually did?", "Albert Einstein", "Isaac Newton", "Rita Mae Brown", "Rosalind Franklin", 2);
-        Question question1 = new Question(R.drawable.img_quote_1, "Was honest Abe honestly quoted? Who authored this pithy bit of wisdom?", "Edward Stieglitz", "Maya Angelou", "Abraham Lincoln", "Ralph Waldo Emerson", 0);
-        Question question2 = new Question(R.drawable.img_quote_2, "Easy advice to read, difficult advice to follow - who actually said it?", "Martin Luther King Jr.", "Mother Teresa", "Fred Rogers", "Oprah Winfrey", 1);
-        Question question3 = new Question(R.drawable.img_quote_3, "Insanely inspiring, insanely incorrect(maybe). Who is the true source of this inspiration?", "Nelson Mandela", "Harriet Tubman", "Mahatma Gandhi", "Nicholas Klein", 3);
-        Question question4 = new Question(R.drawable.img_quote_4, "A peace worth striving for - who actually reminded us of this?", "Malala Yousafzai", "Martin Luther King Jr.", "Liu Xiaobo", "Dalai Lama", 1);
-        Question question5 = new Question(R.drawable.img_quote_5, "Unfortunately, true - but did Marilyn Monroe convey it or did someone else?", "Laurel Thatcher Ulrich", "Eleanor Roosevelt", "Marilyn Monroe", "Queen Victoria", 0);
-
-        questions.add(question0);
-        questions.add(question1);
-        questions.add(question2);
-        questions.add(question3);
-        questions.add(question4);
-        questions.add(question5);
-
-
-        */
 
         totalCorrect = 0;
         totalQuestions = questions.size();
 
         Question firstQuestion = chooseNewQuestion();
 
-        // TODO 3-D.ii: Uncomment the line below after implementing displayQuestionsRemaining(int)
         displayQuestionsRemaining(questions.size());
 
-        // TODO 3-H.ii: Uncomment after implementing displayQuestion(Question)
         displayQuestion(firstQuestion);
     }
 
@@ -441,6 +402,23 @@ public class GameActivity extends AppCompatActivity {
         int newQuestionIndex = generateRandomNumber(questions.size());
         currentQuestionIndex = newQuestionIndex;
         return questions.get(currentQuestionIndex);
+    }
+
+    public List<Pair<Integer,Integer>>selectQuestions(){
+        List<Pair<Integer, Integer>> result = new ArrayList<>();
+        int numQuestions = GameOptionsActivity.numberQuestions;
+        int numCategories = GameOptionsActivity.numCategories;
+        int questionsPerCategory = numQuestions/numCategories;
+        int remainingQuestions = numQuestions%numCategories;
+
+        for (int i = 0; i < numCategories; i++) {
+                int resourceId = GameOptionsActivity.selectedCategories.get(i).questionsResourceId;
+                int finalNumQuestions = questionsPerCategory + (i < remainingQuestions? 1 : 0);
+
+                result.add(new Pair<>(resourceId,finalNumQuestions));
+        }
+
+        return result;
     }
 
     int generateRandomNumber(int max) {

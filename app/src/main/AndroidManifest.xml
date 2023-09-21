@@ -26,6 +26,9 @@
         <activity
             android:name=".GameOverActivity" >
         </activity>
+        <activity
+            android:name=".GameOptionsActivity" >
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"
