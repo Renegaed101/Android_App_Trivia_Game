@@ -29,7 +29,7 @@ public class TriviaQuestionParser {
                     String[] parts = line.split("\\|");
 
                     if (parts.length == 7) { // Ensure a valid line
-                        String resourceName = parts[0]; // New format: Resource name
+                        String categoryId = parts[0]; // New format: Resource name
                         String questionString = parts[1];
                         String answerZero = parts[2];
                         String answerOne = parts[3];
@@ -37,11 +37,8 @@ public class TriviaQuestionParser {
                         String answerThree = parts[5];
                         int correctAnswerIndex = Integer.parseInt(parts[6]);
 
-                        // Calculate the image identifier using the resource name
-                        int imageIdentifier = resources.getIdentifier(resourceName, "drawable",packageName);
-
                         Question question = new Question(
-                                imageIdentifier,
+                                categoryId,
                                 questionString,
                                 answerZero,
                                 answerOne,
@@ -54,6 +51,7 @@ public class TriviaQuestionParser {
                         questionsRead++;
                     }
                 }
+                
             } catch (IOException e) {
                 e.printStackTrace();
             }
