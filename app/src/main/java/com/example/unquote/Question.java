@@ -1,7 +1,7 @@
 package com.example.unquote;
 
 public class Question {
-    int imageId;
+    String categoryId;
     String questionText;
     String answer0;
     String answer1;
@@ -11,14 +11,14 @@ public class Question {
     int playerAnswer;
     boolean answered;
 
-    public Question(int imageIdentifier,
+    public Question(String categoryId,
                     String questionString,
                     String answerZero,
                     String answerOne,
                     String answerTwo,
                     String answerThree,
                     int correctAnswerIndex) {
-        imageId = imageIdentifier;
+        this.categoryId = categoryId;
         questionText = questionString;
         answer0 = answerZero;
         answer1 = answerOne;

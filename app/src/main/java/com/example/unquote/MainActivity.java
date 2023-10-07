@@ -24,6 +24,14 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 
 public class MainActivity extends AppCompatActivity {
     public static MediaPlayer mediaPlayer;
+    public static int[] musicResources = {
+            R.raw.space_pirates,
+            R.raw.moonwinds,
+            R.raw.powerful_trap,
+            R.raw.vangaurd,
+            R.raw.stadium_rock,
+            R.raw.art_of_silence
+    };
     private VideoView videoView;
     public static boolean musicPaused = false;
 
@@ -32,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
     public static int soundWrongAnswer;
     public static int soundNextQuestion;
     public static int soundTapAnswer;
+    public static int soundSelectCategory;
+    public static int soundRemoveCategory;
+    public static int soundCantStartGame;
+    public static int soundScoreIncrease;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,9 +69,13 @@ public class MainActivity extends AppCompatActivity {
         soundWrongAnswer = soundPool.load(this,R.raw.sound_wrong_answer,1);
         soundNextQuestion = soundPool.load(this,R.raw.sound_next_question,1);
         soundTapAnswer = soundPool.load(this,R.raw.sound_tap_button,1);
+        soundSelectCategory = soundPool.load(this,R.raw.select_category,1);
+        soundRemoveCategory = soundPool.load(this,R.raw.remove_category,1);
+        soundCantStartGame = soundPool.load(this,R.raw.cant_start_game,1);
+        soundScoreIncrease = soundPool.load(this,R.raw.score_increase,1);
 
         Button startButton = findViewById(R.id.start_button);
-        mediaPlayer = MediaPlayer.create(this, R.raw.space_pirates);
+        mediaPlayer = MediaPlayer.create(this, musicResources[0]);
         ImageButton playPauseButton = findViewById(R.id.music_toggle_start);
         Animation pulseAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_animation);
 

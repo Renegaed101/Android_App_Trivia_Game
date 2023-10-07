@@ -1,10 +1,12 @@
     <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Unquote" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.TriviaM" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">#000000</item>
         <item name="colorPrimaryVariant">@color/colorPrimary</item>
+        <item name="android:windowBackground">@drawable/trivia_m_icon</item>
+
     </style>
 
-    <style name="Theme.Unquote" parent="Base.Theme.Unquote" />
+    <style name="Theme.TriviaM" parent="Base.Theme.TriviaM" />
 </resources>

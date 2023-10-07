@@ -50,7 +50,7 @@ public class GameOverActivity extends AppCompatActivity {
         double totalCorrect = GameActivity.totalCorrect;
         double totalQuestions = GameActivity.totalQuestions;
 
-        score.setText(String.valueOf((int)(totalCorrect*100)));
+        score.setText(String.valueOf(GameActivity.score));
         numCorrect.setText(String.valueOf((int)(totalCorrect)));
         numIncorrect.setText(String.valueOf((int)(totalQuestions-totalCorrect)));
         accuracy.setText(String.valueOf(Math.round((totalCorrect/totalQuestions)*100)) + "%");

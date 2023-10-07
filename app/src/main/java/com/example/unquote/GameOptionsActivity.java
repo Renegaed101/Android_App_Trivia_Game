@@ -8,12 +8,13 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.VideoView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -27,6 +28,7 @@ public class GameOptionsActivity extends AppCompatActivity {
     public static int numberQuestions = 0;
     public static List<Category> selectedCategories;
     private String cantStartMessage;
+    private Animation pulse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,7 @@ public class GameOptionsActivity extends AppCompatActivity {
         Button questionsButton60 = findViewById(R.id.questionsButton60);
         Button startGameButton = findViewById(R.id.startGameButton);
         TextView categoriesText = findViewById(R.id.selectCategoriesTextView);
+        pulse = AnimationUtils.loadAnimation(this,R.anim.pulse_animation);
 
         startGameButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,10 +56,13 @@ public class GameOptionsActivity extends AppCompatActivity {
                     }
                     Intent startGame = new Intent (getApplicationContext(),GameActivity.class);
                     startActivity(startGame);
+                    MainActivity.soundPool.play(MainActivity.soundNextQuestion, 1.5f, 1.5f, 1, 0, 1.0f);
+
                 } else {
                     AlertDialog.Builder gameOverDialogBuilder = new AlertDialog.Builder(GameOptionsActivity.this);
                     gameOverDialogBuilder.setTitle("Oops");
                     gameOverDialogBuilder.setMessage(cantStartMessage);
+                    MainActivity.soundPool.play(MainActivity.soundCantStartGame, 1.0f, 1.0f, 1, 0, 1.0f);
                     gameOverDialogBuilder.create().show();
                 }
             }
@@ -97,52 +103,52 @@ public class GameOptionsActivity extends AppCompatActivity {
 
             // Set a click listener for each button
             questionsButton20.setOnClickListener(view -> {
-                setButtonVisible(questionsButton20);
-                setButtonFaded(questionsButton40);
-                setButtonFaded(questionsButton60);
+                setButtonSelected(questionsButton20);
+                setButtonNotSelected(questionsButton40);
+                setButtonNotSelected(questionsButton60);
                 numberQuestions = 20;
                 categoriesText.setText("Select at least 1 category");
             });
 
             questionsButton40.setOnClickListener(view -> {
-                setButtonVisible(questionsButton40);
-                setButtonFaded(questionsButton20);
-                setButtonFaded(questionsButton60);
+                setButtonSelected(questionsButton40);
+                setButtonNotSelected(questionsButton20);
+                setButtonNotSelected(questionsButton60);
                 numberQuestions = 40;
                 categoriesText.setText("Select at least 2 categories");
             });
 
             questionsButton60.setOnClickListener(view -> {
-                setButtonVisible(questionsButton60);
-                setButtonFaded(questionsButton20);
-                setButtonFaded(questionsButton40);
+                setButtonSelected(questionsButton60);
+                setButtonNotSelected(questionsButton20);
+                setButtonNotSelected(questionsButton40);
                 numberQuestions = 60;
                 categoriesText.setText("Select at least 3 categories");
             });
 
             // Initially, make one button visible and the others faded
-            setButtonFaded(questionsButton20);
-            setButtonFaded(questionsButton40);
-            setButtonFaded(questionsButton60);
+            setButtonNotSelected(questionsButton20);
+            setButtonNotSelected(questionsButton40);
+            setButtonNotSelected(questionsButton60);
 
 
 
 
         categoryList = new ArrayList<>();
-        categoryList.add(new Category("Animals",R.raw.animals,R.drawable.animal19,R.color.selectedButtonColor,R.color.black));
-        categoryList.add(new Category("Entertainment",R.raw.entertainment,R.drawable.categoryentertainment,R.color.magenta,R.color.white));
-        categoryList.add(new Category("General Knowledge",R.raw.general,R.drawable.categorygeneralknowledge,R.color.white, R.color.black));
-        categoryList.add(new Category("Geography",R.raw.geography,R.drawable.categorygeography,R.color.Green,R.color.white));
-        categoryList.add(new Category("Food",R.raw.food,R.drawable.categoryfood,R.color.orange,R.color.white));
-        categoryList.add(new Category("History",R.raw.history,R.drawable.categoryhistory,R.color.grey,R.color.Green));
-        categoryList.add(new Category("Science",R.raw.science,R.drawable.categoryscience,R.color.white,R.color.blue));
-        categoryList.add(new Category("Music",R.raw.music,R.drawable.categorymusic,R.color.purple,R.color.white));
-        categoryList.add(new Category("Sports",R.raw.sports,R.drawable.categorysports,R.color.teal,R.color.white));
-        categoryList.add(new Category("Technology",R.raw.technology,R.drawable.categorytechnology,R.color.blue,R.color.white));
+        categoryList.add(new Category("Animals",R.raw.animals,R.drawable.animal19,R.color.selectedButtonColor,R.color.black,"animal"));
+        categoryList.add(new Category("Entertainment",R.raw.entertainment,R.drawable.categoryentertainment,R.color.magenta,R.color.white,"mov"));
+        categoryList.add(new Category("General Knowledge",R.raw.general,R.drawable.categorygeneralknowledge,R.color.white, R.color.black,"gen"));
+        categoryList.add(new Category("Geography",R.raw.geography,R.drawable.categorygeography,R.color.Green,R.color.white,"geo"));
+        categoryList.add(new Category("Food",R.raw.food,R.drawable.categoryfood,R.color.orange,R.color.white,"food"));
+        categoryList.add(new Category("History",R.raw.history,R.drawable.categoryhistory,R.color.grey,R.color.Green,"hist"));
+        categoryList.add(new Category("Science",R.raw.science,R.drawable.categoryscience,R.color.white,R.color.blue,"sci"));
+        categoryList.add(new Category("Music",R.raw.music,R.drawable.categorymusic,R.color.purple,R.color.white,"music"));
+        categoryList.add(new Category("Sports",R.raw.sports,R.drawable.categorysports,R.color.teal,R.color.white,"sports"));
+        categoryList.add(new Category("Technology",R.raw.technology,R.drawable.categorytechnology,R.color.blue,R.color.white,"tech"));
 
         RecyclerView categoryRecyclerView = findViewById(R.id.categoryRecyclerView);
-        CategoryAdapter adapter = new CategoryAdapter(categoryList,getResources());
-        categoryRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        CategoryAdapter adapter = new CategoryAdapter(categoryList,this);
+        categoryRecyclerView.setLayoutManager(new GridLayoutManager(this,2));
         categoryRecyclerView.setAdapter(adapter);
 
     }
@@ -172,12 +178,20 @@ public class GameOptionsActivity extends AppCompatActivity {
         }
     }
 
-    private void setButtonVisible(Button button) {
-        button.setAlpha(1.0f); // Fully visible
+    private void setButtonSelected(Button button) {
+        button.setBackgroundColor(getColor(R.color.correctButtonColor));
+        button.setTextColor(getColor(R.color.white));
+        button.setAlpha(1.0f);
+        button.startAnimation(pulse);
+        MainActivity.soundPool.play(MainActivity.soundTapAnswer, 1.0f, 1.0f, 1, 0, 1.0f);
+
     }
 
-    private void setButtonFaded(Button button) {
-        button.setAlpha(0.2f); // Adjust the alpha value as needed
+    private void setButtonNotSelected(Button button) {
+        button.setBackgroundColor(getColor(R.color.grey));
+        button.setTextColor(getColor(R.color.white));
+        button.setAlpha(0.8f);
+        button.clearAnimation();
     }
 
     @Override

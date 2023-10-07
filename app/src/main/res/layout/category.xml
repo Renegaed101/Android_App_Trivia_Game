@@ -8,9 +8,9 @@
     <Button
         android:id="@+id/includeCategoryButton"
         android:layout_width="0dp"
-        android:layout_height="240dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:backgroundTint="#00BCD4"
         android:text="Button"
         app:cornerRadius="12dp"
@@ -43,4 +43,16 @@
         app:layout_constraintBottom_toBottomOf="@+id/includeCategoryButton"
         app:layout_constraintEnd_toEndOf="@+id/includeCategoryButton"
         app:layout_constraintStart_toStartOf="@+id/includeCategoryButton" />
+
+    <ImageButton
+        android:id="@+id/categoryRemoveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:tint="#EC2D1F"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/remove_24px"
+        tools:visibility="visible" />
 </androidx.constraintlayout.widget.ConstraintLayout>
