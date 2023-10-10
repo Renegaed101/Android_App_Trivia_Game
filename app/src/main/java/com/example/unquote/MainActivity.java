@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         if (!musicPaused) {
-            mediaPlayer.setVolume(0.1f,0.1f);
+            mediaPlayer.setVolume(0.2f,0.2f);
             mediaPlayer.start();
             mediaPlayer.setLooping(true);
         }
