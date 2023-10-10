@@ -18,3 +18,82 @@ geo17|What is the highest peak in Africa?|Mount Everest|Mount Kilimanjaro|Mount 
 geo18|Which country is famous for the Amazon Rainforest?|Brazil|Australia|Canada|Russia|0
 geo19|Which river flows through the Grand Canyon?|Mississippi River|Colorado River|Amazon River|Nile River|1
 geo20|What is the smallest independent country in the world by land area?|Monaco|Vatican City|San Marino|Liechtenstein|1
+geo21|What is the capital of Brazil?|Lima|Brasília|Buenos Aires|Rio de Janeiro|1
+geo22|Which river runs through Baghdad?|Tigris|Nile|Euphrates|Danube|0
+geo23|Which mountain range is located in South America and spans several countries, including Argentina and Chile?|The Rockies|The Alps|The Himalayas|The Andes|3
+geo24|What is the world's largest island nation by land area?|Madagascar|Indonesia|Japan|Philippines|1
+geo25|In which African country would you find the city of Casablanca?|Algeria|Morocco|Tunisia|Libya|1
+geo26|Which U.S. state is known for its volcanic islands, including Oahu and Maui?|Florida|Hawaii|Texas|California|1
+geo27|What is the largest bay in the world, located in Canada?|Hudson Bay|Chesapeake Bay|San Francisco Bay|Hudson's Bay|0
+geo28|Which country is known for its fjords, including the famous Geirangerfjord?|Norway|Sweden|Denmark|Finland|0
+geo29|What is the longest river in Europe?|Volga|Thames|Danube|Seine|0
+geo30|In which city would you find the iconic landmark, the Sydney Opera House?|Sydney|Melbourne|Brisbane|Adelaide|0
+geo31|Which country has the most active volcanoes and is often called the "Land of Fire and Ice"?|Ireland|Greece|Iceland|Italy|2
+geo32|What is the national flower of India, known for its fragrant white blossoms?|Sunflower|Lotus|Rose|Orchid|1
+geo33|In which desert is the famous "Uluru" rock formation, also known as Ayers Rock?|Atacama Desert|Gobi Desert|Sahara Desert|Australian Outback|3
+geo34|What is the highest mountain in the Alps and Europe?|Mont Blanc|Mount Kilimanjaro|Mount McKinley|Mount Elbrus|0
+geo35|Which African country is home to the Kalahari Desert?|Nigeria|Kenya|South Africa|Botswana|3
+geo36|Which river flows through Budapest?|Tigris|Nile|Euphrates|Danube|3
+geo37|What is the largest landlocked country in the world by land area?|Kazakhstan|Mongolia|Canada|Saudi Arabia|0
+geo38|Which country is known for the famous Inca ruins of Machu Picchu?|Peru|Mexico|Chile|Argentina|0
+geo39|What is the longest river in the United States?|Colorado River|Mississippi River|Missouri River|Columbia River|1
+geo40|In which country would you find the city of Melbourne?|Australia|New Zealand|Fiji|Papua New Guinea|0
+geo41|What is the currency of South Africa?|Peso|Rand|Krone|Baht|1
+geo42|Which country is known for the Negev Desert and the Dead Sea?|Jordan|Lebanon|Syria|Israel|3
+geo43|What is the highest peak in North America?|Mount Everest|Mount Kilimanjaro|Mount Fuji|Mount McKinley|3
+geo44|In which U.S. state is the Grand Canyon located?|Arizona|Utah|Colorado|Nevada|0
+geo45|Which river is the longest in the world, flowing through various African countries?|Amazon River|Mississippi River|Congo River|Nile River|3
+geo46|What is the capital of South Korea?|Tokyo|Seoul|Beijing|Shanghai|1
+geo47|Which country is known for its beautiful fjords, including Milford Sound?|Sweden|Norway|Denmark|Iceland|1
+geo48|What is the largest saltwater lake in the world, located in Central Asia?|Lake Superior|Caspian Sea|Lake Victoria|Lake Baikal|1
+geo49|In which country would you find the city of Vienna?|Austria|Hungary|Czech Republic|Slovakia|0
+geo50|Which U.S. state is known for its famous "Four Corners" intersection, where four states meet?|New Mexico|Arizona|Utah|Colorado|2
+geo51|What is the currency of Russia?|Yen|Euro|Ruble|Pound|2
+geo52|Which country is known for the ancient city of Petra and the Dead Sea?|Egypt|Jordan|Lebanon|Syria|1
+geo53|What is the highest mountain in South America?|Mount Everest|Mount Kilimanjaro|Aconcagua|Mount McKinley|2
+geo54|In which U.S. state would you find Denali, the highest mountain peak in North America?|California|Alaska|Washington|Montana|1
+geo55|Which river flows through Paris, France?|Nile|Mississippi|Seine|Danube|2
+geo56|What is the national flower of Japan, known for its beautiful cherry blossoms?|Daisy|Sunflower|Tulip|Cherry blossom|3
+geo57|In which African country is the Sahara Desert located?|Algeria|Morocco|Tunisia|Libya|0
+geo58|What is the longest river in South America?|Amazon River|Mississippi River|Congo River|Paraná River|0
+geo59|Which country is known for its fjords, including the Sognefjord?|Sweden|Norway|Denmark|Iceland|1
+geo60|What is the currency of Mexico?|Dollar|Yen|Peso|Euro|2
+geo61|In which Asian country would you find the city of Mumbai?|India|Bangladesh|Pakistan|Nepal|0
+geo62|What is the highest mountain in Africa?|Mount Everest|Mount Kilimanjaro|Mount Fuji|Mount McKinley|1
+geo63|Which river is the longest in Europe?|Volga|Thames|Danube|Seine|0
+geo64|What is the capital of Saudi Arabia?|Riyadh|Mecca|Jeddah|Medina|0
+geo65|In which U.S. state is the Everglades National Park located?|Florida|Louisiana|Georgia|South Carolina|0
+geo66|What is the currency of South Korea?|Dollar|Yen|Won|Pound|2
+geo67|In which country would you find the city of Bogotá?|Colombia|Ecuador|Venezuela|Peru|0
+geo68|What is the largest lake in Africa by surface area?|Lake Tanganyika|Lake Victoria|Lake Superior|Lake Malawi|1
+geo69|What is the smallest country in the world by land area, known as the "Holy See"?|San Marino|Liechtenstein|Vatican City|Monaco|2
+geo70|In which African country would you find the city of Marrakech?|Tunisia|Morocco|Algeria|Libya|1
+geo71|Which ocean lies to the west of Africa?|Indian Ocean|Atlantic Ocean|Arctic Ocean|Pacific Ocean|1
+geo72|What is the capital of New Zealand?|Auckland|Wellington|Sydney|Brisbane|1
+geo73|In which European country would you find the city of Brussels?|Netherlands|Belgium|Luxembourg|France|1
+geo74|What is the largest desert in Australia?|Gobi Desert|Kalahari Desert|Sahara Desert|Australian Outback|3
+geo75|Which country is known for its vast, lush rainforests and the Amazon River?|Brazil|Australia|Canada|Russia|0
+geo76|What is the currency of China?|Yen|Dollar|Renminbi (Yuan)|Rupee|2
+geo77|In which U.S. state would you find the Great Smoky Mountains National Park?|North Carolina|Tennessee|Kentucky|Virginia|1
+geo78|What is the capital of Norway?|Stockholm|Copenhagen|Helsinki|Oslo|3
+geo79|In which African country is Mount Kilimanjaro located?|Kenya|Tanzania|Uganda|Ethiopia|1
+geo80|Which river runs through Rome, Italy?|Nile|Mississippi|Tiber|Danube|2
+geo81|What is the national flower of England, often symbolizing purity and beauty?|Rose|Tulip|Sunflower|Lily|0
+geo82|In which Asian country would you find the city of Bangkok?|Cambodia|Vietnam|Thailand|Myanmar|2
+geo83|Which desert is located in the southwestern United States and northern Mexico?|Atacama Desert|Kalahari Desert|Sahara Desert|Sonoran Desert|3
+geo84|What is the largest lake in North America by surface area?|Lake Superior|Lake Victoria|Lake Baikal|Great Bear Lake|0
+geo85|In which European country would you find the city of Prague?|Austria|Hungary|Czech Republic|Slovakia|2
+geo86|What is the capital of South Africa?|Cape Town|Durban|Johannesburg|Pretoria|3
+geo87|In which U.S. state is Mount Rushmore located?|North Dakota|South Dakota|Wyoming|Nebraska|1
+geo88|What is the national flower of Canada, often seen as a symbol of the country?|Maple leaf|Tulip|Sunflower|Trillium|3
+geo89|What is the currency of Egypt?|Pound|Yen|Dollar|Euro|0
+geo90|In which African country would you find the city of Lagos?|Nigeria|Ghana|Cameroon|Benin|0
+geo91|Which river flows through Vienna, Austria?|Nile|Mississippi|Danube|Tiber|2
+geo92|What is the largest saltwater lake in North America, situated between Utah and California?|Lake Superior|Great Salt Lake|Lake Victoria|Lake Baikal|1
+geo93|In which U.S. state is the Grand Tetons National Park located?|Montana|Idaho|Wyoming|Colorado|2
+geo94|What is the capital of Argentina?|Buenos Aires|Santiago|Lima|Asunción|0
+geo95|Which African country is known for its savannas, wildlife, and the Serengeti Plain?|Kenya|Nigeria|South Africa|Zimbabwe|0
+geo96|What is the currency of Australia?|Dollar|Yen|Won|Pound|0
+geo97|In which country would you find the city of Casablanca?|Algeria|Morocco|Tunisia|Libya|1
+geo98|What is the highest peak in South Asia, part of the Himalayas?|Mount Kilimanjaro|Mount Fuji|Mount Everest|Mount McKinley|2
+geo99|What is the smallest independent country in the world by land area, known as the "Land of the Long White Cloud"?|San Marino|Vatican City|New Zealand|Monaco|2

@@ -18,3 +18,73 @@ food17|What is the main ingredient in the Indian dish "saag paneer"?|Lamb|Chicke
 food18|What is the primary ingredient in the Italian dish "risotto"?|Rice|Pasta|Couscous|Quinoa|0
 food19|Which type of pasta is shaped like small rice grains and is often used in salads?|Spaghetti|Fettuccine|Orzo|Rotini|2
 food20|Which type of cuisine is known for its use of raw fish and rice, often served with soy sauce and wasabi?|Mexican|Chinese|Italian|Japanese|3
+food21|What is the primary ingredient in the Indian dish "tandoori chicken"?|Yogurt|Coconut milk|Soy sauce|Mayonnaise|0
+food22|Which fruit is known as the "king of berries" and is often used in pies and jams?|Strawberry|Raspberry|Blueberry|Cranberry|1
+food23|What is the main ingredient in the Mexican dish "tacos al pastor"?|Pork|Beef|Chicken|Tofu|0
+food24|Which spice is known as the "queen of spices" and is derived from the dried stigmas of a flower?|Saffron|Turmeric|Paprika|Cinnamon|3
+food25|What is the traditional Korean side dish made from fermented vegetables, primarily Napa cabbage?|Miso|Kimchi|Sushi|Soy sauce|1
+food26|Which type of bread is commonly used for making a Cuban sandwich?|Sourdough|Brioche|Cuban bread|Baguette|2
+food27|What is the primary ingredient in the Italian dish "bruschetta"?|Tomatoes|Garlic|Olive oil|Bread|0
+food28|Which vegetable is often spiralized to make a low-carb pasta alternative?|Potato|Carrot|Cauliflower|Zucchini|3
+food29|What is the national dish of Thailand, featuring a blend of sweet, salty, and sour flavors?|Sushi|Pad Thai|Kimchi|Taco|1
+food30|Which type of cheese is known for its holes and originated in Switzerland?|Parmesan|Cheddar|Gouda|Swiss cheese|3
+food31|Which spice is made from ground red chili peppers and is known for its fiery flavor?|Paprika|Saffron|Cumin|Cayenne pepper|3
+food32|What is the traditional Indian bread that is typically cooked in a tandoor or on a griddle?|Sushi|Taco|Naan|Pita|2
+food33|Which fruit is used to make guacamole, a creamy dip popular in Mexican cuisine?|Kiwi|Mango|Pineapple|Avocado|3
+food34|What is the primary ingredient in the Middle Eastern dip "hummus"?|Tomatoes|Chickpeas|Eggplant|Cucumbers|1
+food35|Which nut is often used to make pesto sauce and is a key ingredient in Italian cuisine?|Pecan|Almond|Walnut|Pine nut|3
+food36|What is the traditional Japanese dish made of vinegared rice, vegetables, and raw fish or seafood?|Sushi|Curry|Lasagna|Taco|0
+food37|Which type of pasta is similar in shape to rotini but is smaller and often used in soups?|Orzo|Fettuccine|Spaghetti|Cavatappi|0
+food38|What is the main ingredient in the Thai soup "Tom Yum"?|Coconut milk|Miso paste|Tomatoes|Lemongrass|3
+food39|Which type of cuisine is known for its use of flatbreads, such as naan and roti?|Mexican|Indian|Japanese|Italian|1
+food40|What is the primary ingredient in the traditional French dish "coq au vin"?|Beef|Chicken|Lamb|Tofu|1
+food41|Which spice is known for its earthy flavor and is often used in Indian and Middle Eastern cuisines?|Cloves|Cumin|Coriander|Cayenne pepper|1
+food42|What is the national dish of Japan, featuring vinegared rice, vegetables, and various toppings?|Sushi|Miso soup|Tempura|Sashimi|0
+food43|Which fruit is known as the "king of citrus" and is often used to make orange juice?|Lemon|Grapefruit|Lime|Orange|3
+food44|What is the primary ingredient in the Mexican dip "guacamole"?|Cilantro|Tomato|Avocado|Onion|2
+food45|Which nut is often used in the preparation of marzipan and is native to the Middle East?|Walnut|Pistachio|Hazelnut|Cashew|1
+food46|What is the main ingredient in the traditional Indian dish "biryani"?|Potato|Lamb|Chicken|Rice|3
+food47|Which spice is known for its sweet and warm flavor, often used in desserts and beverages?|Cayenne pepper|Cinnamon|Turmeric|Cloves|1
+food48|What is the traditional Mexican dish consisting of a tortilla filled with various ingredients?|Taco|Pizza|Sushi|Curry|0
+food49|Which vegetable is known for its use in Mediterranean cuisine and is often roasted or grilled?|Okra|Eggplant|Zucchini|Artichoke|1
+food50|What is the primary ingredient in the Middle Eastern dish "falafel"?|Lamb|Beef|Chicken|Chickpeas|3
+food51|Which type of cheese is known for its creamy texture and is often used in Italian pasta dishes?|Feta|Parmesan|Ricotta|Cheddar|2
+food52|Which spice is known for its bold and smoky flavor and is often used in barbecue seasoning?|Nutmeg|Paprika|Cumin|Cayenne pepper|1
+food53|What is the traditional Korean dish made from fermented vegetables, primarily Napa cabbage, and spicy seasonings?|Kimchi|Miso soup|Sushi|Tofu|0
+food54|Which type of bread is commonly used for making a sandwich called a "Cuban sandwich"?|Ciabatta|Sourdough|Cuban bread|Baguette|2
+food55|What is the primary ingredient in the Italian dish "caprese salad"?|Cilantro|Tomatoes|Avocado|Mozzarella|1
+food56|Which vegetable is used to make the classic French dish "ratatouille," often featured in the Pixar film of the same name?|Eggplant|Squash|Zucchini|Cauliflower|0
+food57|Which nut is known for its use in baklava, a sweet pastry popular in Middle Eastern cuisine?|Cashew|Pistachio|Almond|Pecan|1
+food58|Which spice is made from the dried, unripe berries of a tropical evergreen tree and is a key flavoring in gin?|Cloves|Coriander|Juniper berries|Turmeric|2
+food59|What is the national dish of the Philippines, featuring marinated and grilled meat, often served
+food60|Which fruit is known as the "king of fruits" and is infamous for its strong odor?|Banana|Apple|Durian|Pineapple|2
+food61|What type of pasta is shaped like small rice grains and is commonly used in soups?|Spaghetti|Fettuccine|Orzo|Rotini|2
+food62|What is the primary ingredient in the Middle Eastern dip "baba ghanoush"?|Zucchini|Chickpeas|Eggplant|Cucumbers|2
+food63|What is the national dish of Greece, featuring layers of eggplant, potato, and ground meat, topped with a bechamel sauce?|Sushi|Paella|Moussaka|Pasta|2
+food64|Which type of bread is commonly used for making a sandwich called a "Reuben"?|Sourdough|Brioche|Rye|Marble rye|2
+food65|What is the primary ingredient in the Mexican dish "chiles en nogada"?|Pork|Chicken|Poblano peppers|Tofu|2
+food66|What is the main ingredient in the Middle Eastern dish "ful medames"?|Chickpeas|Lentils|Fava beans|Soybeans|0
+food67|Which type of cheese is known for its pungent aroma and creamy texture, often spread on crackers?|Camembert|Gouda|Brie|Cheddar|0
+food68|Which spice is known for its warm and slightly sweet flavor and is commonly used in baking?|Nutmeg|Cinnamon|Turmeric|Paprika|1
+food69|What is the primary ingredient in the Mexican dish "molé sauce"?|Cumin|Paprika|Chocolate|Soy sauce|2
+food70|What is the main ingredient in the Indian dish "shahi paneer"?|Chicken|Tofu|Spinach|Cottage cheese|3
+food71|Which type of cheese is known for its blue veins and is a key ingredient in dressing for wedge salads?|Cheddar|Swiss|Blue cheese|Feta|2
+food72|Which spice is known for its earthy and smoky flavor and is often used in Spanish and Mexican cuisine?|Cayenne pepper|Paprika|Turmeric|Cumin|1
+food73|Which fruit is often referred to as the "king of berries" and is a popular addition to pies and jams?|Strawberry|Blueberry|Raspberry|Blackberry|0
+food74|What is the main ingredient in the popular Middle Eastern dish "hummus"?|Tomatoes|Chickpeas|Eggplant|Cucumbers|1
+food75|Which spice, known for its distinctive yellow color, is a key ingredient in Indian curry dishes?|Saffron|Cumin|Cinnamon|Cardamom|0
+food76|Which type of bread is often used for making a sandwich called a "club sandwich"?|Sourdough|Baguette|White|Ciabatta|0
+food77|What is the national dish of Italy, featuring layers of pasta, ricotta cheese, and tomato sauce?|Sushi|Paella|Lasagna|Pizza|2
+food78|Which vegetable is known as the "king of vegetables" and is often grilled or used in ratatouille?|Eggplant|Zucchini|Bell pepper|Cucumber|0
+food79|What is the primary ingredient in the Indian dish "samosa"?|Potato|Lamb|Chicken|Tofu|0
+food80|Which vegetable, often used in salads, is known for its round shape and bright red or green color?|Onion|Tomato|Bell pepper|Radish|2
+food81|What is the main ingredient in the Mexican dish "guacamole"?|Avocado|Pineapple|Cilantro|Tomato|0
+food82|Which nut is commonly used in making pesto sauce and is a key ingredient in many Italian desserts?|Cashew|Almond|Pecan|Pine nut|3
+food83|What is the traditional Japanese seasoning made from soybeans and is often used as a condiment for sushi?|Soy sauce|Wasabi|Miso|Teriyaki sauce|2
+food84|Which fruit is known as the "king of fruits" and is notorious for its pungent odor?|Banana|Apple|Durian|Pineapple|2
+food85|What is the main ingredient in the Mexican dish "chiles rellenos"?|Pork|Chicken|Poblano peppers|Tofu|2
+food86|Which type of cheese is known for its blue veins and creamy texture and is often used in salads?|Cheddar|Swiss|Feta|Blue cheese|3
+food87|Which spice is known for its warm and slightly sweet flavor and is commonly used in pumpkin spice lattes?|Nutmeg|Cinnamon|Turmeric|Paprika|1
+food88|Which type of bread is commonly used for making a sandwich called a "po' boy"?|Sourdough|Baguette|French|Ciabatta|1
+food89|What is the main ingredient in the Chinese dish "kung pao chicken"?|Beef|Tofu|Chicken|Pork|2
+food90|Which fruit is often referred to as the "queen of fruits" and is known for its sweet and aromatic flavor?|Pineapple|Mango|Strawberry|Kiwi|1

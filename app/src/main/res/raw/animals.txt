@@ -18,3 +18,82 @@ animal17|Which sea creature is known for its ability to change color to blend in
 animal18|What is the national symbol of Australia?|Kangaroo|Platypus|Wombat|Emu|0
 animal19|Which bird is famous for its distinctive call that sounds like "who cooks for you"?|Pigeon|Sparrow|Owl|Crow|2
 animal20|What is the largest species of land turtle?|Tortoise|Terrapin|Box turtle|Snapping turtle|0
+animal21|Which big cat is known for its ability to roar but not purr?|Cheetah|Leopard|Tiger|Lion|3
+animal22|What is the smallest species of penguin?|Emperor penguin|Little blue penguin|King penguin|Macaroni penguin|1
+animal23|Which mammal can fly and is associated with Halloween?|Bat|Owl|Rat|Raven|0
+animal24|What is the world's smallest mammal?|Bat|Mouse|Shrew|Squirrel|0
+animal25|Which animal has a prehensile tail and is known for hanging from trees?|Sloth|Gibbon|Kangaroo|Monkey|0
+animal26|What is the largest species of pinniped (seals and sea lions)?|Leopard seal|Harbor seal|Walrus|Elephant seal|3
+animal27|Which bird is known for its distinctive dance in which it hops and flaps its wings?|Penguin|Emu|Ostrich|Cockatoo|0
+animal28|What is the world's smallest breed of horse?|Pony|Clydesdale|Arabian|Thoroughbred|0
+animal29|Which animal is known as the "king of the jungle"?|Cheetah|Leopard|Tiger|Lion|3
+animal30|What is the largest species of crocodile?|Saltwater crocodile|Nile crocodile|American crocodile|Spectacled caiman|0
+animal31|Which reptile is known for its ability to change color rapidly and shoot its tongue to catch prey?|Iguana|Chameleon|Komodo dragon|Gila monster|1
+animal32|What is the smallest species of snake?|Cobra|Anaconda|Garter snake|Thread snake|3
+animal33|Which insect is known for its painful sting and black and yellow stripes?|Ant|Hornet|Wasp|Bee|2
+animal34|What is the national bird of New Zealand?|Kiwi|Tui|Fantail|Kea|0
+animal35|Which animal is known as the "gentle giant" of the ocean and is the world's largest fish?|Great white shark|Hammerhead shark|Whale shark|Tiger shark|2
+animal36|What is the smallest species of owl?|Barn owl|Great horned owl|Snowy owl|Elf owl|3
+animal37|Which bird is known for its long, curved bill and is often associated with tropical regions?|Pelican|Toucan|Puffin|Albatross|1
+animal38|What is the largest species of jellyfish, often called the "lion's mane"?|Moon jellyfish|Box jellyfish|Portuguese man o' war|Lion's mane jellyfish|3
+animal39|Which animal is known for its distinctive black and white stripes and is native to Africa?|Zebra|Giraffe|Hippopotamus|Rhinoceros|0
+animal40|What is the national symbol of Canada?|Beaver|Loon|Maple leaf|Bear|1
+animal41|Which bird is famous for its ability to mimic human speech and is often a pet?|Budgerigar|Canary|Cockatiel|Finch|2
+animal42|What is the largest species of kangaroo?|Wallaroo|Red kangaroo|Eastern grey kangaroo|Tree kangaroo|1
+animal43|Which animal is known for its hibernation during the winter months?|Grizzly bear|Groundhog|Polar bear|Black bear|1
+animal44|What is the smallest species of dolphin?|Common dolphin|Bottlenose dolphin|Spinner dolphin|Vaquita|3
+animal45|Which animal is known for its long, sticky tongue and is an insect-eater?|Frog|Lizard|Snake|Chameleon|3
+animal46|What is the national animal of Scotland?|Unicorn|Highland cow|Scottish terrier|Red deer|0
+animal47|Which bird is known for its vibrant plumage and is often kept as a pet due to its ability to talk?|Macaw|Parakeet|Cockatoo|Canary|0
+animal48|What is the smallest species of monkey?|Chimpanzee|Gibbon|Tamarin|Marmoset|3
+animal49|Which mammal is known for its armor-like shell and is often found in North America?|Turtle|Tortoise|Terrapin|Snapping turtle|0
+animal50|What is the largest species of octopus?|Blue-ringed octopus|Giant Pacific octopus|Common octopus|Argonaut octopus|1
+animal51|Which animal is known for its ability to regenerate lost body parts, including limbs?|Lizard|Salamander|Frog|Snake|1
+animal52|What is the largest species of hornet and is known for its aggressive behavior?|Honeybee|Carpenter bee|Yellowjacket|Asian giant hornet|3
+animal53|Which big cat is known for its striking black coat with white spots?|Leopard|Jaguar|Cheetah|Lion|0
+animal54|What is the national bird of India?|Peacock|Parakeet|Eagle|Ostrich|0
+animal55|Which animal is known as the "king of the jungle" in the Americas?|Cheetah|Leopard|Tiger|Jaguar|3
+animal56|What is the world's largest species of lizard?|Iguana|Monitor lizard|Komodo dragon|Gila monster|2
+animal57|Which mammal is known for its ability to glide through the air using a membrane between its limbs?|Squirrel|Bat|Flying lemur|Flying fox|1
+animal58|What is the smallest breed of cat?|Siamese cat|Persian cat|Maine Coon|Singapura cat|3
+animal59|Which insect is known for its ability to produce light through bioluminescence and is often found in the ocean?|Firefly|Ladybug|Dragonfly|Butterfly|0
+animal60|What is the largest species of penguin in the southern hemisphere?|Emperor penguin|King penguin|Gentoo penguin|Adélie penguin|1
+animal61|Which reptile is known for its ability to change color rapidly and is often kept as a pet?|Iguana|Chameleon|Komodo dragon|Gila monster|1
+animal62|What is the smallest species of snake in the world?|Cobra|Anaconda|Garter snake|Thread snake|3
+animal63|Which insect is known for its painful sting and is often found in nests in trees?|Ant|Hornet|Wasp|Bee|1
+animal64|What is the national bird of Japan?|Pigeon|Sparrow|Crane|Hawk|2
+animal65|Which animal is known for its distinctive black and white stripes and is native to Asia?|Zebra|Giraffe|Hippopotamus|Rhinoceros|3
+animal66|What is the smallest species of bear?|Grizzly bear|Panda bear|Polar bear|Sun bear|3
+animal67|Which bird is known for its ability to hover in mid-air while feeding on nectar from flowers?|Ostrich|Eagle|Hummingbird|Albatross|2
+animal68|What is the largest species of sea turtle?|Loggerhead sea turtle|Green sea turtle|Leatherback sea turtle|Hawksbill sea turtle|2
+animal69|Which animal is known as the "clown of the ocean" due to its playful behavior?|Dolphin|Whale|Seal|Manatee|0
+animal70|What is the smallest species of porpoise, often referred to as the "panda of the sea"?|Common porpoise|Spectacled porpoise|Vaquita|Bottlenose porpoise|2
+animal71|Which reptile is known for its ability to shed its tail as a defense mechanism?|Lizard|Salamander|Frog|Gecko|3
+animal72|What is the national bird of Australia?|Kookaburra|Cockatoo|Emu|Magpie|2
+animal73|Which bird is known for its distinctive call that sounds like "who cooks for you all"?|Pigeon|Sparrow|Owl|Crow|2
+animal74|What is the world's smallest species of deer?|Moose|Elk|Reindeer|Pudu|3
+animal75|Which sea creature is known for its ability to mimic the appearance of its surroundings, making it nearly invisible?|Dolphin|Sea turtle|Octopus|Seahorse|2
+animal76|What is the national symbol of Russia?|Bear|Eagle|Lion|Hammer and sickle|1
+animal77|Which bird is known for its distinctive call that sounds like "whip-poor-will"?|Pigeon|Sparrow|Owl|Chuck-will's-widow|3
+animal78|What is the smallest species of tortoise?|Tortoise|Terrapin|Box turtle|Hinge-back tortoise|3
+animal79|Which animal is known for its ability to run at high speeds and has a single large horn on its head?|Rhinoceros|Hippopotamus|Elephant|Giraffe|0
+animal80|What is the national animal of China?|Panda|Dragon|Phoenix|Tiger|0
+animal81|Which bird is known for its ability to imitate the sounds of other birds and mechanical noises?|Mockingbird|Canary|Finch|Lark|0
+animal82|What is the national bird of South Africa?|Flamingo|Ostrich|Penguin|Secretary bird|1
+animal83|Which animal is known for its ability to regenerate its limbs when injured?|Lizard|Frog|Salamander|Turtle|2
+animal84|What is the world's largest species of moth?|Silk moth|Luna moth|Atlas moth|Tiger moth|2
+animal85|Which reptile is known for its ability to play dead when threatened?|Lizard|Salamander|Turtle|Possum|3
+animal86|What is the smallest species of dolphin in the world?|Common dolphin|Bottlenose dolphin|Spinner dolphin|Vaquita|3
+animal87|Which insect is known for its ability to walk on water due to surface tension?|Ant|Water strider|Wasp|Dragonfly|1
+animal88|What is the national bird of Argentina?|Andean condor|Hawk|Parakeet|Sparrow|0
+animal89|Which animal is known for its long, flexible trunk and large ears?|Hippopotamus|Elephant|Giraffe|Rhino|1
+animal90|What is the largest species of kangaroo in the world?|Wallaroo|Red kangaroo|Eastern grey kangaroo|Tree kangaroo|1
+animal91|Which bird is known for its ability to dive into water to catch fish and has a distinctive crest on its head?|Osprey|Eagle|Heron|Kingfisher|3
+animal92|What is the smallest species of bat in the world?|Fruit bat|Vampire bat|Bumblebee bat|Flying fox|2
+animal93|Which reptile is known for its ability to change colors based on its mood and surroundings?|Iguana|Chameleon|Komodo dragon|Alligator|1
+animal94|What is the national bird of the Philippines?|Hawk|Eagle|Parrot|Kingfisher|1
+animal95|Which bird is known for its distinctive blue coloration and is often associated with happiness?|Bluebird|Pigeon|Sparrow|Robin|0
+animal96|What is the world's smallest species of monkey?|Chimpanzee|Gibbon|Tamarin|Marmoset|3
+animal97|Which insect is known for its ability to create intricate nests out of paper-like material?|Ant|Bee|Wasp|Hornet|2
+animal98|What is the largest species of hornet, often called the "killer hornet"?|Honeybee|Carpenter bee|Yellowjacket|Asian giant hornet|3
+animal99|Which big cat is known for its ability to swim and is often found near water?|Leopard|Lion|Tiger|Jaguar|3

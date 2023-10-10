@@ -18,3 +18,56 @@ gen17|What is the process by which an organism's genetic material is copied and 
 gen18|Which planet is known for its prominent ring system?|Saturn|Jupiter|Mars|Uranus|0
 gen19|What is the chemical symbol for nitrogen?|N|Ni|Na|Ne|0
 gen20|Which gas do humans primarily exhale when breathing?|Carbon dioxide|Oxygen|Nitrogen|Hydrogen|0
+gen21|What is the chemical symbol for iron?|Fe|I|Ir|In|0
+gen22|Which gas is used by plants during photosynthesis to produce energy?|Oxygen|Carbon dioxide|Nitrogen|Hydrogen|1
+gen23|What is the capital of Australia?|Sydney|Melbourne|Canberra|Brisbane|2
+gen24|Which gas is known as laughing gas and is sometimes used as an anesthetic?|Oxygen|Carbon dioxide|Nitrous oxide|Methane|2
+gen25|What is the chemical symbol for silver?|Ag|Au|Si|Sr|0
+gen26|What is the process by which liquid water becomes water vapor?|Condensation|Precipitation|Evaporation|Freezing|2
+gen27|Which planet is known as the "Evening Star" and "Morning Star" due to its brightness?|Mars|Saturn|Jupiter|Venus|3
+gen28|What is the chemical symbol for lead?|Pb|Li|La|Pt|0
+gen29|What is the process by which an organism changes over successive generations?|Mutation|Metamorphosis|Reproduction|Evolution|3
+gen30|Which gas makes up the largest percentage of the Earth's atmosphere?|Oxygen|Carbon dioxide|Nitrogen|Hydrogen|2
+gen31|What is the capital of China?|Beijing|Shanghai|Hong Kong|Tokyo|0
+gen32|What is the chemical symbol for calcium?|Ca|Co|Cu|Cd|0
+gen33|What is the process by which plants convert sunlight into chemical energy?|Fermentation|Photosynthesis|Respiration|Combustion|1
+gen34|Which planet is known for its prominent Great Red Spot, a massive storm?|Uranus|Neptune|Jupiter|Saturn|2
+gen35|What is the chemical symbol for sodium?|Na|Ni|Ne|No|0
+gen36|What is the largest mammal in the world?|Blue whale|Elephant|Giraffe|Dolphin|0
+gen37|What is the process by which rocks are broken down into smaller pieces by natural forces?|Erosion|Sublimation|Solidification|Fusion|0
+gen38|Which gas is commonly used in balloons to make them float?|Oxygen|Carbon dioxide|Nitrogen|Helium|3
+gen39|What is the chemical symbol for potassium?|K|Kr|P|Po|0
+gen40|What is the national flower of Japan, known for its short-lived beauty?|Rose|Daisy|Cherry blossom|Tulip|2
+gen41|Which planet is known as the "Morning Star" and "Evening Star" due to its brightness?|Mars|Saturn|Jupiter|Venus|3
+gen42|What is the capital of Brazil?|Sao Paulo|Rio de Janeiro|Brasilia|Buenos Aires|2
+gen43|Which gas is the lightest and most abundant element in the universe?|Oxygen|Carbon dioxide|Helium|Nitrogen|2
+gen44|What is the chemical symbol for copper?|Co|Cu|Cd|Cp|1
+gen45|What is the process by which an organism undergoes a major change in form and function during its life cycle?|Metamorphosis|Reproduction|Evolution|Photosynthesis|0
+gen46|Which planet is often referred to as the "Red Planet"?|Earth|Venus|Mars|Jupiter|2
+gen47|What is the process by which liquid water becomes water vapor due to heating?|Freezing|Condensation|Evaporation|Melting|2
+gen48|Which gas is also known as "laughing gas" and has anesthetic properties?|Oxygen|Carbon dioxide|Nitrogen|Nitrous oxide|3
+gen49|What is the capital of South Africa?|Pretoria|Cape Town|Johannesburg|Bloemfontein|0
+gen50|What is the process by which rocks and minerals are chemically altered or physically broken down?|Fusion|Erosion|Sublimation|Solidification|1
+gen51|Which gas is the primary component of natural gas?|Oxygen|Methane|Carbon dioxide|Helium|1
+gen52|What is the process by which a species gradually changes over time, often in response to environmental factors?|Fermentation|Photosynthesis|Respiration|Evolution|3
+gen53|Which planet is known for its distinctive rings made of ice and rock particles?|Uranus|Neptune|Jupiter|Saturn|3
+gen54|What is the national flower of the United States, often associated with the Thanksgiving holiday?|Daisy|Sunflower|Rose|Tulip|1
+gen55|Which gas is responsible for the Earth's ozone layer in the stratosphere?|Oxygen|Carbon dioxide|Ozone|Nitrogen|2
+gen56|Which planet is known as the "Morning Star" and "Evening Star"?|Venus|Mercury|Mars|Jupiter|1
+gen57|What is the process by which plants convert sunlight into chemical energy for growth?|Respiration|Fermentation|Photosynthesis|Transpiration|2
+gen58|Which gas is the most abundant element in the Earth's crust?|Oxygen|Silicon|Carbon dioxide|Hydrogen|1
+gen59|What is the process by which liquid water becomes a solid due to cooling?|Evaporation|Fusion|Melting|Freezing|3
+gen60|Which planet is often referred to as the "Evening Star"?|Earth|Venus|Mercury|Mars|1
+gen61|What is the chemical symbol for zinc?|Zn|Xe|Zi|Zm|0
+gen62|What is the process by which rocks and minerals are formed from magma or lava?|Erosion|Metamorphism|Solidification|Sublimation|2
+gen63|Which gas is known as "laughing gas" and is used in dentistry as an anesthetic?|Oxygen|Carbon dioxide|Nitrous oxide|Methane|2
+gen64|What is the capital of Japan?|Beijing|Seoul|Tokyo|Shanghai|2
+gen65|What is the chemical symbol for mercury?|Mn|Hg|He|Ge|1
+gen66|What is the process by which a species adapts to its environment over a long period?|Fermentation|Photosynthesis|Respiration|Evolution|3
+gen67|Which planet is known for its vibrant blue color due to the presence of methane in its atmosphere?|Uranus|Neptune|Jupiter|Saturn|1
+gen68|What is the chemical symbol for phosphorus?|Po|Pr|P|Pt|2
+gen69|What is the national flower of Japan and a symbol of the transience of life?|Daisy|Sunflower|Rose|Cherry blossom|3
+gen70|Which gas is the primary component of Earth's atmosphere by volume?|Oxygen|Methane|Carbon dioxide|Nitrogen|3
+gen71|What is the chemical symbol for sulfur?|Su|So|S|Si|2
+gen72|What is the process by which living organisms produce energy from organic molecules?|Fermentation|Photosynthesis|Respiration|Transpiration|2
+gen73|Which planet is known for its bright red appearance and is often called the "Red Planet"?|Venus|Earth|Mars|Jupiter|2
