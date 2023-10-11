@@ -18,3 +18,49 @@ mov17|What is the name of the character played by Scarlett Johansson in the Marv
 mov18|Which film is known for the line "Here's looking at you, kid"?|Casablanca|Gone with the Wind|The Godfather|Schindler's List|0
 mov19|Who directed the science fiction film "Interstellar"?|Christopher Nolan|James Cameron|Ridley Scott|Michael Bay|0
 mov20|Which actor played the role of Tony Stark/Iron Man in the Marvel Cinematic Universe?|Chris Hemsworth|Chris Evans|Robert Downey Jr.|Mark Ruffalo|2
+mov21|Which film features a boy who never grows up and can fly, known as Peter Pan?|Alice in Wonderland|The Jungle Book|Cinderella|Peter Pan|3
+mov22|In the movie "E.T. the Extra-Terrestrial," what type of candy does E.T. become famous for eating?|M&M's|Reese's Pieces|Skittles|Twizzlers|1
+mov23|Who played the character of Hermione Granger in the "Harry Potter" film series?|Emma Watson|Emma Stone|Emma Roberts|Emma Thompson|0
+mov24|Which animated film features a character named Ariel, who dreams of becoming human?|Beauty and the Beast|Cinderella|The Little Mermaid|Snow White and the Seven Dwarfs|2
+mov25|Who directed the film "The Shawshank Redemption"?|Quentin Tarantino|Christopher Nolan|Frank Darabont|Steven Spielberg|2
+mov26|Which movie features a character named Maximus Decimus Meridius, who seeks revenge against Commodus?|300|Braveheart|Gladiator|Troy|2
+mov27|What is the highest-grossing animated film of all time?|Toy Story 4|Frozen II|The Lion King (2019)|Frozen|0
+mov28|Which actress played the lead role in the film "The Devil Wears Prada"?|Julia Roberts|Meryl Streep|Anne Hathaway|Cate Blanchett|1
+mov29|In the "Star Wars" franchise, who is Luke Skywalker's twin sister?|Leia Organa|Padmé Amidala|Rey|Ahsoka Tano|0
+mov30|Which actor is known for his role as Jack Sparrow in the "Pirates of the Caribbean" series?|Orlando Bloom|Johnny Depp|Geoffrey Rush|Keira Knightley|1
+mov31|Who portrayed the character of Willy Wonka in the film "Charlie and the Chocolate Factory" (2005)?|Gene Wilder|Johnny Depp|Jim Carrey|Steve Carell|1
+mov32|What is the name of the fictional African nation in the Marvel Cinematic Universe, ruled by King T'Challa?|Wakanda|Zamunda|Elbonia|Genovia|0
+mov33|Which film follows the journey of a clownfish named Marlin as he searches for his son, Nemo?|Finding Nemo|Shark Tale|Madagascar|Kung Fu Panda|0
+mov34|In the "Matrix" trilogy, what is the real name of the character known as Neo?|Thomas Anderson|John Smith|Robert Johnson|David Williams|0
+mov35|Which film franchise features a group of superheroes including Iron Man, Thor, and Captain America?|Justice League|The Avengers|X-Men|Guardians of the Galaxy|1
+mov36|What is the name of the fictional wizarding world created by J.K. Rowling in the "Harry Potter" series?|Narnia|Middle-earth|Hogwarts|Westeros|2
+mov37|Which actress played the character of Katniss Everdeen in "The Hunger Games" series?|Emma Watson|Jennifer Aniston|Natalie Portman|Jennifer Lawrence|3
+mov38|Who directed the science fiction film "Blade Runner"?|James Cameron|Steven Spielberg|Ridley Scott|Christopher Nolan|2
+mov39|In the film "The Godfather," what is the signature phrase spoken by the character Don Vito Corleone?|"I'll be back."|"May the Force be with you."|"I coulda been a contender."|"I'm gonna make him an offer he can't refuse."|3
+mov40|Which actress portrayed the character of Lara Croft in the "Tomb Raider" film series?|Milla Jovovich|Kate Beckinsale|Angelina Jolie|Scarlett Johansson|2
+mov41|What is the name of the fictional detective created by Sir Arthur Conan Doyle, known for his brilliant deductive reasoning?|Sherlock Holmes|Hercule Poirot|Sam Spade|Nancy Drew|0
+mov42|Which film won the Academy Award for Best Animated Feature in 2003?|Shrek|Finding Nemo|The Incredibles|Ice Age|1
+mov43|Who played the role of Captain Jack Sparrow's nemesis, Captain Hector Barbossa, in the "Pirates of the Caribbean" series?|Orlando Bloom|Geoffrey Rush|Bill Nighy|Tom Hiddleston|1
+mov44|In the "Star Wars" franchise, what is the name of the desert planet where Luke Skywalker was raised?|Endor|Tatooine|Alderaan|Kashyyyk|1
+mov45|Which actor portrayed Tony Stark/Iron Man's best friend, James "Rhodey" Rhodes, in the Marvel Cinematic Universe?|Don Cheadle|Terrence Howard|Idris Elba|Anthony Mackie|0
+mov46|Who directed the 1994 animated film "The Lion King"?|Steven Spielberg|Tim Burton|Peter Jackson|Rob Minkoff and Roger Allers|3
+mov47|What is the name of the fictional wizard who is the protagonist of J.R.R. Tolkien's "The Lord of the Rings" series?|Gandalf|Frodo Baggins|Aragorn|Bilbo Baggins|1
+mov48|Which film features a character named Hannibal Lecter, a brilliant but insane psychiatrist and cannibalistic serial killer?|The Silence of the Lambs|Seven|American Psycho|Zodiac|0
+mov49|In the movie "Avatar," what is the name of the fictional planet that is home to the Na'vi people?|Pandora|Endor|Alderaan|Krypton|0
+mov50|Who directed the 1993 science fiction film "Jurassic Park"?|James Cameron|Steven Spielberg|Christopher Nolan|George Lucas|1
+mov51|Which film features a character named Ariel, who dreams of becoming human?|Beauty and the Beast|Cinderella|The Little Mermaid|Snow White and the Seven Dwarfs|2
+mov52|Which actor played the character of Maximus Decimus Meridius in the film "Gladiator"?|Russell Crowe|Mel Gibson|Brad Pitt|Liam Neeson|0
+mov53|What is the name of the fictional country ruled by Elsa in the movie "Frozen"?|Arendelle|Corona|Zootopia|Atlantica|0
+mov54|In the film "The Dark Knight," who played the role of the Joker?|Heath Ledger|Jared Leto|Jack Nicholson|Cesar Romero|0
+mov55|Which movie features a character named John McClane, a New York cop who battles terrorists in a Los Angeles skyscraper?|Die Hard|Speed|Lethal Weapon|The Fugitive|0
+mov56|Who directed the film "Schindler's List"?|Steven Spielberg|Martin Scorsese|Francis Ford Coppola|Roman Polanski|0
+mov57|In the "Star Wars" franchise, what is the name of Han Solo's ship?|Millennium Falcon|X-Wing Fighter|TIE Fighter|Star Destroyer|0
+mov58|Which actress played the role of Mia Wallace in the film "Pulp Fiction"?|Uma Thurman|Julia Roberts|Halle Berry|Michelle Pfeiffer|0
+mov59|What is the name of the fictional high school where the movie "Clueless" is set?|Bronson Alcott High School|Rydell High School|Shermer High School|Bayside High School|0
+mov60|Which actor portrayed the character of Tony Montana in the film "Scarface"?|Al Pacino|Robert De Niro|Joe Pesci|Marlon Brando|0
+mov61|In the movie "The Matrix," what is the red pill/blue pill choice presented to the protagonist, Neo?|Red pill/blue pill|Truth pill/falsehood pill|Reality pill/illusion pill|Awaken pill/remain asleep pill|0
+mov62|Who directed the film "The Shining" (1980), based on Stephen King's novel?|Stanley Kubrick|David Cronenberg|Brian De Palma|Tobe Hooper|0
+mov63|Which movie features a character named John H. Miller, who is tasked with saving Private James Francis Ryan during World War II?|Saving Private Ryan|Pearl Harbor|We Were Soldiers|Platoon|0
+mov64|What is the name of the fictional African country ruled by King T'Challa in the Marvel Cinematic Universe?|Wakanda|Zamunda|Elbonia|Genovia|0
+mov65|Who played the role of Mary Poppins in the 1964 film "Mary Poppins"?|Julie Andrews|Audrey Hepburn|Elizabeth Taylor|Grace Kelly|0
+mov66|In the movie "The Wizard of Oz," what color is Dorothy's magical slippers?|Ruby red|Sapphire blue|Emerald green|Golden yellow|0

@@ -18,3 +18,58 @@ sports17|In which sport can you perform a slam dunk?|Soccer|Baseball|Basketball|
 sports18|Who is the most decorated Olympian of all time with 28 Olympic medals?|Michael Phelps|Usain Bolt|Carl Lewis|Jesse Owens|0
 sports19|What is the national sport of Japan?|Sumo wrestling|Karate|Baseball|Judo|0
 sports20|Which country won the 2018 Winter Olympics in Pyeongchang?|USA|Russia|South Korea|Norway|3
+sports21|Which country won the 2019 Cricket World Cup?|India|England|Australia|New Zealand|1
+sports22|In which sport is the Ballon d'Or awarded to the best player in the world?|Soccer|Tennis|Golf|Basketball|0
+sports23|Who is the most decorated Olympian in terms of gold medals, with 23 golds?|Michael Phelps|Usain Bolt|Carl Lewis|Simone Biles|0
+sports24|Which city hosted the 2016 Summer Olympics?|Beijing|Rio de Janeiro|London|Tokyo|1
+sports25|What is the term for a three-strike sequence in bowling?|Triple|Turkey|Hat-trick|Threepeat|1
+sports26|Which sport uses the terms "birdie" and "eagle"?|Golf|Tennis|Cricket|Soccer|0
+sports27|Who is considered the greatest football (soccer) player of all time?|Cristiano Ronaldo|Lionel Messi|Pelé|Diego Maradona|1
+sports28|In which sport do teams compete for the Webb Ellis Cup?|Soccer|Basketball|Rugby|Cricket|2
+sports29|What is the term for a three-strike sequence in baseball?|Triple|Turkey|Hat-trick|Threepeat|1
+sports30|Which country won the 2019 FIFA Women's World Cup?|Germany|Brazil|USA|France|2
+sports31|In which sport is the Green Jacket awarded at the Masters Tournament?|Tennis|Golf|Cricket|Rugby|1
+sports32|Who is the all-time leading scorer in the NHL?|Wayne Gretzky|Mario Lemieux|Gordie Howe|Jaromír Jágr|0
+sports33|Which country won the most medals in the 2020 Tokyo Olympics?|USA|China|Russia|Japan|3
+sports34|What is the name of the horse race that completes the Triple Crown in the USA?|Belmont Stakes|Kentucky Derby|Preakness Stakes|Grand National|2
+sports35|In which sport is the Claret Jug awarded at The Open Championship?|Tennis|Golf|Cricket|Rugby|1
+sports36|Who holds the record for the most career points in the NBA?|Kareem Abdul-Jabbar|Kobe Bryant|LeBron James|Michael Jordan|0
+sports37|Which country won the 2018 FIFA World Cup in Russia?|Germany|Argentina|France|Brazil|2
+sports38|What is the term for a zero score in golf on an individual hole?|Birdie|Par|Bogey|Hole-in-one|3
+sports39|In which sport did Serena Williams become a legendary figure?|Golf|Soccer|Basketball|Tennis|3
+sports40|Who is the fastest man in the world over 100 meters?|Usain Bolt|Carl Lewis|Jesse Owens|Michael Johnson|0
+sports41|What is the term for the individual who regulates a soccer match and ensures the rules are followed?|Referee|Umpire|Coach|Goalkeeper|0
+sports42|In which sport are the terms "slam" and "smash" commonly used?|Tennis|Golf|Cricket|Rugby|0
+sports43|Who is the all-time leading scorer in the English Premier League?|Thierry Henry|Wayne Rooney|Alan Shearer|Frank Lampard|2
+sports44|Which country has won the most FIFA World Cup titles?|Brazil|Germany|Italy|Argentina|0
+sports45|In which sport is the Brownlow Medal awarded to the best and fairest player?|Soccer|Basketball|Australian Rules Football|Baseball|2
+sports46|Who won the 2021 NBA Finals?|Los Angeles Lakers|Brooklyn Nets|Phoenix Suns|Milwaukee Bucks|3
+sports47|In which sport do players compete for the Claret Jug?|Soccer|Tennis|Golf|Rugby|2
+sports48|Who won the 2021 UEFA European Championship (Euros)?|France|Italy|England|Portugal|1
+sports49|What is the term for a perfect score of 10 in gymnastics?|Strike|Spare|Perfect 10|Bullseye|2
+sports50|In which sport do teams compete for the Larry O'Brien Championship Trophy?|Soccer|Basketball|Ice Hockey|Baseball|1
+sports51|Who is considered the greatest tennis player of all time?|Roger Federer|Rafael Nadal|Novak Djokovic|Rod Laver|0
+sports52|In which sport do players wear a gi and earn belts based on their skill level?|Soccer|Basketball|Karate|Baseball|2
+sports53|What is the name of the annual rugby union competition featuring England, France, Ireland, Italy, Scotland, and Wales?|Six Nations|Tri-Nations|Rugby Championship|Nations Cup|0
+sports54|In which sport is the term "ace" commonly used?|Tennis|Golf|Cricket|Rugby|0
+sports55|Who is the most successful Formula 1 driver with seven World Championships?|Michael Schumacher|Lewis Hamilton|Ayrton Senna|Sebastian Vettel|1
+sports56|In which sport did Jackie Robinson break the color barrier in the United States by becoming the first African American to play in the major leagues?|Soccer|Baseball|Basketball|American Football|1
+sports57|Which country won the first FIFA World Cup in 1930?|Uruguay|Argentina|Brazil|Germany|0
+sports58|In which sport do teams compete for the Grey Cup?|Soccer|Basketball|Ice Hockey|Canadian Football|3
+sports59|In which sport is the America's Cup awarded?|Tennis|Golf|Yachting|Cricket|2
+sports60|Who is known as "The Greatest" in the world of boxing?|Mike Tyson|Muhammad Ali|Floyd Mayweather|Sugar Ray Robinson|1
+sports61|In which sport do teams compete for the Vince Lombardi Trophy?|Soccer|Basketball|Ice Hockey|American Football|3
+sports62|In which sport is the Vince Lombardi Trophy awarded?|Soccer|Basketball|Ice Hockey|American Football|3
+sports63|Who holds the record for the most career wins in Formula 1?|Michael Schumacher|Lewis Hamilton|Sebastian Vettel|Alain Prost|1
+sports64|Which country has won the most Summer Olympics gold medals in total?|USA|China|Russia|Great Britain|0
+sports65|In which sport are the terms "aces" and "double faults" commonly used?|Tennis|Golf|Cricket|Rugby|0
+sports66|Who won the FIFA Women's World Cup in 2019?|Germany|Brazil|USA|France|2
+sports67|In which sport is the Ryder Cup contested?|Tennis|Golf|Cricket|Rugby|1
+sports68|Who is known as "The Great One" in the sport of ice hockey?|Wayne Gretzky|Mario Lemieux|Gordie Howe|Jaromír Jágr|0
+sports69|What is the term for a perfect score in diving?|Strike|Spare|Perfect 10|Bullseye|2
+sports70|In which sport do players use the terms "love" and "deuce"?|Tennis|Golf|Cricket|Rugby|0
+sports71|In which sport is the Heisman Trophy awarded?|Soccer|Basketball|Ice Hockey|American Football|3
+sports72|What is the term for a zero score in bowling on an individual hole?|Birdie|Par|Bogey|Hole-in-one|3
+sports73|In which sport is the "Hand of God" incident famous?|Soccer|Basketball|Cricket|Rugby|0
+sports74|Who is known as "The Black Mamba" in the world of basketball?|Kobe Bryant|LeBron James|Michael Jordan|Kareem Abdul-Jabbar|0
+sports75|In which sport do teams compete for the America's Cup?|Tennis|Golf|Yachting|Cricket|2

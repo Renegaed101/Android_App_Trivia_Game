@@ -18,3 +18,70 @@ music17|Which artist is known for the song "Hotel California"?|The Rolling Stone
 music18|Who is often referred to as the "Rocket Man"?|David Bowie|Elton John|Sting|Freddie Mercury|1
 music19|Which artist released the album "Purple Rain" in 1984?|Prince|Michael Jackson|Elvis Presley|David Bowie|0
 music20|Who was known as the "Queen of Soul"?|Whitney Houston|Tina Turner|Aretha Franklin|Diana Ross|2
+music21|What is the best-selling album of all time?|Led Zeppelin IV|The Eagles - Greatest Hits|Thriller - Michael Jackson|Back in Black - AC/DC|2
+music22|Who sang "Hello" and "Someone Like You"?|Adele|Taylor Swift|Katy Perry|Lady Gaga|0
+music23|Which band's drummer is often referred to as "The Quiet One"?|Led Zeppelin|The Rolling Stones|The Who|Pink Floyd|2
+music24|What was the name of The Beatles' final studio album?|Let It Be|Abbey Road|Revolver|Rubber Soul|1
+music25|Which artist is known for hits like "Sweet Child o' Mine" and "November Rain"?|Guns N' Roses|Bon Jovi|Aerosmith|Def Leppard|0
+music26|Who was the lead singer of Queen?|Freddie Mercury|Robert Plant|David Bowie|Mick Jagger|0
+music27|Which rock band released the iconic album "Highway to Hell" in 1979?|The Rolling Stones|The Who|Led Zeppelin|AC/DC|3
+music28|Who is known for the hit "Billie Jean" and the moonwalk dance?|Prince|David Bowie|Elton John|Michael Jackson|3
+music29|What is the name of The Rolling Stones' iconic tongue logo?|The Lips|The Snarl|The Pout|The Lick|3
+music30|Which artist is famous for songs like "Purple Haze" and "All Along the Watchtower"?|Eric Clapton|Jimi Hendrix|Jimmy Page|Stevie Ray Vaughan|1
+music31|Who is known for the hit "Superstition" and "I Just Called to Say I Love You"?|Stevie Wonder|Marvin Gaye|Ray Charles|Otis Redding|0
+music32|What is the name of the famous electronic music festival in the Nevada desert?|Ultra Music Festival|Tomorrowland|Electric Daisy Carnival|Burning Man|3
+music33|Who was the lead singer of The Doors?|Roger Daltrey|Mick Jagger|John Lennon|Jim Morrison|3
+music34|What is the nickname of singer and guitarist Jimi Hendrix?|The Red Strat|The Guitar Wizard|The Voodoo Child|The Electric Axeman|2
+music35|Who is known for the hit "Purple Haze" and "All Along the Watchtower"?|Eric Clapton|Jimi Hendrix|Jimmy Page|Stevie Ray Vaughan|1
+music36|What is the name of Adele's record-breaking album released in 2011?|21|25|19|Adele|0
+music37|Which artist is known for the song "Rocket Man"?|David Bowie|Elton John|Sting|Billy Joel|1
+music38|Who released the iconic album "The Dark Side of the Moon"?|The Who|Pink Floyd|Led Zeppelin|The Rolling Stones|1
+music39|What is the name of the legendary rock festival held in 1969 featuring Jimi Hendrix and Janis Joplin?|Coachella|Burning Man|Woodstock|Lollapalooza|2
+music40|Which legendary singer was known for hits like "What's Going On" and "Sexual Healing"?|Al Green|Marvin Gaye|Ray Charles|Stevie Wonder|1
+music41|Who sang the hit song "Black Dog"?|Led Zeppelin|AC/DC|The Rolling Stones|The Who|0
+music42|Which artist is known for the albums "Ziggy Stardust" and "Heroes"?|Prince|David Bowie|Elton John|George Michael|1
+music43|What is the name of the lead singer of U2?|Chris Martin|Bono|Sting|Freddie Mercury|1
+music44|Which rock band's hits include "I Can't Get No Satisfaction" and "Paint It Black"?|The Who|Pink Floyd|The Doors|The Rolling Stones|3
+music45|What is the name of the famous DJ known for tracks like "Wake Me Up" and "Levels"?|Calvin Harris|David Guetta|Avicii|Martin Garrix|2
+music46|Which artist is known for the album "Back to Black" and hits like "Rehab" and "You Know I'm No Good"?|Amy Winehouse|Adele|Lana Del Rey|Florence Welch|0
+music47|What was the name of the band known for the hit "Sweet Child o' Mine"?|Guns N' Roses|Bon Jovi|Aerosmith|Def Leppard|0
+music48|What is the name of The Beatles' final studio album?|Let It Be|Abbey Road|Revolver|Rubber Soul|1
+music49|Which band is known for the song "Stairway to Heaven"?|The Rolling Stones|Led Zeppelin|The Who|Pink Floyd|1
+music50|Who was known as the "King of Reggae"?|Peter Tosh|Bob Marley|Jimmy Cliff|Sting|1
+music51|What is the name of the Beatles' final studio album released in 1970?|Abbey Road|The White Album|Let It Be|Sgt. Pepper's Lonely Hearts Club Band|2
+music52|Which female artist is known for her hits "I Will Always Love You" and "I Wanna Dance with Somebody"?|Beyoncé|Whitney Houston|Mariah Carey|Celine Dion|1
+music53|Who is known for his iconic song "Rocket Man"?|David Bowie|Elton John|Sting|Freddie Mercury|1
+music54|Which band is known for their hit "Paint It Black"?|The Rolling Stones|The Who|Led Zeppelin|Pink Floyd|0
+music55|What is the name of Elvis Presley's home in Memphis, Tennessee?|Graceland|Neverland|Elvis Manor|Rock 'n' Roll Ranch|0
+music56|Which rock band released the album "Led Zeppelin IV" in 1971, featuring "Stairway to Heaven"?|The Rolling Stones|The Who|Led Zeppelin|Pink Floyd|2
+music57|Who was known as the "Material Girl"?|Madonna|Celine Dion|Katy Perry|Lady Gaga|0
+music58|Which artist released the album "Legend," featuring reggae hits like "One Love" and "No Woman, No Cry"?|Bob Marley|Sting|Jimmy Cliff|Peter Tosh|0
+music59|Which female artist released the album "Lemonade" in 2016?|Rihanna|Adele|Taylor Swift|Beyoncé|3
+music60|What is the name of the famous Canadian singer known for hits like "Summer of '69" and "Everything I Do"?|Bryan Adams|Michael Bublé|Justin Bieber|Leonard Cohen|0
+music61|Who sang "I Want to Hold Your Hand" and "Hey Jude"?|Elton John|The Rolling Stones|The Who|The Beatles|3
+music62|What is the name of the famous American singer known for "Purple Haze" and "The Wind Cries Mary"?|Elvis Presley|Jimi Hendrix|Chuck Berry|Johnny Cash|1
+music63|Who was known as the "Queen of Tejano Music" and released albums like "Amor Prohibido"?|Jennifer Lopez|Selena|Shakira|Gloria Estefan|1
+music64|Which band is known for their hit "Light My Fire"?|The Rolling Stones|The Who|The Doors|Pink Floyd|2
+music65|Who is known for hits like "Bohemian Rhapsody" and "We Will Rock You"?|Led Zeppelin|The Who|Queen|Pink Floyd|2
+music66|Which female artist released the album "Fearless" in 2008?|Katy Perry|Adele|Taylor Swift|Beyoncé|2
+music67|Who sang "Superstition" and "I Just Called to Say I Love You"?|Michael Jackson|Stevie Wonder|Prince|Lionel Richie|1
+music68|Which artist is known for hits like "Radioactive" and "Demons"?|Imagine Dragons|OneRepublic|Coldplay|Maroon 5|0
+music69|Who is known for her hits "Wrecking Ball" and "Party in the U.S.A."?|Demi Lovato|Selena Gomez|Miley Cyrus|Taylor Swift|2
+music70|Which band is known for the song "Losing My Religion"?|U2|REM|R.E.O. Speedwagon|Coldplay|1
+music71|Who is known for his iconic song "My Way"?|Elvis Presley|Frank Sinatra|Dean Martin|Nat King Cole|1
+music72|Which artist is known for hits like "I Gotta Feeling" and "Where Is the Love"?|The Black Eyed Peas|OutKast|N*SYNC|Eminem|0
+music73|Who sang "All You Need Is Love" and "Let It Be"?|John Lennon|George Harrison|Paul McCartney|Ringo Starr|2
+music74|Which band is known for their hit "Smoke on the Water"?|Led Zeppelin|Deep Purple|Pink Floyd|The Who|1
+music75|Who was known as the "Queen of Disco" and released hits like "Stayin' Alive"?|Gloria Gaynor|Donna Summer|Cher|Barbra Streisand|1
+music76|Which artist is known for the song "Boys Don't Cry"?|The Cure|Joy Division|The Smiths|The Police|0
+music77|Who is known for his hits like "Billie Jean" and "Smooth Criminal"?|Lionel Richie|Stevie Wonder|Michael Jackson|Prince|2
+music78|Which band is known for their hit "Hotel California"?|The Rolling Stones|The Who|The Eagles|Pink Floyd|2
+music79|Who sang "Yellow Submarine" and "Let It Be"?|Paul McCartney|George Harrison|John Lennon|Ringo Starr|0
+music80|What is the name of the famous American rock band known for hits like "Sweet Child o' Mine" and "Paradise City"?|AC/DC|Kiss|Guns N' Roses|Aerosmith|2
+music81|Who is known for his iconic song "Imagine"?|Bob Dylan|Elton John|John Lennon|David Bowie|2
+music82|Which band is known for their hit "Angie"?|The Rolling Stones|The Who|The Doors|Pink Floyd|0
+music83|Who sang "Blue Suede Shoes" and "Heartbreak Hotel"?|Johnny Cash|Elvis Presley|Buddy Holly|Chuck Berry|1
+music84|Which artist is known for hits like "Hotline Bling" and "God's Plan"?|Kendrick Lamar|Drake|Eminem|Jay-Z|1
+music85|Who was known as the "King of Pop" and released hits like "Billie Jean" and "Thriller"?|Elvis Presley|Prince|Michael Jackson|David Bowie|2
+music86|Which artist is known for her song "Bad Guy" and the album "When We All Fall Asleep, Where Do We Go?"|Billie Eilish|Lana Del Rey|Lorde|Ariana Grande|0
+music87|Who sang "Purple Haze" and "The Wind Cries Mary"?|Elvis Presley|Jimi Hendrix|Chuck Berry|Johnny Cash|1

@@ -18,3 +18,52 @@ tech17|What is the process of converting data into a code to prevent unauthorize
 tech18|Which operating system is developed by Apple Inc. for its Macintosh computers?|Windows|Linux|iOS|Android|2
 tech19|What does "IoT" stand for in the context of technology?|Internet of Things|Innovative Operating Technology|Integrated Office Technology|Internet on Time|0
 tech20|What is the term for a set of instructions that a computer can execute to perform a specific task?|Program|App|Script|Algorithm|3
+tech21|What is the main component of a computer responsible for executing instructions?|RAM|CPU|GPU|HDD|1
+tech22|Which programming language is commonly used for web development and is known for its client-side scripting capabilities?|Python|Java|JavaScript|Ruby|2
+tech23|What does "AI" stand for in the context of technology?|Artificial Intelligence|Advanced Internet|Automated Interaction|Altered Information|0
+tech24|Which company developed the Windows operating system?|Apple|Microsoft|Google|Linux|1
+tech25|What technology is used to make long-distance voice communication possible?|Satellite|Bluetooth|VoIP|GPS|2
+tech26|What does "CPU" stand for in computing?|Central Processing Unit|Computer Processing Unit|Central Program Unit|Computer Power Unit|0
+tech27|What is the main purpose of a firewall in the context of computer security?|Virus scanning|Access control|Data storage|Graphics rendering|1
+tech28|Which company is known for its cloud computing platform, AWS (Amazon Web Services)?|Amazon|Google|Microsoft|IBM|0
+tech29|What is the term for software that is distributed for free and can be modified and redistributed?|Open-source|Freeware|Shareware|Commercial|0
+tech30|Which programming language is often used for data analysis and is known for its simplicity and readability?|C#|Python|R|Java|1
+tech31|What is the primary function of an operating system on a computer?|Data storage|Web browsing|User interface|Hardware and software management|3
+tech32|Which computer scientist is known for developing the C programming language?|Tim Berners-Lee|Alan Turing|Dennis Ritchie|Grace Hopper|2
+tech33|What is the term for a small hardware device used for storing digital information, such as USB drives and SD cards?|Microchip|Transistor|Flash drive|Central unit|2
+tech34|Which company is famous for its electric cars, including models like the Model 3 and Model S?|Ford|Tesla|Chevrolet|Toyota|1
+tech35|What is the primary function of a router in a computer network?|Data encryption|Firewall protection|Traffic management|Audio processing|2
+tech36|Which company is known for its graphics processing units (GPUs), commonly used for gaming and deep learning?|AMD|Intel|Nvidia|ARM|2
+tech37|What does "PDF" stand for in the context of document formats?|Portable Document Format|Personal Data File|Printable Document Form|Platform Data File|0
+tech38|Which company is known for its popular video-sharing platform, YouTube?|Facebook|Google|Twitter|Amazon|1
+tech39|What is the term for a set of rules and protocols for connecting and exchanging data between devices on a network?|Encryption|Protocol|Firewall|Algorithm|1
+tech40|What does the acronym "ISP" stand for in the context of internet services?|Internet Service Provider|Information Security Protocol|Internal System Processor|Internet Security Program|0
+tech41|Which company is known for its e-commerce platform, including services like Amazon Prime?|eBay|Alibaba|Amazon|Walmart|2
+tech42|What is the term for the practice of concealing messages or information within other non-secret text or data?|Hacking|Encrypting|Steganography|Firewalling|2
+tech43|What technology allows wireless communication between devices over short distances, often used for connecting peripherals like keyboards and mice?|Wi-Fi|Bluetooth|NFC|GPS|1
+tech44|What does "WWW" stand for in website addresses?|World Wide Web|Web Widget Wizard|Website Word Wall|Wide Web Workstation|0
+tech45|What programming language is used for creating web content and dynamic web applications?|Java|Python|Ruby|JavaScript|3
+tech46|What is the main purpose of a modem in computer networking?|Data storage|Access control|Internet connectivity|Graphics rendering|2
+tech47|Which company is known for its popular social networking platform, Facebook?|Google|Instagram|Twitter|Facebook|3
+tech48|What does "LAN" stand for in the context of networking?|Local Area Network|Large Area Network|Long-distance Access Network|Localized Address Node|0
+tech49|Which company is known for its cloud-based productivity suite, including applications like Word and Excel?|Adobe|Microsoft|Google|Apple|1
+tech50|What technology is commonly used for contactless payments and mobile ticketing, using radio waves for communication?|NFC|Bluetooth|Wi-Fi|GPS|0
+tech51|What does "SaaS" stand for in the context of software and technology?|Software as a Service|Science and Art of Software|Software and Applications Suite|System as a Solution|0
+tech52|Which computer scientist is known for developing the C++ programming language?|Tim Berners-Lee|Alan Turing|Dennis Ritchie|Bjarne Stroustrup|3
+tech53|What does "VPN" stand for in the context of internet security and privacy?|Virtual Personal Network|Very Private Network|Virtual Private Network|Verified Personal Network|2
+tech54|Which company is famous for its "iPod," "iPhone," and "iPad" products?|Samsung|Google|Apple|Microsoft|2
+tech55|What technology is used for creating 3D models and prototypes by adding material layer by layer?|Casting|Machining|Injection molding|3D printing|3
+tech56|What does "HTTPS" stand for in website addresses?|Hyper Transfer Text Protocol Secure|High Tech Transmission System|Hyperlink Transport Technology|Hypertext Transfer Protocol Secure|3
+tech57|Which company is known for its popular search engine and online advertising services?|Apple|Microsoft|Google|Amazon|2
+tech58|What technology is used for transmitting data over long distances via cables or optical fibers?|Wi-Fi|Bluetooth|Ethernet|NFC|2
+tech59|What does "SEO" stand for in the context of web development and online marketing?|Secure Engine Optimization|Search Engine Optimization|Software Enhancement Operation|Site Engagement Opportunity|1
+tech60|Which company is known for its e-reader devices like the Kindle?|Sony|Barnes & Noble|Kobo|Amazon|3
+tech61|What does "IP address" stand for in the context of networking and internet communication?|Internet Protocol address|International Position address|Internet Process address|Interactive Protocol address|0
+tech62|Which programming language is commonly used for data analysis and statistical computing, particularly in data science?|Java|Python|R|Ruby|1
+tech63|What technology allows for two-way communication with satellites and is commonly used for GPS navigation?|Radio waves|Microwaves|Satellite communication|Infrared|2
+tech64|What is the primary function of a DNS (Domain Name System) server?|Data storage|User authentication|Name resolution|Graphics rendering|2
+tech65|What technology is used for capturing and digitizing images and documents in a format that can be stored and displayed electronically?|OCR|QR code|JPEG|Scanner|0
+tech66|Which company is known for its gaming platform, Steam, and its digital distribution of video games?|Ubisoft|EA Sports|Valve|Blizzard|2
+tech67|What does "BIOS" stand for in the context of computer systems?|Basic Input/Output System|Binary Input/Output System|Business Information Output System|Basic Integrated Operating System|0
+tech68|Which company is known for its cloud-based email and productivity software, including Gmail and Google Docs?|Microsoft|Apple|Google|IBM|2
+tech69|What technology is commonly used for wireless communication between devices over short distances, often used for connecting headphones and speakers?|NFC|Bluetooth|Wi-Fi|GPS|1

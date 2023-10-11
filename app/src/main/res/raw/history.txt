@@ -18,3 +18,44 @@ hist17|Which civilization built the city of Machu Picchu?|Inca|Aztec|Maya|Egypti
 hist18|Which country was divided into North and South during the Cold War?|Germany|Italy|Japan|France|0
 hist19|Who was the first woman to win a Nobel Prize?|Rosa Parks|Marie Curie|Amelia Earhart|Eleanor Roosevelt|1
 hist20|Which ancient city was destroyed by a volcanic eruption in 79 AD?|Pompeii|Athens|Troy|Carthage|0
+hist21|What event marked the end of the American Civil War?|Battle of Gettysburg|Emancipation Proclamation|Appomattox Court House|Assassination of Lincoln|2
+hist22|What was the main goal of the Lewis and Clark Expedition?|Find the Northwest Passage|Explore the Louisiana Purchase|Discover a new species|Conquer Native American tribes|0
+hist23|Which dynasty built the Great Wall of China?|Ming|Tang|Qing|Han|3
+hist24|Who was the first woman to become the Prime Minister of the United Kingdom?|Margaret Thatcher|Queen Elizabeth I|Angela Merkel|Theresa May|0
+hist25|What was the significance of the Boston Tea Party in 1773?|Celebration of tea|Protest against high taxes|Royal party for the colonists|Trade with Native Americans|1
+hist26|In which year did the United States formally gain its independence from Britain?|1607|1776|1789|1812|1
+hist27|What was the primary cause of the Russian Revolution of 1917?|Food shortages|Monarchy support|Religious freedom|Expansionist war|0
+hist28|Who is the author of "The Communist Manifesto"?|Vladimir Lenin|Leon Trotsky|Karl Marx|Joseph Stalin|2
+hist29|What was the main goal of the Manhattan Project during World War II?|Develop the atomic bomb|Create a new language|Construct the Pentagon|Establish the United Nations|0
+hist30|Which infamous prison in France was stormed during the French Revolution?|The Bastille|Alcatraz|Sing Sing|Attica|0
+hist31|Who was the first European explorer to reach India by sea?|Christopher Columbus|Marco Polo|Ferdinand Magellan|Vasco da Gama|3
+hist32|What event marked the beginning of World War II?|The attack on Pearl Harbor|The sinking of the Lusitania|The signing of the Treaty of Versailles|The Russian Revolution|0
+hist33|What is the name of the ship known for bringing the pilgrims to Plymouth Rock in 1620?|Santa Maria|Mayflower|Nina|Victoria|1
+hist34|Which English queen was known as the "Virgin Queen"?|Queen Mary I|Queen Anne|Queen Elizabeth I|Queen Victoria|2
+hist35|What was the primary reason for the construction of the Berlin Wall in 1961?|Preventing illegal immigration|Creating a tourist attraction|Dividing the city for fun|Uniting East and West|0
+hist36|Who wrote "The Communist Manifesto" with Karl Marx?|Joseph Stalin|Vladimir Lenin|Leon Trotsky|Friedrich Engels|3
+hist37|What is the chemical element with the atomic number 92?|Uranium|Gold|Plutonium|Lead|0
+hist38|Who was the first woman to fly solo nonstop across the Atlantic?|Bessie Coleman|Harriet Quimby|Amelia Earhart|Sally Ride|2
+hist39|What was the primary cause of the American Civil War?|Economic differences|States' rights|Slavery|Religious conflicts|2
+hist40|Which U.S. President is famous for the Emancipation Proclamation?|Theodore Roosevelt|Thomas Jefferson|Abraham Lincoln|Andrew Jackson|2
+hist41|In which year did the Wright brothers achieve the first powered, controlled, sustained flight?|1903|1912|1920|1937|0
+hist42|Who was the first woman to become the Prime Minister of India?|Margaret Thatcher|Angela Merkel|Queen Elizabeth II|Indira Gandhi|3
+hist43|Which war was fought between North Vietnam and South Vietnam in the 1960s and 1970s?|World War I|Korean War|Vietnam War|World War II|2
+hist44|Which ancient civilization is known for its pharaohs and the Great Pyramids?|Inca|Aztec|Maya|Egyptian|3
+hist45|What was the name of the ship that Christopher Columbus sailed to the Americas in 1492?|Mayflower|Santa Maria|Nina|Santa Clara|1
+hist46|Who is known for leading the famous Salt March as a form of nonviolent protest against British salt taxes in India?|Jawaharlal Nehru|Mahatma Gandhi|Nelson Mandela|Winston Churchill|2
+hist47|In which year did the United States declare its independence from Britain?|1766|1776|1786|1796|1
+hist48|Which city is known as the "City of Love" and is famous for the Eiffel Tower?|Rome|Barcelona|Venice|Paris|3
+hist49|What was the name of the ship that Charles Darwin sailed on during his voyage that led to his theory of evolution?|Beagle|Falcon|Hawk|Eagle|0
+hist50|Who was the first woman to fly solo nonstop across the Atlantic Ocean?|Bessie Coleman|Harriet Quimby|Amelia Earhart|Sally Ride|2
+hist51|What event marked the beginning of World War II in Europe?|The signing of the Treaty of Versailles|The invasion of Poland|The Battle of Stalingrad|The D-Day landings|1
+hist52|What was the name of the ancient trade route that connected the East and West?|Silk Road|Gold Road|Salt Route|Spice Route|0
+hist53|Which historical figure is known for his theory of general relativity and the equation E=mc^2?|Isaac Newton|Stephen Hawking|Galileo Galilei|Albert Einstein|3
+hist54|Who is famous for writing "The Communist Manifesto" alongside Friedrich Engels?|Joseph Stalin|Karl Marx|Vladimir Lenin|Mao Zedong|1
+hist55|What is the name of the ship known for bringing the Mayflower Pilgrims to Plymouth Rock in 1620?|Mayflower|Santa Maria|Nina|Victoria|0
+hist56|Who was the first woman to win a Nobel Prize and remains the only person to win Nobel Prizes in two different scientific fields?|Marie Curie|Rosa Parks|Amelia Earhart|Eleanor Roosevelt|0
+hist57|Which famous battle in 1066 marked the Norman Conquest of England?|Battle of Hastings|Battle of Bannockburn|Battle of Agincourt|Battle of Thermopylae|0
+hist58|What was the capital of the Byzantine Empire (Eastern Roman Empire)?|Athens|Rome|Constantinople|Cairo|2
+hist59|Which ancient civilization is known for its hieroglyphics, pyramids, and the Sphinx?|Inca|Aztec|Maya|Egyptian|3
+hist60|In which year did the Berlin Wall fall, leading to the reunification of East and West Germany?|1989|1991|1993|1995|0
+hist61|Which treaty formally ended World War I in 1919?|Treaty of Versailles|Treaty of Tordesillas|Treaty of Utrecht|Treaty of Paris|0

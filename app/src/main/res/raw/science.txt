@@ -18,3 +18,35 @@ sci17|What is the process by which an organism's genetic material is copied and 
 sci18|Which planet is known for its prominent ring system?|Saturn|Jupiter|Uranus|Mars|0
 sci19|What is the chemical symbol for nitrogen?|N|Ni|Na|Ne|0
 sci20|What is the smallest planet in our solar system?|Venus|Earth|Mars|Mercury|3
+sci21|What is the chemical symbol for iron?|Fe|Au|Ag|Cu|0
+sci22|Which gas is most abundant in the Earth's atmosphere?|Oxygen|Carbon dioxide|Nitrogen|Hydrogen|2
+sci23|What is the process of a liquid turning into vapor at its boiling point?|Freezing|Condensation|Sublimation|Evaporation|3
+sci24|What is the chemical symbol for silver?|Si|S|Ag|Sr|2
+sci25|What is the study of the behavior of matter at very low temperatures?|Thermodynamics|Quantum mechanics|Cryogenics|Astronomy|2
+sci26|What is the primary function of white blood cells in the human body?|Carry oxygen|Digest food|Fight infection|Store energy|2
+sci27|Which planet is known as the "Blue Planet"?|Earth|Mars|Venus|Jupiter|0
+sci28|What is the chemical symbol for sodium?|So|S|Na|No|2
+sci29|What is the branch of science that deals with the study of earthquakes?|Astronomy|Biology|Geology|Chemistry|2
+sci30|What is the chemical symbol for calcium?|C|Ca|Co|Cu|1
+sci31|What is the process of water vapor turning into liquid?|Vaporization|Evaporation|Condensation|Sublimation|2
+sci32|Which gas is used by plants during photosynthesis to produce energy?|Hydrogen|Carbon dioxide|Oxygen|Nitrogen|1
+sci33|What is the chemical symbol for potassium?|P|K|Po|Pt|1
+sci34|What is the study of the Earth's physical structure and substance?|Biology|Chemistry|Physics|Geology|3
+sci35|What is the process of a gas turning into a liquid?|Sublimation|Condensation|Vaporization|Evaporation|1
+sci36|Which gas do humans primarily inhale when breathing?|Nitrogen|Carbon dioxide|Oxygen|Hydrogen|2
+sci37|What is the chemical symbol for chlorine?|Cl|C|Ca|Co|0
+sci38|What is the process of heat transfer through a fluid (liquid or gas) in motion?|Conduction|Convection|Radiation|Insulation|1
+sci39|What is the chemical symbol for sulfuric acid?|Sa|Su|So|H2SO4|3
+sci40|What is the study of the interaction between living organisms and their environment?|Ecology|Astronomy|Geology|Physics|0
+sci41|What is the chemical symbol for carbon monoxide?|CO|CO2|O2|C2|0
+sci42|What is the process of a solid turning directly into a gas without passing through the liquid phase?|Evaporation|Sublimation|Condensation|Vaporization|1
+sci43|What is the chemical symbol for neon?|Ne|Na|Ni|N|0
+sci44|What is the study of the composition and properties of matter?|Biology|Chemistry|Geology|Physics|1
+sci45|What is the chemical symbol for magnesium?|Mg|Ma|Mo|Me|0
+sci46|What is the process of a gas turning directly into a solid without passing through the liquid phase?|Condensation|Evaporation|Vaporization|Sublimation|3
+sci47|What is the study of the structure and function of the human body?|Astronomy|Biology|Geology|Anatomy|3
+sci48|What is the process by which genetic information is passed from parent to offspring?|Mutation|Replication|Evolution|Photosynthesis|1
+sci49|What is the chemical symbol for hydrogen peroxide?|Hp|Ho|H2O2|Hy|2
+sci50|What is the process of a liquid turning into vapor below its boiling point?|Condensation|Evaporation|Sublimation|Vaporization|0
+sci51|What is the largest planet in our solar system?|Mars|Venus|Jupiter|Saturn|2
+sci52|What is the smallest independent country in the world by land area?|Monaco|Vatican City|San Marino|Liechtenstein|1

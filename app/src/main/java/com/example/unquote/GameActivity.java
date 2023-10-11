@@ -615,7 +615,7 @@ public class GameActivity extends AppCompatActivity {
         MainActivity.mediaPlayer.release();
         MainActivity.mediaPlayer = null;
         MainActivity.mediaPlayer = MediaPlayer.create(this,musicResource);
-        MainActivity.mediaPlayer.setVolume(0.1f,0.1f);
+        MainActivity.mediaPlayer.setVolume(0.2f,0.2f);
         MainActivity.mediaPlayer.start();
         MainActivity.mediaPlayer.setLooping(true);
     }
