@@ -52,6 +52,7 @@ public class GameActivity extends AppCompatActivity {
     TextView multiplierTextView;
     TextView multiplierActivatedTextView;
     VerticalBarView multiplierBar;
+    VerticalBarView multiplierBarSkeleton;
 
 
 
@@ -95,11 +96,14 @@ public class GameActivity extends AppCompatActivity {
         multiplierTextView = findViewById(R.id.multiplierTextView);
         multiplierActivatedTextView = findViewById(R.id.multiplierActivatedTextVeiw);
         multiplierBar = findViewById(R.id.multiplierBar);
+        multiplierBarSkeleton = findViewById(R.id.multiplierBarSkeleton);
         answer0Button = findViewById(R.id.btn_main_answer_0);
         answer1Button = findViewById(R.id.btn_main_answer_1);
         answer2Button = findViewById(R.id.btn_main_answer_2);
         answer3Button = findViewById(R.id.btn_main_answer_3);
         submitButton = findViewById(R.id.btn_main_submit_answer);
+
+        multiplierBarSkeleton.setAsSkeleton();
 
         background = findViewById(R.id.gameVideoView);
         Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.game_background_dark);
