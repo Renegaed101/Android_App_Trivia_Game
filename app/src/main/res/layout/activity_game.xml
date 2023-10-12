@@ -182,42 +182,6 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:visibility="visible" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/multiplierTextCardView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:alpha="0.8"
-        android:backgroundTint="@color/grey"
-        android:visibility="invisible"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="4dp"
-        app:layout_constraintBottom_toTopOf="@+id/ll_main_first_row_buttons"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/music_toggle_game"
-        app:layout_constraintVertical_bias="0.6">
-
-
-        <TextView
-            android:id="@+id/multiplierTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="2dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="2dp"
-            android:elevation="3dp"
-            android:text="TextView"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/ll_main_first_row_buttons"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/music_toggle_game"
-            app:layout_constraintVertical_bias="0.98"
-            tools:visibility="visible" />
-
-    </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/multiplierActivatedTextVeiw"

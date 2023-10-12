@@ -51,7 +51,8 @@ public class GameActivity extends AppCompatActivity {
     TextView scoreChangeTextView;
     TextView multiplierTextView;
     TextView multiplierActivatedTextView;
-    CardView multiplierTextCardView;
+    VerticalBarView multiplierBar;
+    VerticalBarView multiplierBarSkeleton;
 
 
 
@@ -94,12 +95,15 @@ public class GameActivity extends AppCompatActivity {
         scoreChangeTextView = findViewById(R.id.scoreChangeTextView);
         multiplierTextView = findViewById(R.id.multiplierTextView);
         multiplierActivatedTextView = findViewById(R.id.multiplierActivatedTextVeiw);
-        multiplierTextCardView = findViewById(R.id.multiplierTextCardView);
+        multiplierBar = findViewById(R.id.multiplierBar);
+        multiplierBarSkeleton = findViewById(R.id.multiplierBarSkeleton);
         answer0Button = findViewById(R.id.btn_main_answer_0);
         answer1Button = findViewById(R.id.btn_main_answer_1);
         answer2Button = findViewById(R.id.btn_main_answer_2);
         answer3Button = findViewById(R.id.btn_main_answer_3);
         submitButton = findViewById(R.id.btn_main_submit_answer);
+
+        multiplierBarSkeleton.setAsSkeleton();
 
         background = findViewById(R.id.gameVideoView);
         Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.game_background_dark);
@@ -338,11 +342,11 @@ public class GameActivity extends AppCompatActivity {
             MainActivity.soundPool.play(MainActivity.soundWrongAnswer, 0.08f, 0.08f, 1, 0, 1.0f);
 
         }
+        multiplierBar.setConsecutiveCorrectAnswers(consecutiveCorrect);
 
         Handler handler = new Handler(Looper.getMainLooper());
 
-        // Delayed action (e.g., wait for 2 seconds)
-        int delayMillis = 1000; // 2 seconds
+        int delayMillis = 1000; //
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -507,47 +511,44 @@ public class GameActivity extends AppCompatActivity {
                         executeRisingFadeAnimation(multiplierActivatedTextView,"Multiplier Lost" );
                     }
                     currentIncrement = 100;
+                    multiplierTextView.setTextColor(getColor(R.color.white));
+                    multiplierTextView.setText("Multiplier Inactive");
                     multiplierTextView.clearAnimation();
-                    multiplierTextCardView.setVisibility(View.INVISIBLE);
                     setQuestionCardAnimation(R.raw.question_card_background);
                     break;
-                case 3:
+                case 2:
                     currentIncrement = 150;
                     executeRisingFadeAnimation(multiplierActivatedTextView,"x1.5 Multiplier Activated" );
                     multiplierTextView.setText("x1.5 Multiplier");
-                    multiplierTextCardView.setVisibility(View.VISIBLE);
                     multiplierTextView.startAnimation(fadeAnimation);
                     multiplierTextView.setTextColor(getColor(R.color.lightBlue));
                     setQuestionCardAnimation(R.raw.question_card_background_multx1_5);
                     setMusic(MainActivity.musicResources[1]);
                     break;
 
-                case 5:
+                case 4:
                     currentIncrement = 200;
                     executeRisingFadeAnimation(multiplierActivatedTextView,"x2 Multiplier Activated" );
                     multiplierTextView.setText("x2 Multiplier");
-                    multiplierTextCardView.setVisibility(View.VISIBLE);
                     multiplierTextView.setTextColor(getColor(R.color.purple));
                     setQuestionCardAnimation(R.raw.question_card_background_multx2);
                     setMusic(MainActivity.musicResources[2]);
                     break;
 
-                case 10:
+                case 6:
                     currentIncrement = 300;
                     executeRisingFadeAnimation(multiplierActivatedTextView,"x3 Multiplier Activated" );
                     multiplierTextView.setText("x3 Multiplier");
                     multiplierTextView.setTextColor(getColor(R.color.orange));
-                    multiplierTextCardView.setVisibility(View.VISIBLE);
                     setQuestionCardAnimation(R.raw.question_card_background_multx3);
                     setMusic(MainActivity.musicResources[3]);
                     break;
 
-                case 15:
+                case 8:
                     currentIncrement = 400;
                     executeRisingFadeAnimation(multiplierActivatedTextView,"x4 Multiplier Activated" );
                     multiplierTextView.setText("x4 Multiplier");
                     multiplierTextView.setTextColor(getColor(R.color.wrongButtonColor));
-                    multiplierTextCardView.setVisibility(View.VISIBLE);
                     setQuestionCardAnimation(R.raw.question_card_background_multx4);
                     setMusic(MainActivity.musicResources[4]);
                     break;

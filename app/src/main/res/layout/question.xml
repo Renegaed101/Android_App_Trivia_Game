@@ -48,5 +48,62 @@
         app:layout_constraintVertical_bias="0.504"
         tools:text="How much wood would a wood chuck chuck if a wood chuck could chuck wood?" />
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/multiplierTextCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="-8dp"
+        android:alpha="0.8"
+        android:backgroundTint="@color/grey"
+        android:visibility="visible"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_main_question_image"
+        app:layout_constraintStart_toStartOf="parent">
 
+
+        <TextView
+            android:id="@+id/multiplierTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="2dp"
+            android:elevation="3dp"
+            android:text="Multiplier Inactive"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/ll_main_first_row_buttons"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/music_toggle_game"
+            app:layout_constraintVertical_bias="0.98"
+            tools:visibility="visible" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.example.unquote.VerticalBarView
+        android:id="@+id/multiplierBar"
+        android:layout_width="24dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/multiplierTextCardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.unquote.VerticalBarView
+        android:id="@+id/multiplierBarSkeleton"
+        android:layout_width="24dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="8dp"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/multiplierTextCardView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
