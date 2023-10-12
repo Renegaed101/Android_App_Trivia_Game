@@ -1,5 +1,7 @@
 package com.example.unquote;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
 import android.content.Context;
 import android.graphics.Canvas;
@@ -18,22 +20,18 @@ import java.util.Arrays;
 public class VerticalBarView extends View {
     private int numSections = 4;  // Number of sections in the vertical bar
     private int spacing = 20;     // Spacing between rectangles and circles
-    private int[] rectangleColors = {Color.GRAY, Color.GRAY, Color.GRAY,
-            Color.GRAY, Color.GRAY, Color.GRAY,
-            Color.GRAY, Color.GRAY};
-    private int[] circleColors = {Color.GRAY, Color.GRAY, Color.GRAY, Color.GRAY};
+    private int[] rectangleColors = new int[8];
+    private float[] rectangleFillPercent = new float[8];
+    private int[] circleColors = new int[4];
     private int barFillColor = ContextCompat.getColor(getContext(),R.color.selectedButtonColor);
     private int firstMultColor = ContextCompat.getColor(getContext(),R.color.lightBlue);
     private int secondtMultColor = ContextCompat.getColor(getContext(),R.color.purple);
     private int thirdMultColor = ContextCompat.getColor(getContext(),R.color.orange);
     private int fourthMultColor = ContextCompat.getColor(getContext(),R.color.wrongButtonColor);
     private Paint paint;
+    private static final int BASE_ALPHA = 70;  // 0 is fully transparent, 255 is fully opaque.
 
-    // Array to store the current heights of the colored regions
-    private int[] coloredRegionHeights = {0, 0, 0, 0};
 
-    // Set this flag to true when an animation is in progress
-    private boolean isAnimating = false;
 
     public VerticalBarView(Context context) {
         super(context);
@@ -53,34 +51,47 @@ public class VerticalBarView extends View {
     private void init() {
         paint = new Paint();
         paint.setStyle(Paint.Style.FILL);
+        Arrays.fill(rectangleColors, barFillColor);
+        Arrays.fill(circleColors, Color.TRANSPARENT);
+        Arrays.fill(rectangleFillPercent, 0f);
+    }
+
+    public void setAsSkeleton() {
+        Arrays.fill(circleColors,Color.argb(BASE_ALPHA, Color.red(Color.GRAY), Color.green(Color.GRAY), Color.blue(Color.GRAY)));
+        Arrays.fill(rectangleColors, Color.argb(BASE_ALPHA, Color.red(Color.GRAY), Color.green(Color.GRAY), Color.blue(Color.GRAY)));
+        Arrays.fill(rectangleFillPercent, 1f);
+        invalidate();
     }
 
     // Call this method to update the number of consecutively correct answers
     public void setConsecutiveCorrectAnswers(int consecutiveCorrectAnswers) {
-        for (int i = 0; i < rectangleColors.length; i++) {
-            if (consecutiveCorrectAnswers > i) {
-                startColorAnimation(barFillColor,rectangleColors,i);
-            }
-        }
-
-        if (consecutiveCorrectAnswers == 0) {
-            Arrays.fill(circleColors,Color.GRAY);
-            Arrays.fill(rectangleColors, Color.GRAY);
-            invalidate();
+        if (consecutiveCorrectAnswers > 8) {
             return;
         }
 
-        if (consecutiveCorrectAnswers >= 2) {
-            startColorAnimationDelayed(firstMultColor, circleColors, 0);
+        if (consecutiveCorrectAnswers == 0) {
+            for (int i = 0; i < rectangleColors.length; i++){
+                startFillAnimation(0f,i,3000);
+            }
+            for (int i = 0; i < circleColors.length; i++){
+                startColorAnimation(Color.TRANSPARENT, circleColors, i,3000);
+            }
+            return;
         }
-        if (consecutiveCorrectAnswers >= 4) {
-            startColorAnimationDelayed(secondtMultColor, circleColors, 1);
-        }
-        if (consecutiveCorrectAnswers >= 6) {
-            startColorAnimationDelayed(thirdMultColor, circleColors, 2);
-        }
-        if (consecutiveCorrectAnswers >= 8) {
+
+        rectangleColors[consecutiveCorrectAnswers-1] = Color.BLACK;
+        startColorAnimation(barFillColor,rectangleColors,consecutiveCorrectAnswers-1);
+        startFillAnimation(1f,consecutiveCorrectAnswers-1);
+
+
+        if (consecutiveCorrectAnswers == 8) {
             startColorAnimationDelayed(fourthMultColor, circleColors, 3);
+        } else if (consecutiveCorrectAnswers == 6) {
+            startColorAnimationDelayed(thirdMultColor, circleColors, 2);
+        } else if (consecutiveCorrectAnswers == 4) {
+            startColorAnimationDelayed(secondtMultColor, circleColors, 1);
+        } else if (consecutiveCorrectAnswers == 2) {
+            startColorAnimationDelayed(firstMultColor, circleColors, 0);
         }
 
     }
@@ -89,10 +100,15 @@ public class VerticalBarView extends View {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startColorAnimation(targetColor, targetArray, index);
+                for (int i = 0; i <= index; i++) {
+                    startColorAnimation(targetColor, targetArray, i);
+                    startColorAnimation(targetColor,rectangleColors,i*2);
+                    startColorAnimation(targetColor,rectangleColors,i*2+1);
+                }
             }
-        }, 500); // Delay in milliseconds
+        }, 1000); // Delay in milliseconds
     }
+
 
     private void startColorAnimation(final int targetColor, final int[] targetArray, final int index) {
         ValueAnimator colorAnimation = ValueAnimator.ofArgb(targetArray[index], targetColor);
@@ -105,8 +121,53 @@ public class VerticalBarView extends View {
         });
 
         // Set animation duration and start the animation
-        colorAnimation.setDuration(1000); // You can adjust the duration as needed
+        colorAnimation.setDuration(1500); // You can adjust the duration as needed
         colorAnimation.start();
+    }
+
+
+    private void startColorAnimation(final int targetColor, final int[] targetArray, final int index, final int duration) {
+        ValueAnimator colorAnimation = ValueAnimator.ofArgb(targetArray[index], targetColor);
+        colorAnimation.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animator) {
+                targetArray[index] = (int) animator.getAnimatedValue();
+                invalidate();
+            }
+        });
+
+        // Set animation duration and start the animation
+        colorAnimation.setDuration(duration); // You can adjust the duration as needed
+        colorAnimation.start();
+    }
+    private void startFillAnimation(final float targetPercent, final int index) {
+        ValueAnimator fillAnimation = ValueAnimator.ofFloat(rectangleFillPercent[index], targetPercent);
+        fillAnimation.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animator) {
+                rectangleFillPercent[index] = (float) animator.getAnimatedValue();
+                invalidate();
+            }
+        });
+
+        // Set animation duration and start the animation
+        fillAnimation.setDuration(1500); // Adjust duration as needed
+        fillAnimation.start();
+    }
+
+    private void startFillAnimation(final float targetPercent, final int index, final int duration) {
+        ValueAnimator fillAnimation = ValueAnimator.ofFloat(rectangleFillPercent[index], targetPercent);
+        fillAnimation.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animator) {
+                rectangleFillPercent[index] = (float) animator.getAnimatedValue();
+                invalidate();
+            }
+        });
+
+        // Set animation duration and start the animation
+        fillAnimation.setDuration(duration); // Adjust duration as needed
+        fillAnimation.start();
     }
 
     @Override
@@ -125,14 +186,16 @@ public class VerticalBarView extends View {
             int circleY = rectTop - spacing;
 
             // Draw the first rectangle
-            RectF rect1 = new RectF((width * 3) / 8, rectTop, (width * 5) / 8, rectBottom);
+            float fillHeight1 = sectionHeight * rectangleFillPercent[i * 2];
+            RectF rect1 = new RectF((width * 3) / 8, rectBottom - fillHeight1, (width * 5) / 8, rectBottom);
             paint.setColor(rectangleColors[i * 2]);
             canvas.drawRect(rect1, paint);
 
             // Draw the second rectangle above the first with a small gap
             int rect2Top = rectTop - sectionHeight - spacing;
             int rect2Bottom = rectBottom - sectionHeight - spacing;
-            RectF rect2 = new RectF((width * 3) / 8, rect2Top, (width * 5) / 8, rect2Bottom);
+            float fillHeight2 = sectionHeight * rectangleFillPercent[i * 2 + 1];
+            RectF rect2 = new RectF((width * 3) / 8, rect2Bottom - fillHeight2, (width * 5) / 8, rect2Bottom);
             paint.setColor(rectangleColors[i * 2 + 1]);
             canvas.drawRect(rect2, paint);
 
