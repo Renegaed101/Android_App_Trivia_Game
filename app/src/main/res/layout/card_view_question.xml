@@ -6,10 +6,11 @@
     app:cardCornerRadius="12dp"
     app:cardElevation="2dp"
     app:cardPreventCornerOverlap="false"
+    android:backgroundTint="@color/black"
     app:cardUseCompatPadding="false">
 
     <include
         layout="@layout/question"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent" />
 </androidx.cardview.widget.CardView>

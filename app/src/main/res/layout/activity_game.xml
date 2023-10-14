@@ -158,12 +158,12 @@
         android:id="@+id/question_card"
         layout="@layout/card_view_question"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/ll_main_first_row_buttons"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/music_toggle_game"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
@@ -181,22 +181,5 @@
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         tools:visibility="visible" />
-
-
-    <TextView
-        android:id="@+id/multiplierActivatedTextVeiw"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:elevation="3dp"
-        android:text="TextView"
-        android:textColor="@color/selectedButtonColor"
-        android:textSize="20sp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/ll_main_first_row_buttons"
-        app:layout_constraintEnd_toEndOf="@+id/scoreChangeTextView"
-        app:layout_constraintStart_toStartOf="@+id/scoreChangeTextView"
-        tools:visibility="visible" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

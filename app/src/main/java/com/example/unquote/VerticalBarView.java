@@ -100,17 +100,20 @@ public class VerticalBarView extends View {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
+                startColorAnimation(targetColor, targetArray, index, 500);
                 for (int i = 0; i <= index; i++) {
-                    startColorAnimation(targetColor, targetArray, i);
-                    startColorAnimation(targetColor,rectangleColors,i*2);
-                    startColorAnimation(targetColor,rectangleColors,i*2+1);
+                    if (i != index) {
+                        startColorAnimation(targetColor, targetArray, i,6000);
+                    }
+                    startColorAnimation(targetColor,rectangleColors,i*2,6000);
+                    startColorAnimation(targetColor,rectangleColors,i*2+1,6000);
                 }
             }
-        }, 1000); // Delay in milliseconds
+        }, 1150); // Delay in milliseconds
     }
 
 
-    private void startColorAnimation(final int targetColor, final int[] targetArray, final int index) {
+    private void startColorAnimation(final int targetColor, final int[] targetArray, final int index ) {
         ValueAnimator colorAnimation = ValueAnimator.ofArgb(targetArray[index], targetColor);
         colorAnimation.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override

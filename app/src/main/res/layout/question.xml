@@ -5,16 +5,61 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <VideoView
+        android:id="@+id/questionCardVideoView0"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleX="1.2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_main_question_image" />
 
     <VideoView
-        android:id="@+id/questionCardVideoView"
+        android:id="@+id/questionCardVideoView1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:scaleX="1.2"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_main_question_image" />
+
+    <VideoView
+        android:id="@+id/questionCardVideoView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleX="1.2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_main_question_image" />
+
+    <VideoView
+        android:id="@+id/questionCardVideoView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleX="1.2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_main_question_image" />
+
+    <VideoView
+        android:id="@+id/questionCardVideoView4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleX="1.2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_main_question_image" />
+
 
     <ImageView
         android:id="@+id/iv_main_question_image"
@@ -24,19 +69,44 @@
         android:backgroundTint="@android:color/transparent"
         android:cropToPadding="false"
         android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:src="@tools:sample/avatars" />
+
+    <View
+        android:id="@+id/imageBlackOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:alpha="0"
+        android:background="#000"
+        android:scaleX="1.2"
+        app:layout_constraintBottom_toTopOf="@+id/questionCardVideoView0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_main_question_image" />
+
+    <View
+        android:id="@+id/cardAnimationBlackOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#000"
+        android:scaleX="1.2"
+        app:layout_constraintBottom_toBottomOf="@+id/questionCardVideoView0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/questionCardVideoView0" />
 
     <TextView
         android:id="@+id/tv_main_question_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="40dp"
-        android:layout_marginBottom="32dp"
         android:fontFamily="@font/atma_light"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -45,7 +115,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_main_question_image"
-        app:layout_constraintVertical_bias="0.504"
+        app:layout_constraintVertical_bias="0.5"
         tools:text="How much wood would a wood chuck chuck if a wood chuck could chuck wood?" />
 
     <androidx.cardview.widget.CardView
@@ -88,7 +158,7 @@
         android:layout_width="24dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="32dp"
         android:layout_marginBottom="8dp"
         android:elevation="5dp"
         app:layout_constraintBottom_toTopOf="@+id/multiplierTextCardView"
@@ -100,10 +170,27 @@
         android:layout_width="24dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="32dp"
         android:layout_marginBottom="8dp"
         android:elevation="5dp"
         app:layout_constraintBottom_toTopOf="@+id/multiplierTextCardView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/multiplierActivatedTextVeiw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:text="TextView"
+        android:textColor="@color/selectedButtonColor"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/multiplierBar"
+        app:layout_constraintStart_toEndOf="@+id/multiplierBar"
+        app:layout_constraintTop_toTopOf="@+id/multiplierBar"
+        app:layout_constraintVertical_bias="0.75"
+        tools:visibility="visible" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

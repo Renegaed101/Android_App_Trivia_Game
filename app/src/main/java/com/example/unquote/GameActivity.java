@@ -1,10 +1,13 @@
 package com.example.unquote;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
 import android.content.Intent;
+import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
@@ -24,6 +27,8 @@ import android.os.Looper;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -34,13 +39,13 @@ public class GameActivity extends AppCompatActivity {
     static public int totalCorrect;
     static public int totalQuestions;
     ArrayList<Question> questions;
-    View questionImageView;
-    View questionTextView;
+    ImageView questionImageView;
+    TextView questionTextView;
     View questionRemainingTextView;
-    View answer0Button;
-    View answer1Button;
-    View answer2Button;
-    View answer3Button;
+    Button answer0Button;
+    Button answer1Button;
+    Button answer2Button;
+    Button answer3Button;
     Button submitButton;
     Animation pulseAnimation;
     Animation fadeAnimation;
@@ -53,12 +58,16 @@ public class GameActivity extends AppCompatActivity {
     TextView multiplierActivatedTextView;
     VerticalBarView multiplierBar;
     VerticalBarView multiplierBarSkeleton;
-
-
-
     private VideoView background;
+    private VideoView[] cardBorderAnimations = new VideoView[5];
+    private int[] cardBorderAnimationResources = {R.raw.question_card_background,
+    R.raw.question_card_background_multx1_5,R.raw.question_card_background_multx2,
+    R.raw.question_card_background_multx3,R.raw.question_card_background_multx4};
+    View imageBlackOverlay;
+    View cardAnimationBlackOverlay;
+    Handler handler;
+    Executor executor;
 
-    private VideoView cardBorderAnimation;
 
     @Override
     public void onBackPressed() {
@@ -71,6 +80,10 @@ public class GameActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_game);
 
+        // To improve performance via parallelization
+        handler = new Handler(Looper.getMainLooper());
+        executor = Executors.newSingleThreadExecutor();
+
         ImageButton playPauseButton = findViewById(R.id.music_toggle_game);
 
         if (MainActivity.musicPaused) {
@@ -80,9 +93,12 @@ public class GameActivity extends AppCompatActivity {
             MainActivity.mediaPlayer.setLooping(true);
         }
 
+        executor.execute(() -> {
+            preloadCardBorderAnimations();
+        });
 
-        cardBorderAnimation = findViewById(R.id.questionCardVideoView);
-        setQuestionCardAnimation(R.raw.question_card_background);
+        imageBlackOverlay = findViewById(R.id.imageBlackOverlay);
+        cardAnimationBlackOverlay = findViewById(R.id.cardAnimationBlackOverlay);
 
         pulseAnimation = AnimationUtils.loadAnimation(this, R.anim.pulse_animation);
         fadeAnimation = AnimationUtils.loadAnimation(this, R.anim.fade_animation);
@@ -168,20 +184,20 @@ public class GameActivity extends AppCompatActivity {
 
     void displayQuestion(Question question){
 
-        ((ImageView)questionImageView).setImageResource(selectQuestionImageResourceId(question));
-        ((TextView)questionTextView).setText(question.questionText);
-        ((Button)answer0Button).setText(question.answer0);
-        ((Button)answer1Button).setText(question.answer1);
-        ((Button)answer2Button).setText(question.answer2);
-        ((Button)answer3Button).setText(question.answer3);
+        questionImageView.setImageResource(selectQuestionImageResourceId(question));
+        questionTextView.setText(question.questionText);
+        answer0Button.setText(question.answer0);
+        answer1Button.setText(question.answer1);
+        answer2Button.setText(question.answer2);
+        answer3Button.setText(question.answer3);
         answer0Button.setBackgroundColor(getColor(R.color.notSelectedButtonColor));
         answer1Button.setBackgroundColor(getColor(R.color.notSelectedButtonColor));
         answer2Button.setBackgroundColor(getColor(R.color.notSelectedButtonColor));
         answer3Button.setBackgroundColor(getColor(R.color.notSelectedButtonColor));
-        ((Button)answer0Button).setTextColor(getColor(R.color.white));
-        ((Button)answer1Button).setTextColor(getColor(R.color.white));
-        ((Button)answer2Button).setTextColor(getColor(R.color.white));
-        ((Button)answer3Button).setTextColor(getColor(R.color.white));
+        answer0Button.setTextColor(getColor(R.color.white));
+        answer1Button.setTextColor(getColor(R.color.white));
+        answer2Button.setTextColor(getColor(R.color.white));
+        answer3Button.setTextColor(getColor(R.color.white));
         answer0Button.clearAnimation();
         answer1Button.clearAnimation();
         answer2Button.clearAnimation();
@@ -343,26 +359,21 @@ public class GameActivity extends AppCompatActivity {
 
         }
         multiplierBar.setConsecutiveCorrectAnswers(consecutiveCorrect);
+        questions.remove(currentQuestion);
 
-        Handler handler = new Handler(Looper.getMainLooper());
+        handler = new Handler(Looper.getMainLooper());
 
-        int delayMillis = 1000; //
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                updateMultiplier();
-                MainActivity.soundPool.play(MainActivity.soundNextQuestion, 1.5f, 1.5f, 1, 0, 1.0f);
-                moveToNextQuestion(currentQuestion);
+                updateMultiplier(); //Note this also handles moving onto next question
             }
-        }, delayMillis);
+        }, 1000);
 
 
     }
 
-    void moveToNextQuestion(Question currentQuestion) {
-
-
-        questions.remove(currentQuestion);
+    void moveToNextQuestion() {
 
         displayQuestionsRemaining(questions.size());
 
@@ -426,6 +437,7 @@ public class GameActivity extends AppCompatActivity {
         score = 0;
         totalQuestions = questions.size();
         scoreTextView.setText("Score: 0");
+        resumeCardBorderAnimations();
 
         Question firstQuestion = chooseNewQuestion();
 
@@ -503,57 +515,90 @@ public class GameActivity extends AppCompatActivity {
 
     }
 
+    void prepareMultiplierActivatedTextView(float verticalBias,int color) {
+        ConstraintLayout.LayoutParams layoutParams = (ConstraintLayout.LayoutParams) multiplierActivatedTextView.getLayoutParams();
+        layoutParams.verticalBias = verticalBias;
+        multiplierActivatedTextView.setLayoutParams(layoutParams);
+        multiplierActivatedTextView.setTextColor(color);
+    }
+
     void updateMultiplier() {
+            int color;
+            boolean wontMoveToNextQuestion = true;
             switch (consecutiveCorrect) {
                 case 0:
+                    color = getColor(R.color.white);
                     if (currentIncrement != 100) {
                         setMusic(MainActivity.musicResources[5]);
-                        executeRisingFadeAnimation(multiplierActivatedTextView,"Multiplier Lost" );
+                        prepareMultiplierActivatedTextView(0.5f, color);
+                        executeMoveRightFadeAnimation(multiplierActivatedTextView,"Deactivated Multiplier" );
+                        transitionCardBorderAnimations();
+                        wontMoveToNextQuestion = false;
                     }
                     currentIncrement = 100;
-                    multiplierTextView.setTextColor(getColor(R.color.white));
+                    multiplierTextView.setTextColor(color);
                     multiplierTextView.setText("Multiplier Inactive");
                     multiplierTextView.clearAnimation();
-                    setQuestionCardAnimation(R.raw.question_card_background);
+                    if (wontMoveToNextQuestion) {
+                        MainActivity.soundPool.play(MainActivity.soundNextQuestion, 1.5f, 1.5f, 1, 0, 1.0f);
+                        moveToNextQuestion();
+                    }
                     break;
                 case 2:
+                    transitionCardBorderAnimations();
                     currentIncrement = 150;
-                    executeRisingFadeAnimation(multiplierActivatedTextView,"x1.5 Multiplier Activated" );
+                    color = getColor(R.color.lightBlue);
+                    prepareMultiplierActivatedTextView(0.79f, color);
+                    executeMoveRightFadeAnimation(multiplierActivatedTextView,"x1.5 Multiplier Activated" );
                     multiplierTextView.setText("x1.5 Multiplier");
                     multiplierTextView.startAnimation(fadeAnimation);
-                    multiplierTextView.setTextColor(getColor(R.color.lightBlue));
-                    setQuestionCardAnimation(R.raw.question_card_background_multx1_5);
+                    multiplierTextView.setTextColor(color);
                     setMusic(MainActivity.musicResources[1]);
                     break;
 
                 case 4:
+                    transitionCardBorderAnimations();
                     currentIncrement = 200;
-                    executeRisingFadeAnimation(multiplierActivatedTextView,"x2 Multiplier Activated" );
+                    color = getColor(R.color.purple);
+                    prepareMultiplierActivatedTextView(0.53f, color);
+                    executeMoveRightFadeAnimation(multiplierActivatedTextView,"x2 Multiplier Activated" );
                     multiplierTextView.setText("x2 Multiplier");
-                    multiplierTextView.setTextColor(getColor(R.color.purple));
-                    setQuestionCardAnimation(R.raw.question_card_background_multx2);
+                    multiplierTextView.setTextColor(color);
                     setMusic(MainActivity.musicResources[2]);
                     break;
 
                 case 6:
+                    transitionCardBorderAnimations();
                     currentIncrement = 300;
-                    executeRisingFadeAnimation(multiplierActivatedTextView,"x3 Multiplier Activated" );
+                    color = getColor(R.color.orange);
+                    prepareMultiplierActivatedTextView(0.26f, color);
+                    executeMoveRightFadeAnimation(multiplierActivatedTextView,"x3 Multiplier Activated" );
                     multiplierTextView.setText("x3 Multiplier");
-                    multiplierTextView.setTextColor(getColor(R.color.orange));
-                    setQuestionCardAnimation(R.raw.question_card_background_multx3);
+                    multiplierTextView.setTextColor(color);
                     setMusic(MainActivity.musicResources[3]);
                     break;
 
                 case 8:
+                    transitionCardBorderAnimations();
                     currentIncrement = 400;
-                    executeRisingFadeAnimation(multiplierActivatedTextView,"x4 Multiplier Activated" );
+                    color = getColor(R.color.wrongButtonColor);
+                    prepareMultiplierActivatedTextView(0f, color);
+                    executeMoveRightFadeAnimation(multiplierActivatedTextView,"x4 Multiplier Activated" );
                     multiplierTextView.setText("x4 Multiplier");
-                    multiplierTextView.setTextColor(getColor(R.color.wrongButtonColor));
-                    setQuestionCardAnimation(R.raw.question_card_background_multx4);
+                    multiplierTextView.setTextColor(color);
                     setMusic(MainActivity.musicResources[4]);
                     break;
+
+                default:
+                    MainActivity.soundPool.play(MainActivity.soundNextQuestion, 1.5f, 1.5f, 1, 0, 1.0f);
+                    moveToNextQuestion();
             }
-        }
+
+    }
+
+
+
+
 
     void executeRisingFadeAnimation(TextView textView, String text) {
 
@@ -604,22 +649,136 @@ public class GameActivity extends AppCompatActivity {
         textView.startAnimation(animationSet);
     }
 
-    void setQuestionCardAnimation(int resourceId) {
-        Uri videoUri = Uri.parse("android.resource://" + getPackageName() + "/" + resourceId);
-        cardBorderAnimation.setVideoURI(videoUri);
-        cardBorderAnimation.start();
-        cardBorderAnimation.setOnPreparedListener(mp -> mp.setLooping(true));
+
+    void executeMoveRightFadeAnimation(TextView textView, String text) {
+
+        AnimationSet animationSet = new AnimationSet(true);
+
+        // Fade-in animation
+        AlphaAnimation fadeIn = new AlphaAnimation(0.0f, 1.0f);
+        fadeIn.setDuration(500);
+
+        // Translate animation (move to the right)
+        TranslateAnimation moveRight = new TranslateAnimation(
+                Animation.RELATIVE_TO_SELF, -0.01f, Animation.RELATIVE_TO_SELF, 0.03f,  // X-axis (start and end position)
+                Animation.RELATIVE_TO_SELF, 0.0f, Animation.RELATIVE_TO_SELF, 0.0f   // Y-axis (start and end position)
+        );
+        moveRight.setDuration(1400);
+
+        // Fade-out animation
+        AlphaAnimation fadeOut = new AlphaAnimation(1.0f, 0.0f);
+        fadeOut.setDuration(500); // 1 second for fade-out
+        fadeOut.setStartOffset(900); // Start after fade-in and move-right animations
+
+        // Add animations to the set
+        animationSet.addAnimation(fadeIn);
+        animationSet.addAnimation(moveRight);
+        animationSet.addAnimation(fadeOut);
+
+        animationSet.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+                // Animation started (e.g., start playing sound, update score)
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                // Animation ended (e.g., stop playing sound)
+                textView.setVisibility(View.INVISIBLE); // Hide the TextView
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+                // Animation repeated (if needed)
+            }
+        });
+
+        textView.setText(text);
+        textView.setVisibility(View.VISIBLE);
+        textView.startAnimation(animationSet);
     }
 
-    void setMusic(int musicResource) {
-        MainActivity.mediaPlayer.stop();
-        MainActivity.mediaPlayer.release();
-        MainActivity.mediaPlayer = null;
-        MainActivity.mediaPlayer = MediaPlayer.create(this,musicResource);
-        MainActivity.mediaPlayer.setVolume(0.2f,0.2f);
+
+    private void setMusic(int musicResource) {
+        if (MainActivity.mediaPlayer != null) {
+            fadeOutMediaPlayer(new OnFadeComplete() {
+                @Override
+                public void onFadeComplete() {
+                    MainActivity.mediaPlayer.reset(); // Reset the current media player
+                    try {
+                        AssetFileDescriptor afd = getResources().openRawResourceFd(musicResource);
+                        if (afd != null) {
+                            MainActivity.mediaPlayer.setDataSource(afd.getFileDescriptor(), afd.getStartOffset(), afd.getLength());
+                            afd.close();
+                            MainActivity.mediaPlayer.prepareAsync();
+                            MainActivity.mediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+                                @Override
+                                public void onPrepared(MediaPlayer mp) {
+                                    fadeInMediaPlayer();
+                                }
+                            });
+                        }
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            });
+        } else {
+            MainActivity.mediaPlayer = MediaPlayer.create(this, musicResource);
+            MainActivity.mediaPlayer.setVolume(0.2f, 0.2f);
+            MainActivity.mediaPlayer.start();
+            MainActivity.mediaPlayer.setLooping(true);
+        }
+
+
+    }
+
+    private void fadeOutMediaPlayer(OnFadeComplete listener) {
+        ValueAnimator fadeOut = ValueAnimator.ofFloat(0.2f, 0.0f);
+        fadeOut.setDuration(1500);
+        fadeOut.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                MainActivity.mediaPlayer.setVolume((float) animation.getAnimatedValue(), (float) animation.getAnimatedValue());
+            }
+        });
+        fadeOut.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                MainActivity.mediaPlayer.stop();
+                if (listener != null) {
+                    handler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            listener.onFadeComplete();
+                        }
+                    },150);
+
+                }
+            }
+        });
+        fadeOut.start();
+    }
+
+    private void fadeInMediaPlayer() {
         MainActivity.mediaPlayer.start();
+        ValueAnimator fadeIn = ValueAnimator.ofFloat(0.0f, 0.2f);
+        fadeIn.setDuration(1000);
+        fadeIn.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                MainActivity.mediaPlayer.setVolume((float) animation.getAnimatedValue(), (float) animation.getAnimatedValue());
+            }
+        });
+        fadeIn.start();
         MainActivity.mediaPlayer.setLooping(true);
     }
+
+    interface OnFadeComplete {
+        void onFadeComplete();
+    }
+
+
 
     int selectQuestionImageResourceId(Question question) {
         String resourceName = "";
@@ -653,11 +812,129 @@ public class GameActivity extends AppCompatActivity {
     }
 
 
+    void preloadCardBorderAnimations() {
+
+        cardBorderAnimations[0] = findViewById(R.id.questionCardVideoView0);
+        cardBorderAnimations[1] = findViewById(R.id.questionCardVideoView1);
+        cardBorderAnimations[2] = findViewById(R.id.questionCardVideoView2);
+        cardBorderAnimations[3] = findViewById(R.id.questionCardVideoView3);
+        cardBorderAnimations[4] = findViewById(R.id.questionCardVideoView4);
+
+        for (int i = 0; i < cardBorderAnimations.length; i++) {
+            Uri videoUri = Uri.parse("android.resource://" + getPackageName() +
+                    "/" + cardBorderAnimationResources[i]);
+            cardBorderAnimations[i].setOnPreparedListener(mp -> {
+                mp.setLooping(true);
+            });
+            cardBorderAnimations[i].setVideoURI(videoUri);
+        }
+    }
+
+    void transitionImageAnimations() {
+        fadeOut(imageBlackOverlay,1000,new Runnable() {
+            @Override
+            public void run() {
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        moveToNextQuestion();
+                        fadeIn(imageBlackOverlay,1000);
+                    }
+                },100);
+            }
+        });
+    }
+
+    void transitionCardBorderAnimations() {
+
+        transitionImageAnimations();
+
+        //As fadeOut completes, this value will have changed to the new increment
+        int oldIncrement = currentIncrement;
+        fadeOut(cardAnimationBlackOverlay,1000,new Runnable() {
+
+            @Override
+            public void run() {
+                pauseCardBorderAnimations(oldIncrement);
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        resumeCardBorderAnimations();
+                    }
+                },700);
+            }
+        });
+    }
+
+    void fadeOut(View blackOverlay, int duration,Runnable onEndAction) {
+        blackOverlay.setLayerType(View.LAYER_TYPE_HARDWARE, null);
+        blackOverlay.animate().alpha(1f).setDuration(duration).withEndAction(onEndAction).start();
+        blackOverlay.setLayerType(View.LAYER_TYPE_NONE,null);
+    }
+
+    void fadeIn(View blackOverlay, int duration) {
+        blackOverlay.setLayerType(View.LAYER_TYPE_HARDWARE, null);
+        blackOverlay.animate().alpha(0f).setDuration(duration).start();
+        blackOverlay.setLayerType(View.LAYER_TYPE_NONE,null);
+    }
+
+    void pauseCardBorderAnimations(int increment) {
+        switch (increment) {
+            case 100:
+                cardBorderAnimations[0].pause();
+                cardBorderAnimations[0].setVisibility(View.INVISIBLE);
+                break;
+            case 150:
+                cardBorderAnimations[1].pause();
+                cardBorderAnimations[1].setVisibility(View.INVISIBLE);
+                break;
+            case 200:
+                cardBorderAnimations[2].pause();
+                cardBorderAnimations[2].setVisibility(View.INVISIBLE);
+                break;
+            case 300:
+                cardBorderAnimations[3].pause();
+                cardBorderAnimations[3].setVisibility(View.INVISIBLE);
+                break;
+            case 400:
+                cardBorderAnimations[4].pause();
+                cardBorderAnimations[4].setVisibility(View.INVISIBLE);
+                break;
+        }
+    }
+
+    void resumeCardBorderAnimations() {
+        switch (currentIncrement) {
+            case 100:
+                cardBorderAnimations[0].start();
+                cardBorderAnimations[0].setVisibility(View.VISIBLE);
+                break;
+            case 150:
+                cardBorderAnimations[1].start();
+                cardBorderAnimations[1].setVisibility(View.VISIBLE);
+                break;
+            case 200:
+                cardBorderAnimations[2].start();
+                cardBorderAnimations[2].setVisibility(View.VISIBLE);
+                break;
+            case 300:
+                cardBorderAnimations[3].start();
+                cardBorderAnimations[3].setVisibility(View.VISIBLE);
+                break;
+            case 400:
+                cardBorderAnimations[4].start();
+                cardBorderAnimations[4].setVisibility(View.VISIBLE);
+                break;
+        }
+        fadeIn(cardAnimationBlackOverlay, 1000);
+    }
+
+
     @Override
     public void onPause() {
         super.onPause();
         background.pause();
-        cardBorderAnimation.pause();
+        pauseCardBorderAnimations(currentIncrement);
         MainActivity.mediaPlayer.pause();
 
     }
@@ -666,7 +943,7 @@ public class GameActivity extends AppCompatActivity {
     public void onResume() {
         super.onResume();
         background.start();
-        cardBorderAnimation.start();
+        resumeCardBorderAnimations();
         if (!MainActivity.musicPaused) {
             MainActivity.mediaPlayer.start();
             MainActivity.mediaPlayer.setLooping(true);
