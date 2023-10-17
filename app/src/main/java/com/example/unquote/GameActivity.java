@@ -184,7 +184,7 @@ public class GameActivity extends AppCompatActivity {
 
     void displayQuestion(Question question){
 
-        questionImageView.setImageResource(selectQuestionImageResourceId(question));
+        setQuestionImageView(question);
         questionTextView.setText(question.questionText);
         answer0Button.setText(question.answer0);
         answer1Button.setText(question.answer1);
@@ -700,6 +700,7 @@ public class GameActivity extends AppCompatActivity {
 
 
     private void setMusic(int musicResource) {
+
         if (MainActivity.mediaPlayer != null) {
             fadeOutMediaPlayer(new OnFadeComplete() {
                 @Override
@@ -758,6 +759,7 @@ public class GameActivity extends AppCompatActivity {
             }
         });
         fadeOut.start();
+
     }
 
     private void fadeInMediaPlayer() {
@@ -778,9 +780,29 @@ public class GameActivity extends AppCompatActivity {
         void onFadeComplete();
     }
 
+    void setQuestionImageView(Question question) {
+        executor.execute(new Runnable() {
+            @Override
+            public void run() {
+                final int imageResourceId = selectQuestionImageResourceId(question);
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        questionImageView.setImageResource(imageResourceId);
+                    }
+                });
+            }
+        });
+    }
 
 
     int selectQuestionImageResourceId(Question question) {
+        executor.execute(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+        });
         String resourceName = "";
         for (Category category: GameOptionsActivity.selectedCategories) {
             if (question.categoryId.contains(category.categoryId)) {
@@ -840,7 +862,7 @@ public class GameActivity extends AppCompatActivity {
                         moveToNextQuestion();
                         fadeIn(imageBlackOverlay,1000);
                     }
-                },100);
+                },700);
             }
         });
     }
@@ -926,7 +948,7 @@ public class GameActivity extends AppCompatActivity {
                 cardBorderAnimations[4].setVisibility(View.VISIBLE);
                 break;
         }
-        fadeIn(cardAnimationBlackOverlay, 1000);
+        fadeIn(cardAnimationBlackOverlay, 1500);
     }
 
 

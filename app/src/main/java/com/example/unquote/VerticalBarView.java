@@ -173,6 +173,27 @@ public class VerticalBarView extends View {
         fillAnimation.start();
     }
 
+    private void flashAnimation(int targetColor, int[] targetArray, int index, int timeBetweenFlashes, int numberOfFlashes) {
+        ValueAnimator flashAnimator = ValueAnimator.ofArgb(targetColor, Color.TRANSPARENT, targetColor);
+        flashAnimator.setDuration(timeBetweenFlashes);
+        flashAnimator.setRepeatCount(numberOfFlashes - 1); // minus 1 because it already animates once by default
+        flashAnimator.setRepeatMode(ValueAnimator.REVERSE);
+
+        flashAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                // Here you might need to modify how you update the color of your orb with the new value
+                // This is just an example of how you might do it:
+                int flashColor = (int) animation.getAnimatedValue();
+                targetArray[index] = flashColor;
+                invalidate();
+            }
+        });
+
+
+        flashAnimator.start();
+    }
+
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
