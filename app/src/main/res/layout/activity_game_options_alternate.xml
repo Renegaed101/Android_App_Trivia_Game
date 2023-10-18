@@ -2,9 +2,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/specificCategoriesConstraintLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/gameOptionsConstraintLayout">
+    android:layout_height="match_parent">
 
     <VideoView
         android:id="@+id/gameOptionsVideoView"
@@ -37,7 +37,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:scrollbars="vertical"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/gameOptionsVideoView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,17 +47,18 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="Set-Up Phase"
         android:textColor="@color/white"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/music_toggle_game_options" />
+        app:layout_constraintStart_toEndOf="@+id/music_toggle_game_options"
+        app:layout_constraintTop_toTopOf="@+id/gameOptionsVideoView" />
 
     <Button
         android:id="@+id/questionsButton20"
         android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_height="60dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:alpha="0.8"
@@ -73,7 +74,7 @@
     <Button
         android:id="@+id/questionsButton40"
         android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_height="60dp"
         android:layout_marginTop="8dp"
         android:alpha="0.8"
         android:backgroundTint="@color/white"
@@ -89,7 +90,7 @@
     <Button
         android:id="@+id/questionsButton60"
         android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_height="60dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:alpha="0.8"
@@ -106,7 +107,7 @@
         android:id="@+id/startGameButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/white"
         android:text="Start"
@@ -120,12 +121,12 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/aclonica"
         android:text="Select Number of Questions"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -137,7 +138,7 @@
         android:text="Select your Categories"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
@@ -148,7 +149,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -177,44 +178,45 @@
 
     <Button
         android:id="@+id/allCatButton"
-        android:layout_width="280dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/atma_light"
         android:text="All Categories"
-        android:textSize="34sp"
+        android:textSize="19sp"
         android:textStyle="bold"
         app:cornerRadius="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/questionsButton40"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/questionsButton40" />
 
     <Button
         android:id="@+id/specCatButton"
-        android:layout_width="280dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/atma_light"
         android:text="Specific Categories"
-        android:textSize="34sp"
+        android:textSize="19sp"
         android:textStyle="bold"
         app:cornerRadius="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/allCatButton"
+        app:layout_constraintEnd_toEndOf="@+id/gameOptionsVideoView"
         app:layout_constraintHorizontal_bias="0.75"
-        app:layout_constraintStart_toStartOf="@+id/allCatButton"
-        app:layout_constraintTop_toBottomOf="@+id/allCatButton" />
+        app:layout_constraintStart_toStartOf="@+id/questionsButton40"
+        app:layout_constraintTop_toBottomOf="@+id/questionsButton40" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/aclonica"
-        android:text="Question Categories"
+        android:text="Categories"
         android:textColor="@color/white"
-        android:textSize="34sp"
+        android:textSize="24sp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/questionsButton40" />
 

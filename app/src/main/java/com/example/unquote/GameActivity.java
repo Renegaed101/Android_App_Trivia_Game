@@ -457,7 +457,7 @@ public class GameActivity extends AppCompatActivity {
     public List<Pair<Integer,Integer>>selectQuestions(){
         List<Pair<Integer, Integer>> result = new ArrayList<>();
         int numQuestions = GameOptionsActivity.numberQuestions;
-        int numCategories = GameOptionsActivity.numCategories;
+        int numCategories = GameOptionsActivity.selectedCategories.size();
         int questionsPerCategory = numQuestions/numCategories;
         int remainingQuestions = numQuestions%numCategories;
 
