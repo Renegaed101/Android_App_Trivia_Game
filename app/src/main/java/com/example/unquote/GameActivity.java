@@ -12,14 +12,20 @@ import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Pair;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.AnimationSet;
 import android.view.animation.TranslateAnimation;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.VideoView;
 import android.os.Handler;
 import android.os.Looper;
@@ -41,6 +47,7 @@ public class GameActivity extends AppCompatActivity {
     ArrayList<Question> questions;
     ImageView questionImageView;
     TextView questionTextView;
+    TextView restartGameTextView;
     View questionRemainingTextView;
     Button answer0Button;
     Button answer1Button;
@@ -51,6 +58,7 @@ public class GameActivity extends AppCompatActivity {
     Animation fadeAnimation;
     TextView scoreTextView;
     static public int score = 0;
+    private static boolean currentQuestionAnswered;
     private int consecutiveCorrect;
     private int currentIncrement;
     TextView scoreChangeTextView;
@@ -65,6 +73,7 @@ public class GameActivity extends AppCompatActivity {
     R.raw.question_card_background_multx3,R.raw.question_card_background_multx4};
     View imageBlackOverlay;
     View cardAnimationBlackOverlay;
+    View fullscreenBlackOverlay;
     Handler handler;
     Executor executor;
 
@@ -88,9 +97,6 @@ public class GameActivity extends AppCompatActivity {
 
         if (MainActivity.musicPaused) {
             playPauseButton.setImageResource(R.drawable.volume_off_24px);
-        } else {
-            MainActivity.mediaPlayer.start();
-            MainActivity.mediaPlayer.setLooping(true);
         }
 
         executor.execute(() -> {
@@ -118,6 +124,8 @@ public class GameActivity extends AppCompatActivity {
         answer2Button = findViewById(R.id.btn_main_answer_2);
         answer3Button = findViewById(R.id.btn_main_answer_3);
         submitButton = findViewById(R.id.btn_main_submit_answer);
+        fullscreenBlackOverlay = findViewById(R.id.fullscreenBlackOverlay);
+        restartGameTextView = findViewById(R.id.restartGameTextView);
 
         multiplierBarSkeleton.setAsSkeleton();
 
@@ -129,16 +137,48 @@ public class GameActivity extends AppCompatActivity {
         background.start();
         background.setOnPreparedListener(mp -> mp.setLooping(true));
 
+        final ImageButton dropdownButton = findViewById(R.id.dropdownButton);
+
+        dropdownButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PopupMenu popup = new PopupMenu(GameActivity.this, dropdownButton);
+
+                // Inflate your menu XML
+                popup.getMenuInflater().inflate(R.menu.dropdown_menu, popup.getMenu());
+
+                // Add click listener for menu items
+                popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    public boolean onMenuItemClick(MenuItem item) {
+                        if (item.getItemId() == R.id.Main_Menu) {
+                            GameOptionsActivity.resetState();
+                            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                            startActivity(intent);
+                            return true;
+                        } else if (item.getItemId() == R.id.Restart_Game) {
+                            restartGame();
+                            return true;
+                        }
+                        return false;
+                    }
+
+                });
+
+                popup.show();
+            }
+        });
+
         playPauseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (MainActivity.mediaPlayer.isPlaying()) {
+                if (!MainActivity.musicPaused) {
                     playPauseButton.setImageResource(R.drawable.volume_off_24px);
                     MainActivity.mediaPlayer.pause();
                     MainActivity.musicPaused = true;
                 } else {
                     playPauseButton.setImageResource(R.drawable.volume_up_24px);
                     MainActivity.mediaPlayer.start();
+                    MainActivity.mediaPlayer.setVolume(0.2f,0.2f);
                     MainActivity.mediaPlayer.setLooping(true);
                     MainActivity.musicPaused = false;
                 }
@@ -210,6 +250,7 @@ public class GameActivity extends AppCompatActivity {
         submitButton.setTextColor(getColor(R.color.white));
         submitButton.setBackgroundColor(getColor(R.color.black));
         submitButton.setVisibility(View.VISIBLE);
+        currentQuestionAnswered = false;
 
     }
 
@@ -218,7 +259,7 @@ public class GameActivity extends AppCompatActivity {
     }
 
     void onAnswerSelected(int answerSelected) {
-        if (getCurrentQuestion().answered){return;}
+        if (currentQuestionAnswered){return;}
         Question currentQuestion = getCurrentQuestion();
         submitButton.setAlpha(1.0f);
         submitButton.setBackgroundColor(getColor(R.color.white));
@@ -272,7 +313,7 @@ public class GameActivity extends AppCompatActivity {
         }
         submitButton.clearAnimation();
         submitButton.setVisibility(View.INVISIBLE);
-        currentQuestion.answered = true;
+        currentQuestionAnswered = true;
         answer0Button.setAlpha(0.3f);
         answer1Button.setAlpha(0.3f);
         answer2Button.setAlpha(0.3f);
@@ -433,6 +474,10 @@ public class GameActivity extends AppCompatActivity {
 
         totalCorrect = 0;
         consecutiveCorrect = 0;
+        multiplierBar.setConsecutiveCorrectAnswers(consecutiveCorrect);
+        multiplierTextView.setTextColor(getColor(R.color.white));
+        multiplierTextView.setText("Multiplier Inactive");
+        multiplierTextView.clearAnimation();
         currentIncrement = 100;
         score = 0;
         totalQuestions = questions.size();
@@ -457,7 +502,7 @@ public class GameActivity extends AppCompatActivity {
     public List<Pair<Integer,Integer>>selectQuestions(){
         List<Pair<Integer, Integer>> result = new ArrayList<>();
         int numQuestions = GameOptionsActivity.numberQuestions;
-        int numCategories = GameOptionsActivity.numCategories;
+        int numCategories = GameOptionsActivity.selectedCategories.size();
         int questionsPerCategory = numQuestions/numCategories;
         int remainingQuestions = numQuestions%numCategories;
 
@@ -595,9 +640,6 @@ public class GameActivity extends AppCompatActivity {
             }
 
     }
-
-
-
 
 
     void executeRisingFadeAnimation(TextView textView, String text) {
@@ -763,17 +805,20 @@ public class GameActivity extends AppCompatActivity {
     }
 
     private void fadeInMediaPlayer() {
-        MainActivity.mediaPlayer.start();
-        ValueAnimator fadeIn = ValueAnimator.ofFloat(0.0f, 0.2f);
-        fadeIn.setDuration(1000);
-        fadeIn.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-            @Override
-            public void onAnimationUpdate(ValueAnimator animation) {
-                MainActivity.mediaPlayer.setVolume((float) animation.getAnimatedValue(), (float) animation.getAnimatedValue());
-            }
-        });
-        fadeIn.start();
-        MainActivity.mediaPlayer.setLooping(true);
+        if (!MainActivity.musicPaused) {
+            MainActivity.mediaPlayer.start();
+            ValueAnimator fadeIn = ValueAnimator.ofFloat(0.0f, 0.2f);
+            fadeIn.setDuration(1000);
+            fadeIn.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+                @Override
+                public void onAnimationUpdate(ValueAnimator animation) {
+                    MainActivity.mediaPlayer.setVolume((float) animation.getAnimatedValue(), (float) animation.getAnimatedValue());
+                }
+            });
+            fadeIn.start();
+
+            MainActivity.mediaPlayer.setLooping(true);
+        }
     }
 
     interface OnFadeComplete {
@@ -863,6 +908,22 @@ public class GameActivity extends AppCompatActivity {
                         fadeIn(imageBlackOverlay,1000);
                     }
                 },700);
+            }
+        });
+    }
+
+    void restartGame() {
+        fadeOut(fullscreenBlackOverlay,1000,new Runnable() {
+            @Override
+            public void run() {
+                executeRisingFadeAnimation(restartGameTextView,"Restarting game with same settings");
+                startNewGame();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        fadeIn(fullscreenBlackOverlay,1000);
+                    }
+                },2000);
             }
         });
     }

@@ -97,3 +97,86 @@ animal96|What is the world's smallest species of monkey?|Chimpanzee|Gibbon|Tamar
 animal97|Which insect is known for its ability to create intricate nests out of paper-like material?|Ant|Bee|Wasp|Hornet|2
 animal98|What is the largest species of hornet, often called the "killer hornet"?|Honeybee|Carpenter bee|Yellowjacket|Asian giant hornet|3
 animal99|Which big cat is known for its ability to swim and is often found near water?|Leopard|Lion|Tiger|Jaguar|3
+animal101|What is the only bird known to fly backwards?|Hummingbird|Sparrow|Eagle|Penguin|0
+animal102|Which mammal is known for its ability to laugh?|Human|Hyena|Chimpanzee|Dolphin|1
+animal103|What is the world's largest rodent?|Beaver|Capibara|Rat|Squirrel|1
+animal104|Which fish is known for its ability to puff up when threatened?|Goldfish|Blowfish|Shark|Salmon|1
+animal105|What is the only continent on which you will not find bees?|Africa|Antarctica|Asia|Europe|1
+animal106|Which bird is known for having the largest wingspan?|Eagle|Albatross|Sparrow|Penguin|1
+animal107|What is the only type of cat that lives in groups?|Lion|Tiger|Cheetah|Leopard|0
+animal108|Which animal is known for having three hearts?|Octopus|Human|Whale|Shark|1
+animal109|What is the only mammal capable of sustained flight?|Bat|Bird|Butterfly|Bee|0
+animal110|Which animal is known to have the highest blood pressure?|Giraffe|Elephant|Whale|Shark|0
+animal111|Which bird can fly the longest distance without stopping?|Sparrow|Albatross|Eagle|Hummingbird|1
+animal112|What is the largest type of big cat in the world?|Tiger|Lion|Leopard|Cheetah|0
+animal113|Which animal is known as the "man of the forest"?|Gorilla|Orangutan|Chimpanzee|Human|1
+animal114|What is the only type of bear found in South America?|Polar Bear|Brown Bear|Spectacled Bear|Grizzly Bear|2
+animal115|What is the largest reptile in the world?|Crocodile|Alligator|Komodo Dragon|Lizard|0
+animal116|Which bird is known for building the largest nests?|Eagle|Stork|Sparrow|Swan|1
+animal117|What is the most venomous snake in the world?|Rattlesnake|Cobra|Black Mamba|Viper|2
+animal118|Which fish is known for swimming upstream to breed?|Goldfish|Salmon|Shark|Tuna|1
+animal119|Which animal is known for having the thickest fur of any mammal?|Bear|Otter|Rabbit|Fox|1
+animal120|Which animal is known as the "unicorn of the sea"?|Dolphin|Narwhal|Whale|Shark|1
+animal121|What is the largest type of deer in the world?|Moose|Elk|White-tailed deer|Reindeer|0
+animal122|Which animal is known for its impressive memory?|Elephant|Dog|Cat|Dolphin|0
+animal123|What is the world's smallest bird?|Hummingbird|Sparrow|Robin|Pigeon|0
+animal124|Which animal has the longest ears?|Rabbit|Elephant|Horse|Dog|1
+animal125|Which bird is known for its ability to mimic chainsaws and camera shutters?|Lyrebird|Parrot|Crow|Raven|0
+animal126|Which animal is known for having a sting that can be fatal to humans?|Jellyfish|Scorpion|Bee|Spider|0
+animal127|What is the only mammal born with horns?|Giraffe|Rhinoceros|Deer|Buffalo|2
+animal128|Which bird is known for its bright pink color?|Flamingo|Parrot|Pigeon|Sparrow|0
+animal129|What is the largest type of monkey?|Mandrill|Baboon|Gorilla|Chimpanzee|0
+animal130|Which animal has the most teeth?|Shark|Snail|Crocodile|Whale|1
+animal131|What is the only mammal that can't jump?|Elephant|Giraffe|Whale|Hippopotamus|0
+animal132|Which fish is known for its ability to regenerate its heart?|Goldfish|Zebrafish|Shark|Salmon|1
+animal133|Which animal has the largest brain?|Elephant|Whale|Human|Dolphin|1
+animal134|What is the only bird that can fly upside-down?|Hummingbird|Sparrow|Eagle|Penguin|0
+animal135|Which animal is known for its ability to change colors?|Chameleon|Octopus|Jellyfish|Squid|0
+animal136|What is the largest type of eagle in the world?|Harpy Eagle|Golden Eagle|Bald Eagle|Steller's Sea Eagle|3
+animal137|Which bird is known for its red throat?|Robin|Cardinal|Flamingo|Penguin|0
+animal138|What is the fastest species of bird?|Eagle|Sparrow|Peregrine Falcon|Hummingbird|2
+animal139|Which animal has the longest lifespan?|Elephant|Tortoise|Whale|Human|1
+animal140|What is the world's largest land predator?|Lion|Tiger|Polar Bear|Grizzly Bear|2
+animal141|Which animal is known for its ability to sleep for months at a time?|Bear|Snail|Cat|Dog|0
+animal142|What is the only bird known to fly continuously for months?|Albatross|Eagle|Sparrow|Penguin|0
+animal143|Which animal has the largest eyes in relation to its body size?|Chameleon|Owl|Squid|Octopus|0
+animal144|What is the fastest species of fish?|Shark|Dolphin|Sailfish|Tuna|2
+animal145|Which animal is known for having the best sense of smell?|Dog|Bear|Elephant|Rat|0
+animal146|What is the largest species of bat in the world?|Fruit Bat|Vampire Bat|Flying Fox|Bumblebee Bat|2
+animal147|Which bird is known for its elaborate courtship dances?|Peacock|Flamingo|Penguin|Swan|2
+animal148|What is the largest type of turtle?|Sea Turtle|Snapping Turtle|Leatherback Turtle|Box Turtle|2
+animal149|Which animal is known for its ability to regenerate its limbs?|Starfish|Octopus|Crab|Jellyfish|0
+animal150|What is the only type of bear that is considered marine?|Polar Bear|Brown Bear|Black Bear|Grizzly Bear|0
+animal151|Which animal is known for having the longest migration?|Whale|Butterfly|Bird|Shark|1
+animal152|What is the world's largest species of shark?|Great White Shark|Whale Shark|Tiger Shark|Hammerhead Shark|1
+animal153|Which animal is known for its ability to survive without water for long periods of time?|Camel|Elephant|Giraffe|Lion|0
+animal154|What is the only type of cat that can roar?|Lion|Tiger|Cheetah|Leopard|0
+animal155|Which animal is known for having a blue tongue?|Giraffe|Komodo Dragon|Chameleon|Skink|3
+animal156|What is the largest species of penguin?|Emperor Penguin|King Penguin|Adelie Penguin|Gentoo Penguin|0
+animal157|Which animal is known for its ability to play dead?|Opossum|Raccoon|Cat|Dog|0
+animal158|What is the only bird known to hover in mid-air for extended periods?|Hummingbird|Sparrow|Eagle|Penguin|0
+animal159|Which animal is known for its ability to breathe through its skin?|Frog|Fish|Snake|Bird|0
+animal160|What is the fastest species of mammal?|Cheetah|Lion|Tiger|Leopard|0
+animal161|Which bird is known for its blue and orange plumage?|Blue Jay|Robin|Kingfisher|Peacock|2
+animal162|What is the world's largest species of ray?|Stingray|Manta Ray|Eagle Ray|Electric Ray|1
+animal163|Which animal is known for its ability to spit when threatened?|Camel|Llama|Alpaca|Giraffe|0
+animal164|What is the largest species of frog?|Bullfrog|African Goliath Frog|Tree Frog|Poison Dart Frog|1
+animal165|Which animal is known for having a red pouch under its bill?|Pelican|Seagull|Penguin|Flamingo|0
+animal166|What is the world's smallest species of whale?|Blue Whale|Dwarf Sperm Whale|Killer Whale|Humpback Whale|1
+animal167|Which animal is known for its ability to regenerate its entire body from a single cell?|Starfish|Jellyfish|Sea Anemone|Coral|0
+animal168|What is the fastest species of bird in level flight?|Sparrow|Eagle|Swallow|Hummingbird|2
+animal169|Which animal is known for having the longest tail in relation to its body size?|Giraffe|Kangaroo|Rat|Lemur|3
+animal170|What is the largest species of crab?|King Crab|Snow Crab|Japanese Spider Crab|Hermit Crab|2
+animal171|Which animal is known for its ability to produce pearls?|Oyster|Snail|Clam|Mussel|0
+animal172|What is the only species of bear found in Africa?|Polar Bear|Brown Bear|Atlas Bear|Grizzly Bear|2
+animal173|Which animal is known for having a heart that can weigh up to 1,500 pounds?|Elephant|Whale|Giraffe|Lion|1
+animal174|What is the world's smallest species of deer?|White-tailed deer|Muntjac|Elk|Reindeer|1
+animal175|Which bird is known for its ability to mimic human speech?|Parrot|Crow|Raven|Sparrow|0
+animal176|What is the largest species of terrestrial crab?|Hermit Crab|King Crab|Coconut Crab|Snow Crab|2
+animal177|Which animal is known for its ability to sleep standing up?|Horse|Elephant|Giraffe|Lion|0
+animal178|What is the world's largest species of spider?|Tarantula|Black Widow|Goliath Bird-Eater|Brown Recluse|2
+animal179|Which animal is known for having the most powerful bite?|Crocodile|Shark|Lion|Tiger|0
+animal180|What is the largest species of jellyfish?|Moon Jellyfish|Lion's Mane Jellyfish|Box Jellyfish|Portuguese Man o' War|1
+animal181|Which animal is known for its ability to walk on water?|Basilisk Lizard|Gecko|Frog|Spider|0
+animal182|What is the world's largest species of venomous snake?|King Cobra|Rattlesnake|Black Mamba|Viper|0
+animal183|Which animal is known for having a tongue that is longer than its body?|Chameleon|Giraffe|Anteater|Blue Whale|0
