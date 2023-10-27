@@ -23,6 +23,7 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 
 
 public class MainActivity extends AppCompatActivity {
+
     public static MediaPlayer mediaPlayer;
     public static int[] musicResources = {
             R.raw.space_pirates,
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
             mediaPlayer.release();
             mediaPlayer = null;
         }
+
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);

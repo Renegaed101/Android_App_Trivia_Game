@@ -39,11 +39,12 @@
 
         <ImageButton
             android:id="@+id/music_toggle_start"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:background="@android:color/transparent"
+            android:scaleType="fitXY"
             android:src="@drawable/volume_up_24px"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

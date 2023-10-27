@@ -22,16 +22,14 @@
         app:layout_constraintVertical_bias="1.0" />
 
 
-
     <ImageButton
         android:id="@+id/music_toggle_game"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:background="@android:color/transparent"
-        android:src="@drawable/volume_up_24px"
         android:elevation="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/volume_up_24px"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -128,32 +126,6 @@
 
     </LinearLayout>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:alpha="0.8"
-        android:backgroundTint="@color/grey"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/scoreTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="TextView"
-            android:textColor="@color/white"
-            android:textSize="34sp"
-            android:textStyle="bold" />
-
-    </androidx.cardview.widget.CardView>
-
     <include
         android:id="@+id/question_card"
         layout="@layout/card_view_question"
@@ -166,20 +138,43 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
+    <ImageButton
+        android:id="@+id/dropdownButton"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_24px" />
+
+    <View
+        android:id="@+id/fullscreenBlackOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="#000"
+        android:elevation="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:id="@+id/scoreChangeTextView"
+        android:id="@+id/restartGameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="-12dp"
-        android:elevation="3dp"
-        android:text="TextView"
-        android:textColor="@color/Green"
-        android:textSize="20sp"
+        android:elevation="10dp"
+        android:text="Restarting game with same settings"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/ll_main_first_row_buttons"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        tools:visibility="visible" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

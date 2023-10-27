@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.transition.ChangeBounds;
+import android.transition.Transition;
 import android.transition.TransitionManager;
 import android.view.View;
 import android.view.animation.Animation;
@@ -27,7 +29,7 @@ import java.util.List;
 
 public class GameOptionsActivity extends AppCompatActivity {
 
-    private List<Category> categoryList;
+    private static List<Category> categoryList;
     private VideoView background;
     public static int numCategories;
     public static int numberQuestions = 0;
@@ -37,6 +39,8 @@ public class GameOptionsActivity extends AppCompatActivity {
     Button questionsButton20;
     Button questionsButton40;
     Button questionsButton60;
+    Button specCatButton;
+    Button allCatButton;
     private Animation pulse;
     RecyclerView recyclerView;
     HorizontalScrollView horizontalScrollView;
@@ -45,6 +49,7 @@ public class GameOptionsActivity extends AppCompatActivity {
     ConstraintLayout gameOptionsConstraintLayout;
     ConstraintSet allCategoriesConstraintSet;
     ConstraintSet specificCategoriesConstraintSet;
+    Transition transition;
 
 
     @Override
@@ -57,8 +62,8 @@ public class GameOptionsActivity extends AppCompatActivity {
         questionsButton20 = findViewById(R.id.questionsButton20);
         questionsButton40 = findViewById(R.id.questionsButton40);
         questionsButton60 = findViewById(R.id.questionsButton60);
-        Button specCatButton = findViewById(R.id.specCatButton);
-        Button allCatButton = findViewById(R.id.allCatButton);
+        specCatButton = findViewById(R.id.specCatButton);
+        allCatButton = findViewById(R.id.allCatButton);
         Button startGameButton = findViewById(R.id.startGameButton);
         TextView categoriesText = findViewById(R.id.selectCategoriesTextView);
         pulse = AnimationUtils.loadAnimation(this,R.anim.pulse_animation);
@@ -73,6 +78,42 @@ public class GameOptionsActivity extends AppCompatActivity {
 
         specificCategoriesConstraintSet = new ConstraintSet();
         specificCategoriesConstraintSet.clone(this,R.layout.activity_game_options_alternate);
+
+        setButtonNotSelected(questionsButton20);
+        setButtonNotSelected(questionsButton40);
+        setButtonNotSelected(questionsButton60);
+        setCatButtonNotSelected(specCatButton);
+        setCatButtonNotSelected(allCatButton);
+
+        transition = new ChangeBounds();
+
+        // Set a TransitionListener
+        transition.addListener(new Transition.TransitionListener() {
+            @Override
+            public void onTransitionStart(Transition transition) {
+                removeButtonText();
+            }
+
+            @Override
+            public void onTransitionEnd(Transition transition) {
+                setButtonText();
+            }
+
+            @Override
+            public void onTransitionCancel(Transition transition) {
+                // Called when the transition is cancelled
+            }
+
+            @Override
+            public void onTransitionPause(Transition transition) {
+                // Called when the transition is paused
+            }
+
+            @Override
+            public void onTransitionResume(Transition transition) {
+                // Called when the transition resumes
+            }
+        });
 
 
         startGameButton.setOnClickListener(new View.OnClickListener() {
@@ -182,14 +223,6 @@ public class GameOptionsActivity extends AppCompatActivity {
                 questionsButton60.setTextSize(60);
             });
 
-            setButtonNotSelected(questionsButton20);
-            setButtonNotSelected(questionsButton40);
-            setButtonNotSelected(questionsButton60);
-            setCatButtonNotSelected(specCatButton);
-            setCatButtonNotSelected(allCatButton);
-
-
-
 
         categoryList = new ArrayList<>();
         categoryList.add(new Category("Animals",R.raw.animals,R.drawable.animal19,R.color.selectedButtonColor,R.color.black,"animal"));
@@ -265,13 +298,13 @@ public class GameOptionsActivity extends AppCompatActivity {
     }
 
     private void setSpecificCategoriesConstraintLayout() {
-        TransitionManager.beginDelayedTransition(gameOptionsConstraintLayout);
+        TransitionManager.beginDelayedTransition(gameOptionsConstraintLayout, transition);
         specificCategoriesConstraintSet.applyTo(gameOptionsConstraintLayout);
         numberQuestionButtonUpdate();
     }
 
     private void setAllCategoriesConstraintLayout() {
-        TransitionManager.beginDelayedTransition(gameOptionsConstraintLayout);
+        TransitionManager.beginDelayedTransition(gameOptionsConstraintLayout, transition);
         allCategoriesConstraintSet.applyTo(gameOptionsConstraintLayout);
         numberQuestionButtonUpdate();
     }
@@ -293,6 +326,29 @@ public class GameOptionsActivity extends AppCompatActivity {
         }
     }
 
+    private void removeButtonText() {
+        questionsButton60.setText("");
+        questionsButton40.setText("");
+        questionsButton20.setText("");
+        allCatButton.setText("");
+        specCatButton.setText("");
+    }
+
+    private void setButtonText() {
+        questionsButton60.setText("60");
+        questionsButton40.setText("40");
+        questionsButton20.setText("20");
+        allCatButton.setText("All Categories");
+        specCatButton.setText("Specific Categories");
+    }
+
+    public static void resetState() {
+        numberQuestions = 0;
+        for (Category i: categoryList) {
+            i.included = false;
+        }
+    }
+
     @Override
     public void onPause() {
         super.onPause();
@@ -310,6 +366,5 @@ public class GameOptionsActivity extends AppCompatActivity {
             MainActivity.mediaPlayer.setLooping(true);
         }
     }
-
 
 }
