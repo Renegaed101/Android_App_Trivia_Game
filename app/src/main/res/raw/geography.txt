@@ -97,3 +97,84 @@ geo96|What is the currency of Australia?|Dollar|Yen|Won|Pound|0
 geo97|In which country would you find the city of Casablanca?|Algeria|Morocco|Tunisia|Libya|1
 geo98|What is the highest peak in South Asia, part of the Himalayas?|Mount Kilimanjaro|Mount Fuji|Mount Everest|Mount McKinley|2
 geo99|What is the smallest independent country in the world by land area, known as the "Land of the Long White Cloud"?|San Marino|Vatican City|New Zealand|Monaco|2
+geo100|In which country would you find the city of Istanbul?|Turkey|Greece|Bulgaria|Italy|0
+geo101|What is the capital of Australia?|Sydney|Canberra|Melbourne|Brisbane|1
+geo102|Which river flows through the heart of London?|Thames|Seine|Danube|Nile|0
+geo103|In which country would you find the famous landmark Machu Picchu?|Peru|Chile|Bolivia|Argentina|0
+geo104|What is the capital of Sweden?|Copenhagen|Stockholm|Oslo|Helsinki|1
+geo105|Which ocean is to the east of Africa?|Indian Ocean|Atlantic Ocean|Pacific Ocean|Arctic Ocean|0
+geo106|What is the largest lake in the world?|Lake Superior|Lake Victoria|Caspian Sea|Lake Baikal|2
+geo107|In which country would you find Mount Everest?|Nepal|China|India|Bhutan|0
+geo108|Which desert covers much of northern Africa?|Sahara Desert|Kalahari Desert|Gobi Desert|Atacama Desert|0
+geo109|What is the capital of Canada?|Toronto|Montreal|Ottawa|Vancouver|2
+geo110|In which U.S. state would you find Yosemite National Park?|California|Colorado|Utah|Wyoming|0
+geo111|Which river flows through Berlin, Germany?|Elbe|Rhine|Danube|Spree|3
+geo112|In which continent would you find the Kalahari Desert?|Africa|Asia|Australia|North America|0
+geo113|What is the capital of Japan?|Kyoto|Seoul|Beijing|Tokyo|3
+geo114|Which mountain range runs along the western edge of South America?|The Andes|The Rockies|The Himalayas|The Alps|0
+geo115|What is the capital of India?|Mumbai|Bangalore|New Delhi|Kolkata|2
+geo116|Which river flows through Cairo, Egypt?|Tigris|Nile|Amazon|Mississippi|1
+geo117|In which European country would you find the city of Dublin?|Ireland|Scotland|England|Wales|0
+geo118|What is the capital of Russia?|Saint Petersburg|Moscow|Vladivostok|Sochi|1
+geo119|In which continent would you find the Amazon Rainforest?|South America|North America|Africa|Asia|0
+geo120|What is the capital of China?|Shanghai|Hong Kong|Beijing|Guangzhou|2
+geo121|Which country is known for its windmills, tulips, and canals?|Netherlands|Belgium|Denmark|Germany|0
+geo122|In which U.S. state would you find the city of Miami?|Florida|California|Texas|Arizona|0
+geo123|Which river flows through Rome, Italy?|Tiber|Danube|Seine|Thames|0
+geo124|What is the capital of Egypt?|Alexandria|Cairo|Luxor|Giza|1
+geo125|In which country would you find the ancient city of Machu Picchu?|Peru|Bolivia|Chile|Argentina|0
+geo126|Which ocean lies to the south of Australia?|Indian Ocean|Southern Ocean|Pacific Ocean|Atlantic Ocean|1
+geo127|In which country would you find the Great Barrier Reef?|Australia|New Zealand|Indonesia|Papua New Guinea|0
+geo128|In which continent is the Sahara Desert located?|Africa|Asia|Australia|North America|0
+geo129|Which country is known for the Great Wall?|China|India|Russia|Mongolia|0
+geo130|What is the capital of Italy?|Milan|Rome|Venice|Florence|1
+geo131|In which country would you find the city of Barcelona?|Spain|Portugal|France|Italy|0
+geo132|Which mountain range separates Europe and Asia?|Ural Mountains|Andes|Himalayas|Rockies|0
+geo133|In which continent would you find Mount Kilimanjaro?|Africa|Asia|South America|Europe|0
+geo134|What is the capital of the United Kingdom?|London|Edinburgh|Dublin|Cardiff|0
+geo135|In which country would you find the city of Athens?|Greece|Italy|Turkey|Egypt|0
+geo136|Which river is the longest in the world?|Amazon River|Nile River|Yangtze River|Mississippi River|0
+geo137|What is the capital of Mexico?|Guadalajara|Monterrey|Cancun|Mexico City|3
+geo138|In which continent would you find the Andes Mountains?|South America|North America|Europe|Asia|0
+geo139|In which country would you find the city of Prague?|Czech Republic|Austria|Germany|Slovakia|0
+geo140|Which ocean is the largest?|Pacific Ocean|Atlantic Ocean|Indian Ocean|Southern Ocean|0
+geo141|What is the capital of Germany?|Berlin|Frankfurt|Munich|Hamburg|0
+geo142|In which continent is the country of Egypt located?|Africa|Asia|Europe|North America|0
+geo143|What is the capital of Spain?|Barcelona|Madrid|Seville|Valencia|1
+geo144|Which river flows through Egypt?|Nile|Amazon|Mississippi|Danube|0
+geo145|What is the capital of Turkey?|Istanbul|Ankara|Izmir|Antalya|1
+geo146|In which continent would you find the Gobi Desert?|Asia|Africa|Australia|North America|0
+geo147|In which country would you find the city of Lisbon?|Portugal|Spain|France|Italy|0
+geo148|Which mountain range runs along the border between Europe and Asia?|Ural Mountains|Andes|Himalayas|Rockies|0
+geo149|In which continent would you find the Serengeti?|Africa|Asia|Australia|Europe|0
+geo150|What is the capital of the Netherlands?|Amsterdam|Rotterdam|The Hague|Utrecht|0
+geo151|In which country would you find the city of Budapest?|Hungary|Austria|Czech Republic|Slovakia|0
+geo152|Which river flows through New York City?|Hudson River|Mississippi River|Thames River|Danube River|0
+geo153|What is the capital of Greece?|Thessaloniki|Athens|Patras|Heraklion|1
+geo154|In which continent would you find the Amazon River?|South America|North America|Africa|Asia|0
+geo155|What is the capital of Switzerland?|Zurich|Geneva|Bern|Basel|2
+geo156|In which country would you find the city of Venice?|Italy|France|Spain|Portugal|0
+geo157|Which mountain range separates Asia from Europe?|Ural Mountains|Andes|Himalayas|Rockies|0
+geo158|In which continent would you find the Atacama Desert?|South America|North America|Africa|Asia|0
+geo159|What is the capital of Denmark?|Copenhagen|Oslo|Stockholm|Helsinki|0
+geo160|In which country would you find the city of Berlin?|Germany|Austria|Switzerland|Poland|0
+geo161|Which river flows through Baghdad, Iraq?|Euphrates|Tigris|Nile|Amazon|1
+geo162|What is the capital of Finland?|Copenhagen|Oslo|Helsinki|Stockholm|2
+geo163|In which continent would you find Lake Victoria?|Africa|Asia|Australia|Europe|0
+geo164|What is the capital of Belgium?|Brussels|Antwerp|Ghent|Bruges|0
+geo165|In which country would you find the city of Cairo?|Egypt|Libya|Sudan|Israel|0
+geo166|What is the capital of Portugal?|Lisbon|Porto|Coimbra|Braga|0
+geo167|In which continent is the country of South Africa located?|Africa|Asia|Europe|Australia|0
+geo168|Which country is known as the Land of the Rising Sun?|Japan|China|South Korea|Thailand|0
+geo169|In which U.S. state would you find the city of Chicago?|Illinois|New York|California|Texas|0
+geo170|Which river flows through Budapest, Hungary?|Danube|Rhine|Elbe|Tiber|0
+geo171|What is the capital of Austria?|Vienna|Salzburg|Graz|Linz|0
+geo172|In which continent would you find the Rocky Mountains?|North America|South America|Europe|Asia|0
+geo173|What is the capital of Poland?|Krakow|Warsaw|Gdansk|Wroclaw|1
+geo174|In which country would you find the city of Amsterdam?|Netherlands|Belgium|Germany|Denmark|0
+geo175|Which river flows through Moscow, Russia?|Moskva River|Danube River|Seine River|Thames River|0
+geo176|What is the capital of the Czech Republic?|Prague|Bratislava|Budapest|Vienna|0
+geo177|In which continent would you find the Alps?|Europe|Asia|North America|South America|0
+geo178|What is the capital of Hungary?|Budapest|Prague|Vienna|Bratislava|0
+geo179|In which country would you find the city of Rome?|Italy|France|Spain|Portugal|0
+geo180|In which continent is the country of Brazil located?|South America|North America|Africa|Asia|0

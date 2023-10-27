@@ -88,3 +88,68 @@ food87|Which spice is known for its warm and slightly sweet flavor and is common
 food88|Which type of bread is commonly used for making a sandwich called a "po' boy"?|Sourdough|Baguette|French|Ciabatta|1
 food89|What is the main ingredient in the Chinese dish "kung pao chicken"?|Beef|Tofu|Chicken|Pork|2
 food90|Which fruit is often referred to as the "queen of fruits" and is known for its sweet and aromatic flavor?|Pineapple|Mango|Strawberry|Kiwi|1
+food91|Which fruit is commonly known as a "superfood" due to its high nutrient content?|Blueberry|Banana|Apple|Orange|0
+food92|What is the main ingredient in the Indian dish "dal"?|Rice|Lentils|Chicken|Potato|1
+food93|Which type of pasta is shaped like small tubes and is often used in macaroni and cheese?|Spaghetti|Macaroni|Fettuccine|Rotini|1
+food94|What is the primary ingredient in the Italian dish "frittata"?|Flour|Eggs|Tomatoes|Potatoes|1
+food95|Which fruit is known for its tough, brown exterior and sweet, creamy interior?|Kiwi|Banana|Mango|Coconut|3
+food96|What is the national dish of Brazil, made with black beans, pork, and beef?|Feijoada|Taco|Sushi|Paella|0
+food97|Which spice is derived from the dried flower buds of a tree and is often used in baking?|Cinnamon|Cloves|Nutmeg|Saffron|1
+food98|What is the primary ingredient in the traditional French dish "ratatouille"?|Eggplant|Tomatoes|Zucchini|Potatoes|0
+food99|Which fruit is known as the "queen of fruits" and is rich in Vitamin C?|Mango|Apple|Strawberry|Orange|0
+food100|What is the main ingredient in the Italian dish "polenta"?|Rice|Cornmeal|Flour|Potatoes|1
+food101|Which vegetable is known as the "king of vegetables" due to its versatility and nutritional content?|Broccoli|Potato|Carrot|Spinach|0
+food102|Which type of bread is typically used for making a sandwich called a "Reuben"?|Sourdough|Rye|White|Baguette|1
+food103|What is the national dish of India, consisting of rice, lentils, and spices?|Sushi|Biryani|Curry|Khichdi|3
+food104|Which fruit is known as the "king of fruits" due to its large size and spiky exterior?|Banana|Pineapple|Mango|Durian|3
+food105|What is the main ingredient in the traditional Japanese dish "sushi"?|Chicken|Beef|Fish|Rice|3
+food106|Which type of cuisine is known for its use of fermented ingredients, such as kimchi?|Chinese|Korean|Japanese|Thai|1
+food107|What is the primary ingredient in the Mexican dish "enchiladas"?|Tortillas|Cheese|Beans|Rice|0
+food108|Which type of cheese is known for its strong flavor and crumbly texture?|Cheddar|Swiss|Blue cheese|Feta|2
+food109|What is the main ingredient in the Indian dish "butter chicken"?|Lamb|Beef|Chicken|Pork|2
+food110|Which fruit is known as the "queen of tropical fruits" and is famous for its sweet and tangy flavor?|Mango|Pineapple|Papaya|Banana|0
+food111|What is the primary ingredient in the Italian dish "gnocchi"?|Flour|Potatoes|Rice|Cheese|1
+food112|What is the national dish of Japan, made from fermented soybeans?|Sushi|Natto|Tempura|Miso soup|1
+food113|Which type of bread is commonly used for making a sandwich called a "panini"?|Ciabatta|Sourdough|Rye|Baguette|0
+food114|Which nut is often used to make pesto sauce and is native to the Mediterranean region?|Cashew|Almond|Pine nut|Pecan|2
+food115|Which fruit is known for its high content of potassium?|Banana|Apple|Orange|Mango|0
+food116|Which spice is derived from the stigma of a flower and is the world's most expensive spice by weight?|Nutmeg|Cinnamon|Saffron|Cloves|2
+food117|What is the primary ingredient in the Indian dish "chana masala"?|Lamb|Beef|Chicken|Chickpeas|3
+food118|Which type of cheese is known for its mild flavor and creamy texture?|Cheddar|Swiss|Brie|Feta|2
+food119|Which fruit is known as the "king of citrus fruits" and is the largest of all citrus fruits?|Orange|Lemon|Grapefruit|Lime|2
+food120|What is the main ingredient in the Italian dish "risotto"?|Rice|Pasta|Flour|Cheese|0
+food121|Which vegetable is known as the "queen of greens" and is rich in antioxidants?|Broccoli|Kale|Spinach|Lettuce|1
+food122|What is the primary ingredient in the Middle Eastern dish "hummus"?|Tahini|Olive oil|Garlic|Chickpeas|3
+food123|Which type of bread is traditionally used for making French toast?|Brioche|Sourdough|Rye|Baguette|0
+food124|What is the national dish of Spain, made with rice, saffron, and a variety of meats and vegetables?|Paella|Taco|Sushi|Biryani|0
+food125|Which fruit is known as the "queen of berries" and is famous for its bright red color?|Blueberry|Raspberry|Strawberry|Blackberry|2
+food126|What is the main ingredient in the Italian dish "carbonara"?|Bacon|Eggs|Cheese|Pasta|1
+food127|Which spice is known for its pungent aroma and is often used in Indian cuisine?|Cumin|Coriander|Fenugreek|Mustard seeds|0
+food128|What is the primary ingredient in the Mexican dish "tacos"?|Tortillas|Beef|Cheese|Beans|0
+food129|Which type of cheese is known for its creamy texture and mild flavor, and is often used in cheesecake?|Cheddar|Cream cheese|Swiss|Feta|1
+food130|Which fruit is known as the "king of berries" and is rich in antioxidants?|Blueberry|Strawberry|Raspberry|Blackberry|0
+food131|What is the main ingredient in the French dish "bouillabaisse"?|Chicken|Fish|Beef|Lamb|1
+food132|Which vegetable is known as the "queen of vegetables" due to its delicate flavor and nutritional benefits?|Asparagus|Broccoli|Carrot|Spinach|0
+food133|What is the primary ingredient in the Indian dish "dosa"?|Rice|Flour|Lentils|Potatoes|0
+food134|What is the national dish of Italy, made with tomatoes, cheese, and basil?|Pizza|Pasta|Lasagna|Risotto|0
+food135|Which fruit is known for its high vitamin C content and is often used to make juice?|Apple|Orange|Banana|Grapefruit|1
+food136|What is the main ingredient in the Italian dish "osso buco"?|Lamb|Beef|Veal|Chicken|2
+food137|Which spice is known for its warming and sweet flavor, often used in pumpkin pie spice blends?|Cinnamon|Nutmeg|Cloves|Cardamom|1
+food138|What is the primary ingredient in the Mexican dish "quesadillas"?|Cheese|Tortillas|Beans|Chicken|0
+food139|Which type of pasta is shaped like small shells and is often used in soups?|Spaghetti|Macaroni|Conchiglie|Rotini|2
+food140|Which fruit is known as the "queen of fruits" in India and is famous for its unique taste and nutritional benefits?|Mango|Pineapple|Papaya|Banana|0
+food141|What is the main ingredient in the Indian dish "aloo gobi"?|Potatoes and cauliflower|Lentils|Chicken|Beef|0
+food142|Which vegetable is known as the "king of vegetables" in India due to its prominent role in Indian cuisine?|Potato|Carrot|Cauliflower|Eggplant|3
+food143|What is the primary ingredient in the Middle Eastern dish "kibbeh"?|Bulgur wheat|Quinoa|Rice|Couscous|0
+food144|Which type of cheese is known for its strong aroma and flavor, often used in Caesar salad dressing?|Cheddar|Swiss|Parmesan|Feta|2
+food145|Which fruit is known for its sweet and tart flavor, often used in making jams and desserts?|Apple|Raspberry|Strawberry|Blueberry|1
+food146|What is the main ingredient in the Italian dish "bruschetta"?|Tomatoes|Bread|Cheese|Basil|0
+food147|Which spice is known for its earthy and warm flavor, often used in curry powders?|Cumin|Coriander|Fenugreek|Mustard seeds|0
+food148|What is the primary ingredient in the Mexican dish "burritos"?|Tortillas|Beef|Cheese|Beans|0
+food149|Which type of pasta is shaped like spirals or corkscrews and is often used in pasta salads?|Spaghetti|Macaroni|Fusilli|Rotini|2
+food150|Which fruit is known as the "king of fruits" in Thailand and is famous for its large size and strong aroma?|Mango|Pineapple|Durian|Banana|2
+food151|What is the main ingredient in the Italian dish "focaccia"?|Flour|Olive oil|Tomatoes|Herbs|0
+food152|Which vegetable is known as the "queen of vegetables" in France due to its delicate flavor and association with French cuisine?|Asparagus|Broccoli|Carrot|Spinach|0
+food153|What is the primary ingredient in the Indian dish "idli"?|Rice and fermented black lentils|Lentils|Chicken|Beef|0
+food154|Which type of bread is commonly used for making a sandwich called a "submarine" or "sub"?|Baguette|Sourdough|Rye|White|0
+food155|What is the national dish of Thailand, made with rice noodles, peanuts, and bean sprouts?|Pad Thai|Sushi|Curry|Pho|0

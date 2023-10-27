@@ -180,7 +180,6 @@ public class GameOptionsActivity extends AppCompatActivity {
                 setButtonNotSelected(questionsButton40);
                 setButtonNotSelected(questionsButton60);
                 numberQuestions = 20;
-                categoriesText.setText("Select at least 1 category");
             });
 
             questionsButton40.setOnClickListener(view -> {
@@ -188,7 +187,6 @@ public class GameOptionsActivity extends AppCompatActivity {
                 setButtonNotSelected(questionsButton20);
                 setButtonNotSelected(questionsButton60);
                 numberQuestions = 40;
-                categoriesText.setText("Select at least 1 category");
             });
 
             questionsButton60.setOnClickListener(view -> {
@@ -196,7 +194,6 @@ public class GameOptionsActivity extends AppCompatActivity {
                 setButtonNotSelected(questionsButton20);
                 setButtonNotSelected(questionsButton40);
                 numberQuestions = 60;
-                categoriesText.setText("Select at least 2 categories");
             });
 
             specCatButton.setOnClickListener(view -> {
@@ -250,9 +247,6 @@ public class GameOptionsActivity extends AppCompatActivity {
             return false;
         } else if (numCategories < 1) {
             cantStartMessage = "Please choose your categories";
-            return false;
-        } else if (numberQuestions > 40 && numCategories < 2) {
-            cantStartMessage = "For 60 questions, please select at least 2 categories.";
             return false;
         } else {
             return true;

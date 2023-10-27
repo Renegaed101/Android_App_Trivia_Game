@@ -71,3 +71,93 @@ gen70|Which gas is the primary component of Earth's atmosphere by volume?|Oxygen
 gen71|What is the chemical symbol for sulfur?|Su|So|S|Si|2
 gen72|What is the process by which living organisms produce energy from organic molecules?|Fermentation|Photosynthesis|Respiration|Transpiration|2
 gen73|Which planet is known for its bright red appearance and is often called the "Red Planet"?|Venus|Earth|Mars|Jupiter|2
+gen74|Which element is represented by the chemical symbol "H"?|Helium|Hydrogen|Hafnium|Hassium|1
+gen75|What is the largest mammal in the ocean?|Dolphin|Shark|Blue Whale|Orca|2
+gen76|Which country is known as the Land of the Rising Sun?|China|South Korea|Japan|Thailand|2
+gen77|What is the chemical symbol for gold?|Au|Ag|Gd|Ge|0
+gen78|What is the capital city of France?|Berlin|Paris|Rome|Madrid|1
+gen79|Which planet in our solar system is known as the "Blue Planet"?|Earth|Mars|Neptune|Uranus|0
+gen80|What is the smallest bone in the human body?|Femur|Stapes|Humerus|Tibia|1
+gen81|Which gas is responsible for the green color of the Northern Lights?|Oxygen|Nitrogen|Helium|Carbon Dioxide|0
+gen82|What is the capital city of Japan?|Seoul|Tokyo|Beijing|Bangkok|1
+gen83|Which element is represented by the chemical symbol "O"?|Osmium|Oxygen|Oganesson|Osmium|1
+gen84|What is the largest desert in the world?|Sahara Desert|Antarctic Desert|Arctic Desert|Gobi Desert|1
+gen85|Which country is the largest by land area?|Canada|United States|China|Russia|3
+gen86|Which planet in our solar system has the longest day?|Jupiter|Venus|Mars|Earth|1
+gen87|What is the capital city of Italy?|Paris|Berlin|Rome|Madrid|2
+gen88|Which element is represented by the chemical symbol "N"?|Sodium|Neon|Nitrogen|Nickel|2
+gen89|What is the largest bird in the world?|Eagle|Ostrich|Penguin|Albatross|1
+gen90|Which gas is the primary component of Jupiter's atmosphere?|Methane|Hydrogen|Helium|Nitrogen|2
+gen91|What is the capital city of Spain?|Paris|Lisbon|Rome|Madrid|3
+gen92|Which element is represented by the chemical symbol "C"?|Cobalt|Carbon|Cadmium|Calcium|1
+gen93|What is the longest river in the world?|Amazon River|Nile River|Yangtze River|Mississippi River|1
+gen94|Which country has the most islands?|Australia|Indonesia|Canada|Sweden|3
+gen95|What is the chemical symbol for platinum?|Pt|Pl|P|Pm|0
+gen96|Which planet in our solar system has the shortest day?|Earth|Mars|Jupiter|Venus|2
+gen97|What is the capital city of Brazil?|Buenos Aires|Lima|Rio de Janeiro|Brasília|3
+gen98|Which element is represented by the chemical symbol "P"?|Platinum|Phosphorus|Palladium|Potassium|1
+gen99|What is the largest island in the world?|Greenland|New Guinea|Borneo|Madagascar|0
+gen100|Which gas makes up most of Mars' atmosphere?|Oxygen|Carbon Dioxide|Nitrogen|Methane|1
+gen101|What is the capital city of Russia?|St. Petersburg|Moscow|Kiev|Minsk|1
+gen102|Which element is represented by the chemical symbol "S"?|Silicon|Sulfur|Samarium|Strontium|1
+gen103|What is the tallest mountain in the world?|K2|Everest|Kangchenjunga|Lhotse|1
+gen104|Which country has the longest coastline?|Australia|United States|Russia|Canada|3
+gen105|What is the chemical symbol for tin?|Ti|Te|Tn|Sn|3
+gen106|Which planet in our solar system is the most dense?|Jupiter|Mercury|Earth|Venus|2
+gen107|What is the capital city of Germany?|Paris|Vienna|Berlin|Warsaw|2
+gen108|Which element is represented by the chemical symbol "K"?|Potassium|Krypton|Krypton|Kurium|0
+gen109|What is the largest country in South America?|Argentina|Brazil|Chile|Peru|1
+gen110|Which gas is the primary component of Venus' atmosphere?|Oxygen|Carbon Dioxide|Nitrogen|Sulfur Dioxide|1
+gen111|What is the capital city of the United Kingdom?|London|Dublin|Paris|Berlin|0
+gen112|Which element is represented by the chemical symbol "Fe"?|Fermium|Iron|Fluorine|Francium|1
+gen113|What is the deepest ocean in the world?|Atlantic Ocean|Indian Ocean|Southern Ocean|Pacific Ocean|3
+gen114|Which country has the most natural lakes?|United States|Canada|Russia|Australia|1
+gen115|What is the chemical symbol for chromium?|Cr|Co|Cn|Cm|0
+gen116|Which planet in our solar system has the largest volcano?|Mars|Earth|Venus|Jupiter|0
+gen117|What is the capital city of South Korea?|Tokyo|Pyongyang|Seoul|Beijing|2
+gen118|Which element is represented by the chemical symbol "Cu"?|Copper|Curium|Calcium|Cerium|0
+gen119|What is the largest lake in the world?|Lake Superior|Lake Victoria|Caspian Sea|Lake Baikal|2
+gen120|Which gas is the primary component of Saturn's atmosphere?|Methane|Helium|Hydrogen|Nitrogen|2
+gen121|What is the capital city of Australia?|Sydney|Melbourne|Canberra|Brisbane|2
+gen122|Which element is represented by the chemical symbol "Zn"?|Zirconium|Zinc|Zirconium|Zirconium|1
+gen123|What is the longest river in Asia?|Mekong River|Yangtze River|Ganges River|Amur River|1
+gen124|Which country has the most volcanoes?|United States|Indonesia|Russia|Japan|1
+gen125|Which planet in our solar system is the hottest?|Mercury|Venus|Earth|Mars|1
+gen126|What is the capital city of India?|Mumbai|New Delhi|Kolkata|Bangalore|1
+gen127|Which element is represented by the chemical symbol "Au"?|Gold|Argon|Aluminum|Americium|0
+gen128|What is the largest peninsula in the world?|Arabian Peninsula|Kamchatka Peninsula|Iberian Peninsula|Scandinavian Peninsula|0
+gen129|Which gas is the primary component of Uranus' atmosphere?|Hydrogen|Helium|Methane|Oxygen|2
+gen130|Which element is represented by the chemical symbol "Ag"?|Silver|Argon|Aluminum|Americium|0
+gen131|What is the largest canyon in the world?|Grand Canyon|Fish River Canyon|Yarlung Tsangpo Grand Canyon|Barranca del Cobre|2
+gen132|Which country has the most time zones?|United States|Russia|China|Australia|1
+gen133|Which planet in our solar system is the least dense?|Jupiter|Saturn|Uranus|Neptune|1
+gen134|What is the capital city of Mexico?|Guadalajara|Mexico City|Monterrey|Cancun|1
+gen135|Which element is represented by the chemical symbol "Pb"?|Platinum|Phosphorus|Palladium|Lead|3
+gen136|What is the largest sea in the world?|Mediterranean Sea|Caribbean Sea|Philippine Sea|Coral Sea|2
+gen137|Which gas is the primary component of Neptune's atmosphere?|Hydrogen|Methane|Helium|Nitrogen|0
+gen138|What is the capital city of China?|Shanghai|Beijing|Hong Kong|Guangzhou|1
+gen139|Which element is represented by the chemical symbol "Sn"?|Tin|Antimony|Strontium|Sodium|0
+gen140|What is the deepest lake in the world?|Lake Tanganyika|Caspian Sea|Lake Baikal|Lake Superior|2
+gen141|Which country has the most freshwater lakes?|United States|Russia|Canada|Sweden|2
+gen142|Which planet in our solar system is the windiest?|Jupiter|Saturn|Neptune|Uranus|2
+gen143|Which element is represented by the chemical symbol "Ni"?|Nickel|Nihonium|Nitrogen|Neon|0
+gen144|What is the largest freshwater lake by surface area?|Lake Superior|Lake Victoria|Lake Michigan|Caspian Sea|0
+gen145|Which gas makes up most of Earth's atmosphere?|Oxygen|Carbon Dioxide|Nitrogen|Argon|2
+gen146|What is the capital city of Argentina?|Buenos Aires|Rio de Janeiro|Montevideo|Santiago|0
+gen147|Which element is represented by the chemical symbol "Og"?|Oxygen|Osmium|Osmium|Oganesson|3
+gen148|What is the highest waterfall in the world?|Niagara Falls|Victoria Falls|Angel Falls|Iguazu Falls|2
+gen149|Which country has the most glaciers?|Canada|United States|Argentina|Antarctica|3
+gen150|Which planet in our solar system is the coldest?|Uranus|Neptune|Saturn|Jupiter|1
+gen151|What is the capital city of Saudi Arabia?|Doha|Riyadh|Kuwait City|Manama|1
+gen152|Which element is represented by the chemical symbol "Hg"?|Helium|Hydrogen|Mercury|Hassium|2
+gen153|What is the largest freshwater lake by volume?|Lake Victoria|Lake Baikal|Lake Superior|Caspian Sea|1
+gen154|Which gas makes up the largest portion of Venus' atmosphere?|Oxygen|Carbon Monoxide|Carbon Dioxide|Nitrogen|2
+gen155|What is the capital city of Egypt?|Cairo|Luxor|Alexandria|Giza|0
+gen156|Which element is represented by the chemical symbol "Pt"?|Platinum|Palladium|Protactinium|Phosphorus|0
+gen157|What is the longest river in Africa?|Congo River|Nile River|Niger River|Zambezi River|1
+gen158|Which country has the most islands in the world?|Sweden|Finland|Indonesia|Philippines|0
+gen159|Which planet in our solar system has the most moons?|Saturn|Jupiter|Uranus|Neptune|1
+gen160|Which element is represented by the chemical symbol "Kr"?|Krypton|Kurchatovium|Krypton|Krypton|0
+gen161|What is the largest island in the Mediterranean Sea?|Sicily|Sardinia|Cyprus|Corsica|0
+gen162|Which gas makes up most of Uranus' atmosphere?|Hydrogen|Helium|Methane|Ammonia|2
+gen163|What is the capital city of Turkey?|Istanbul|Ankara|Izmir|Antalya|1

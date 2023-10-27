@@ -85,3 +85,34 @@ music84|Which artist is known for hits like "Hotline Bling" and "God's Plan"?|Ke
 music85|Who was known as the "King of Pop" and released hits like "Billie Jean" and "Thriller"?|Elvis Presley|Prince|Michael Jackson|David Bowie|2
 music86|Which artist is known for her song "Bad Guy" and the album "When We All Fall Asleep, Where Do We Go?"|Billie Eilish|Lana Del Rey|Lorde|Ariana Grande|0
 music87|Who sang "Purple Haze" and "The Wind Cries Mary"?|Elvis Presley|Jimi Hendrix|Chuck Berry|Johnny Cash|1
+music88|Which artist is famous for the song "I Will Always Love You" from the soundtrack of "The Bodyguard"?|Whitney Houston|Celine Dion|Mariah Carey|Beyoncé|0
+music89|Who is known for the songs "Firework" and "Roar"?|Katy Perry|Taylor Swift|Adele|Beyoncé|0
+music90|Which artist released the album "A Night at the Opera" in 1975?|The Rolling Stones|Queen|Led Zeppelin|Pink Floyd|1
+music91|What is the name of the famous rock band formed in 1962 in London?|The Who|The Rolling Stones|The Beatles|Led Zeppelin|1
+music92|Which female artist is known for the song "Someone Like You"?|Adele|Taylor Swift|Katy Perry|Beyoncé|0
+music93|Who released the hit song "Rolling in the Deep" in 2010?|Katy Perry|Adele|Taylor Swift|Rihanna|1
+music94|What is the name of the famous British rock band formed in 1969, known for their elaborate stage shows?|Led Zeppelin|Pink Floyd|The Rolling Stones|The Beatles|1
+music95|Who is the legendary artist known for the album "Born to Run" and his live performances?|Bruce Springsteen|Bob Dylan|Elvis Presley|Michael Jackson|0
+music96|Which artist is known for the hit songs "Shape of You" and "Thinking Out Loud"?|Ed Sheeran|Justin Bieber|Shawn Mendes|Bruno Mars|0
+music97|Who is the famous American singer known for her vocal range and hits like "Vision of Love" and "Hero"?|Whitney Houston|Mariah Carey|Celine Dion|Beyoncé|1
+music98|What is the name of the famous rock band from Dublin formed in 1976?|Coldplay|U2|The Rolling Stones|The Beatles|1
+music99|Which artist released the hit song "Single Ladies (Put a Ring on It)" in 2008?|Taylor Swift|Adele|Beyoncé|Rihanna|2
+music100|Who is known for the hit songs "Purple Rain" and "When Doves Cry"?|Michael Jackson|David Bowie|Prince|Elton John|2
+music101|Which rock band is known for their song "Bohemian Rhapsody"?|The Beatles|Queen|Led Zeppelin|The Rolling Stones|1
+music102|Who was the legendary jazz musician known for his trumpet playing and unique voice, with hits like "What a Wonderful World"?|Miles Davis|Louis Armstrong|Duke Ellington|John Coltrane|1
+music103|What is the name of the famous female pop star known for her unique style and hits like "Poker Face" and "Bad Romance"?|Adele|Taylor Swift|Lady Gaga|Katy Perry|2
+music104|Who is the iconic country singer known for "Jolene" and "I Will Always Love You"?|Reba McEntire|Dolly Parton|Patsy Cline|Carrie Underwood|1
+music105|Which artist is known for the hit songs "Can't Stop the Feeling" and "Mirrors"?|Justin Timberlake|Bruno Mars|Ed Sheeran|Shawn Mendes|0
+music106|Who is the legendary artist known for "Like a Rolling Stone" and "Blowin' in the Wind"?|Bob Dylan|Bruce Springsteen|Neil Young|Johnny Cash|0
+music107|Which artist is famous for her soulful voice and hits like "Chasing Pavements" and "Hello"?|Adele|Beyoncé|Taylor Swift|Katy Perry|0
+music108|Who is the famous artist known for the albums "Hunky Dory" and "The Rise and Fall of Ziggy Stardust and the Spiders from Mars"?|David Bowie|Elton John|Freddie Mercury|Mick Jagger|0
+music109|What is the name of the legendary rock band known for "Stairway to Heaven" and "Whole Lotta Love"?|The Rolling Stones|The Who|Led Zeppelin|Pink Floyd|2
+music110|Which artist is known for the hit songs "Halo" and "Crazy in Love"?|Rihanna|Adele|Beyoncé|Taylor Swift|2
+music111|Who is the famous American singer known for her powerful voice and hits like "Respect" and "Chain of Fools"?|Aretha Franklin|Whitney Houston|Tina Turner|Diana Ross|0
+music112|What is the name of the famous British singer known for his flamboyant stage presence and powerful vocals, with hits like "Bohemian Rhapsody"?|David Bowie|Freddie Mercury|Mick Jagger|Elton John|1
+music113|Which artist is known for the hit songs "24K Magic" and "Uptown Funk"?|Ed Sheeran|Bruno Mars|Justin Timberlake|Pharrell Williams|1
+music114|Who is the legendary rock musician known for his guitar skills and songs like "Purple Haze" and "Hey Joe"?|Jimi Hendrix|Eric Clapton|B.B. King|Eddie Van Halen|0
+music115|Which pop star is known for her albums "1989" and "Red," as well as her publicized personal life?|Adele|Katy Perry|Taylor Swift|Lady Gaga|2
+music116|Who is the famous singer known for his soulful voice and hits like "Superstition" and "Isn't She Lovely"?|Ray Charles|Stevie Wonder|Marvin Gaye|Luther Vandross|1
+music117|Which artist is known for the hit songs "Hotline Bling" and "God's Plan"?|Kanye West|Drake|Jay-Z|Travis Scott|1
+music118|Who is the legendary singer known for her vocal prowess and hits like "I Will Always Love You" and "The Greatest Love of All"?|Whitney Houston|Mariah Carey|Celine Dion|Aretha Franklin|0

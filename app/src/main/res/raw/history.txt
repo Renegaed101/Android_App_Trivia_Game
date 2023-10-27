@@ -59,3 +59,61 @@ hist58|What was the capital of the Byzantine Empire (Eastern Roman Empire)?|Athe
 hist59|Which ancient civilization is known for its hieroglyphics, pyramids, and the Sphinx?|Inca|Aztec|Maya|Egyptian|3
 hist60|In which year did the Berlin Wall fall, leading to the reunification of East and West Germany?|1989|1991|1993|1995|0
 hist61|Which treaty formally ended World War I in 1919?|Treaty of Versailles|Treaty of Tordesillas|Treaty of Utrecht|Treaty of Paris|0
+hist62|Which famous leader was assassinated in 1963 in Dallas, Texas?|John F. Kennedy|Abraham Lincoln|Martin Luther King Jr.|Malcolm X|0
+hist63|What ancient civilization was centered in modern-day Mexico and is known for its pyramids and advanced astronomy?|Maya|Aztec|Inca|Olmec|0
+hist64|During which war was the Battle of Gettysburg fought?|Civil War|World War I|World War II|Revolutionary War|0
+hist65|Who was the British Prime Minister during World War II?|Neville Chamberlain|Margaret Thatcher|Winston Churchill|Tony Blair|2
+hist66|What was the name of the Roman general who became a dictator and was assassinated in 44 BC?|Augustus|Nero|Caesar|Cicero|2
+hist67|Which ancient civilization is famous for its monumental architecture, including the Parthenon?|Roman|Greek|Egyptian|Persian|1
+hist68|Who was the first President of South Africa after the end of apartheid?|Nelson Mandela|Desmond Tutu|F. W. de Klerk|Thabo Mbeki|0
+hist69|What major event occurred on July 20, 1969, when humans landed and walked on the moon?|Apollo 11 mission|Sputnik launch|Challenger disaster|Hubble Space Telescope launch|0
+hist70|In which century did the Renaissance begin?|14th century|15th century|16th century|17th century|0
+hist71|What was the name of the English king known for having six wives?|Henry V|Henry VII|Henry VIII|Edward VI|2
+hist72|Which empire was ruled by Genghis Khan and later by his grandson Kublai Khan?|Mongol Empire|Ottoman Empire|Roman Empire|Persian Empire|0
+hist73|Who was the famous nurse during the Crimean War and is considered the founder of modern nursing?|Clara Barton|Florence Nightingale|Mary Seacole|Dorothea Dix|1
+hist74|Which country was led by Adolf Hitler during World War II?|Soviet Union|Italy|Japan|Germany|3
+hist75|What was the name of the first successful English colony in North America, founded in 1607?|Jamestown|Plymouth|Roanoke|New Amsterdam|0
+hist76|In which year did the Chernobyl nuclear disaster occur?|1986|1991|2001|2011|0
+hist77|Who was the first President of the United States to resign from office?|Richard Nixon|John F. Kennedy|Lyndon B. Johnson|Gerald Ford|0
+hist78|Which famous document begins with the words "We the People"?|U.S. Constitution|Declaration of Independence|Magna Carta|Bill of Rights|0
+hist79|Who was the leader of the Soviet Union during the majority of the Cold War?|Nikita Khrushchev|Joseph Stalin|Vladimir Lenin|Leon Trotsky|1
+hist80|Which queen ruled England for over 63 years during the 19th century?|Queen Victoria|Queen Elizabeth I|Queen Mary I|Queen Anne|0
+hist81|What was the main cause of the French and Indian War?|Territorial disputes|Religious conflicts|Economic differences|Political instability|0
+hist82|Which U.S. President made the Louisiana Purchase?|George Washington|Thomas Jefferson|Andrew Jackson|Abraham Lincoln|1
+hist83|Who was the first human to travel into space?|Neil Armstrong|Yuri Gagarin|John Glenn|Buzz Aldrin|1
+hist84|In which year did the United States enter World War I?|1914|1917|1941|1945|1
+hist85|Which country was once known as Persia?|Iraq|Iran|Syria|Turkey|1
+hist86|Who was the President of the United States during the Cuban Missile Crisis?|Richard Nixon|John F. Kennedy|Dwight D. Eisenhower|Lyndon B. Johnson|1
+hist87|Who was the Queen of England at the time of the Spanish Armada in 1588?|Queen Mary I|Queen Elizabeth I|Queen Victoria|Queen Anne|1
+hist88|Which historical figure is credited with creating the first empire in world history around 2300 BC?|Nebuchadnezzar|Sargon of Akkad|Alexander the Great|Cyrus the Great|1
+hist89|In which year did the Battle of Hastings take place, leading to the Norman Conquest of England?|1066|1215|1415|1588|0
+hist90|Who was the first Emperor of China?|Qin Shi Huang|Kangxi Emperor|Yongle Emperor|Taizong of Tang|0
+hist91|What was the primary cause of the Black Death that struck Europe in the 14th century?|Bubonic plague|Smallpox|Influenza|Cholera|0
+hist92|Which country was the main colonial power in Brazil?|Spain|Portugal|France|England|1
+hist93|What was the name of the ship that brought the Pilgrims to America in 1620?|Santa Maria|Mayflower|Nina|Pinta|1
+hist94|In which century did the Industrial Revolution begin?|16th century|17th century|18th century|19th century|2
+hist95|Who was the first Secretary of the Treasury in the United States?|Thomas Jefferson|Alexander Hamilton|John Jay|Benjamin Franklin|1
+hist96|Which civilization is credited with inventing the wheel?|Sumerians|Egyptians|Greeks|Romans|0
+hist97|In which year did the United States purchase Alaska from Russia?|1867|1898|1912|1945|0
+hist98|Which U.S. state was the first to secede from the Union in 1860, leading to the Civil War?|Virginia|Georgia|South Carolina|Texas|2
+hist99|Who was the leader of the Soviet Union when it collapsed in 1991?|Joseph Stalin|Mikhail Gorbachev|Vladimir Putin|Nikita Khrushchev|1
+hist100|What was the primary purpose of the Lewis and Clark expedition?|To find a water route to the Pacific Ocean|To claim land for the United States|To map the Louisiana Territory|All of the above|3
+hist101|Which Egyptian pharaoh is known for his well-preserved tomb discovered in 1922?|Khufu|Tutankhamun|Ramses II|Amenhotep III|1
+hist102|Who was the first female Prime Minister of the United Kingdom?|Margaret Thatcher|Theresa May|Indira Gandhi|Golda Meir|0
+hist103|In which year did the American Revolutionary War end?|1781|1783|1791|1812|1
+hist104|Who was the U.S. President during the Vietnam War?|John F. Kennedy|Lyndon B. Johnson|Richard Nixon|Gerald Ford|2
+hist105|What was the main catalyst for the start of the Russian Revolution in 1917?|Assassination of Archduke Franz Ferdinand|Bread riots and worker strikes|The fall of the Romanov dynasty|World War I|1
+hist106|Which civilization was located in what is now modern-day Iraq and is known for its Hanging Gardens?|Assyrian|Babylonian|Sumerian|Akkadian|1
+hist107|In which year did India gain its independence from British rule?|1942|1947|1950|1956|1
+hist108|Who was the President of the United States during the Gulf War in 1990-1991?|Ronald Reagan|George H. W. Bush|Bill Clinton|George W. Bush|1
+hist109|Which empire was the largest in history in terms of land area?|Roman Empire|Mongol Empire|British Empire|Ottoman Empire|2
+hist110|Who was the famous civil rights leader that delivered the "I Have a Dream" speech?|Malcolm X|Martin Luther King Jr.|Nelson Mandela|Rosa Parks|1
+hist111|Who was the last Pharaoh of Ancient Egypt?|Ramses II|Cleopatra|Tutankhamun|Nefertiti|1
+hist112|What was the main reason for the construction of the Berlin Wall?|To keep East Germans from fleeing to West Germany|To protect West Berlin from communist invasion|To separate the Allied and Soviet sectors of Berlin|To prevent the spread of capitalism|0
+hist113|In which century did the Ottoman Empire fall?|15th century|17th century|19th century|20th century|3
+hist114|Who was the U.S. President during the Watergate scandal?|Richard Nixon|John F. Kennedy|Lyndon B. Johnson|Gerald Ford|0
+hist115|What was the primary focus of the Renaissance movement?|Science and exploration|Art and learning|Religion and spirituality|Politics and power|1
+hist116|Which U.S. President is credited with ending the Cold War?|Ronald Reagan|George H. W. Bush|John F. Kennedy|Dwight D. Eisenhower|0
+hist117|Who was the famous queen of ancient Egypt?|Cleopatra|Hatshepsut|Nefertiti|Ankhesenamun|0
+hist118|Which civilization was the first to develop a system of writing in the Americas?|Olmec|Maya|Aztec|Inca|0
+hist119|In which year did the United States declare its independence?|1774|1776|1781|1783|1

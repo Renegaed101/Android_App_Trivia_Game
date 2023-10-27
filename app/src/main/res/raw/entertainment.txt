@@ -64,3 +64,76 @@ mov63|Which movie features a character named John H. Miller, who is tasked with 
 mov64|What is the name of the fictional African country ruled by King T'Challa in the Marvel Cinematic Universe?|Wakanda|Zamunda|Elbonia|Genovia|0
 mov65|Who played the role of Mary Poppins in the 1964 film "Mary Poppins"?|Julie Andrews|Audrey Hepburn|Elizabeth Taylor|Grace Kelly|0
 mov66|In the movie "The Wizard of Oz," what color is Dorothy's magical slippers?|Ruby red|Sapphire blue|Emerald green|Golden yellow|0
+mov67|Which actor plays the character of Captain America in the Marvel Cinematic Universe?|Chris Evans|Robert Downey Jr.|Chris Hemsworth|Mark Ruffalo|0
+mov68|Who directed the movie "Inception"?|Christopher Nolan|Steven Spielberg|Martin Scorsese|Quentin Tarantino|0
+mov69|Which film features a world where humans live alongside intelligent apes?|Planet of the Apes|Jurassic Park|Star Wars|Avatar|0
+mov70|In which movie does Robin Williams play a father disguising himself as a female housekeeper?|Jumanji|Good Will Hunting|Mrs. Doubtfire|Dead Poets Society|2
+mov71|Who played the character of Black Swan in the movie "Black Swan"?|Natalie Portman|Mila Kunis|Keira Knightley|Scarlett Johansson|0
+mov72|Which movie features a giant gorilla climbing the Empire State Building?|King Kong|Godzilla|Jurassic Park|Planet of the Apes|0
+mov73|Who played the role of Rose DeWitt Bukater in "Titanic"?|Kate Winslet|Cate Blanchett|Nicole Kidman|Julia Roberts|0
+mov74|Which film series is based on the novels by J.K. Rowling?|The Hunger Games|Harry Potter|Lord of the Rings|Twilight|1
+mov75|What is the name of the character played by Johnny Depp in "Edward Scissorhands"?|Edward|Jack Sparrow|Sweeney Todd|Gilbert Grape|0
+mov76|Which animated film features a young deer named Bambi?|The Lion King|Bambi|Frozen|Zootopia|1
+mov77|Who played the character of Walter White in the TV series "Breaking Bad"?|Bryan Cranston|Aaron Paul|Dean Norris|Bob Odenkirk|0
+mov78|What is the name of the fictional African nation in "Black Panther"?|Zamunda|Elbonia|Wakanda|Genovia|2
+mov79|Who directed the movie "The Dark Knight"?|Christopher Nolan|Tim Burton|Quentin Tarantino|Martin Scorsese|0
+mov80|Which movie features a character named Dorothy who is transported to a magical land?|The Wizard of Oz|Alice in Wonderland|Peter Pan|The Chronicles of Narnia|0
+mov81|Who played the role of Jack Torrance in "The Shining"?|Jack Nicholson|Leonardo DiCaprio|Tom Hanks|Brad Pitt|0
+mov82|What is the name of the character played by Keanu Reeves in "John Wick"?|John McClane|John Wick|John Matrix|John Rambo|1
+mov83|Which film follows the life of a young lion named Simba?|The Jungle Book|Lion King|Zootopia|Bambi|1
+mov84|Who played the character of Selene in the "Underworld" series?|Milla Jovovich|Kate Beckinsale|Angelina Jolie|Charlize Theron|1
+mov85|Which movie features a character named Andy Dufresne, who is sentenced to life in Shawshank Prison?|The Green Mile|The Shawshank Redemption|Escape from Alcatraz|Papillon|1
+mov86|What is the name of the character played by Hugh Jackman in the "X-Men" series?|Magneto|Wolverine|Cyclops|Professor X|1
+mov87|Who directed the movie "Gladiator"?|Ridley Scott|Steven Spielberg|Christopher Nolan|Martin Scorsese|0
+mov88|Which film features a world where dinosaurs are brought back to life through cloning?|Jurassic Park|Godzilla|King Kong|The Land Before Time|0
+mov89|Who played the role of Elle Woods in "Legally Blonde"?|Reese Witherspoon|Julia Roberts|Meryl Streep|Sandra Bullock|0
+mov90|In which film does Tom Hanks play a character stranded on an uninhabited island?|Cast Away|Forrest Gump|Saving Private Ryan|The Terminal|0
+mov91|Who played the character of Andy in "The Shawshank Redemption"?|Tim Robbins|Morgan Freeman|Clancy Brown|William Sadler|0
+mov92|What is the name of the fictional universe where "Star Wars" is set?|Middle-earth|Westeros|The Star Wars Galaxy|Narnia|2
+mov93|Which movie features a character named Neo who is offered a choice between a red pill and a blue pill?|The Matrix|Inception|The Adjustment Bureau|Dark City|0
+mov94|Who played the character of Clarice Starling in "The Silence of the Lambs"?|Jodie Foster|Helen Hunt|Julianne Moore|Felicity Huffman|0
+mov95|In which film does Sandra Bullock play an FBI agent who goes undercover at a beauty pageant?|Miss Congeniality|The Heat|The Proposal|Gravity|0
+mov96|Which movie is about a man named Andy Dufresne who is sentenced to two life terms in prison?|The Shawshank Redemption|The Green Mile|Escape from Alcatraz|Cool Hand Luke|0
+mov97|Who played the character of Jack Dawson in "Titanic"?|Leonardo DiCaprio|Brad Pitt|Johnny Depp|Tom Cruise|0
+mov98|Which movie features a character named Forrest Gump who has a low IQ but achieves great things?|Forrest Gump|Rain Man|The Curious Case of Benjamin Button|A Beautiful Mind|0
+mov99|Who directed the movie "Avatar"?|James Cameron|Steven Spielberg|Christopher Nolan|Peter Jackson|0
+mov100|Which film features a character named Indiana Jones who is an archaeologist and adventurer?|Indiana Jones|Tomb Raider|National Treasure|The Mummy|0
+mov101|Who played the character of Maximus Decimus Meridius in "Gladiator"?|Russell Crowe|Joaquin Phoenix|Richard Harris|Oliver Reed|0
+mov102|In which film does Jim Carrey play a character who discovers his whole life is a TV show?|The Truman Show|Bruce Almighty|Liar Liar|Eternal Sunshine of the Spotless Mind|0
+mov103|Which movie features a character named Tony Stark who becomes a superhero?|Iron Man|Batman|Superman|Spider-Man|0
+mov104|Who played the role of Black Widow in the Marvel Cinematic Universe?|Scarlett Johansson|Gwyneth Paltrow|Elizabeth Olsen|Zoe Saldana|0
+mov105|What is the name of the fictional wizarding school in "Harry Potter"?|Hogwarts|Beauxbatons|Durmstrang|Ilvermorny|0
+mov106|Which movie features a character named Luke Skywalker?|Star Wars|Star Trek|Guardians of the Galaxy|The Matrix|0
+mov107|Who played the character of Aragorn in "The Lord of the Rings" series?|Viggo Mortensen|Orlando Bloom|Ian McKellen|Sean Bean|0
+mov108|What is the name of the character played by Arnold Schwarzenegger in "The Terminator"?|John Connor|Sarah Connor|The Terminator|Kyle Reese|2
+mov109|Which film follows the journey of Frodo Baggins as he attempts to destroy a powerful ring?|Harry Potter|The Lord of the Rings|The Hobbit|Star Wars|1
+mov110|Who played the role of Joker in "The Dark Knight"?|Heath Ledger|Joaquin Phoenix|Jack Nicholson|Jared Leto|0
+mov111|What is the name of the character played by Natalie Portman in "Star Wars: Episode I – The Phantom Menace"?|Leia Organa|Padmé Amidala|Rey|Jyn Erso|1
+mov112|Which movie features a character named Jack Sparrow who is a pirate?|Pirates of the Caribbean|Treasure Island|Peter Pan|Hook|0
+mov113|Who played the character of Iron Man in the Marvel Cinematic Universe?|Robert Downey Jr.|Chris Evans|Mark Ruffalo|Jeremy Renner|0
+mov114|In which film does Will Smith play a character who is the last man on Earth?|I Am Legend|After Earth|Independence Day|Men in Black|0
+mov115|What is the name of the fictional African nation that is home to Black Panther?|Zamunda|Elbonia|Wakanda|Genovia|2
+mov116|Who directed the movie "Pulp Fiction"?|Quentin Tarantino|Christopher Nolan|Steven Spielberg|Martin Scorsese|0
+mov117|Which film features a character named Neo who discovers he is living in a simulated reality?|The Matrix|Inception|The Adjustment Bureau|Dark City|0
+mov118|Who played the role of Hannibal Lecter in "The Silence of the Lambs"?|Anthony Hopkins|Jodie Foster|Scott Glenn|Ted Levine|0
+mov119|In which film does Sandra Bullock play a character who must navigate a river blindfolded?|Bird Box|Gravity|The Blind Side|Speed|0
+mov120|Which movie is based on the life of King George VI and his struggle with a stammer?|The King's Speech|The Queen|Elizabeth|The Iron Lady|0
+mov121|Who played the character of Elizabeth Bennet in "Pride and Prejudice"?|Keira Knightley|Emma Watson|Jennifer Ehle|Rachel McAdams|0
+mov122|What is the name of the character played by Brad Pitt in "Fight Club"?|Tyler Durden|Narrator|Marla Singer|Robert Paulson|0
+mov123|Which film follows the journey of two hobbits as they attempt to destroy a powerful ring?|Harry Potter|The Lord of the Rings|The Hobbit|Star Wars|1
+mov124|Who played the role of Wolverine in the "X-Men" series?|Hugh Jackman|Ian McKellen|Patrick Stewart|James McAvoy|0
+mov125|What is the name of the character played by Harrison Ford in "Star Wars"?|Luke Skywalker|Han Solo|Obi-Wan Kenobi|Darth Vader|1
+mov126|Which movie features a character named Andy who owns a group of toys that come to life?|Toy Story|The Lego Movie|Cars|Monsters, Inc.|0
+mov127|Who directed the movie "Schindler's List"?|Steven Spielberg|Martin Scorsese|Christopher Nolan|Quentin Tarantino|0
+mov128|Which film features a character named James Bond, who is a British secret agent?|James Bond|Mission: Impossible|Bourne|Kingsman|0
+mov129|Who played the role of Neo in "The Matrix"?|Keanu Reeves|Laurence Fishburne|Hugo Weaving|Carrie-Anne Moss|0
+mov130|In which film does Tom Hanks play a character who is a captain of a cargo ship taken hostage by pirates?|Captain Phillips|Sully|Cast Away|Saving Private Ryan|0
+mov131|Which movie features a character named Simba who is a lion?|The Lion King|The Jungle Book|Zootopia|Madagascar|0
+mov132|Who played the character of John McClane in the "Die Hard" series?|Bruce Willis|Arnold Schwarzenegger|Sylvester Stallone|Mel Gibson|0
+mov133|What is the name of the character played by Jennifer Lawrence in "The Hunger Games"?|Katniss Everdeen|Primrose Everdeen|Effie Trinket|Rue|0
+mov134|Which movie is about a group of toys that come to life when their owner is not around?|Toy Story|The Lego Movie|Cars|Monsters, Inc.|0
+mov135|Who directed the movie "Inglourious Basterds"?|Quentin Tarantino|Steven Spielberg|Christopher Nolan|Martin Scorsese|0
+mov136|Which film follows the journey of a young wizard named Harry Potter?|Harry Potter|The Lord of the Rings|The Hobbit|Star Wars|0
+mov137|Who played the role of Jack Sparrow in "Pirates of the Caribbean"?|Johnny Depp|Orlando Bloom|Keira Knightley|Geoffrey Rush|0
+mov138|What is the name of the character played by Arnold Schwarzenegger in "Terminator 2: Judgment Day"?|John Connor|Sarah Connor|The Terminator|Kyle Reese|2
+mov139|Which movie features a character named Marty McFly who travels through time in a DeLorean?|Back to the Future|Timecop|Looper|The Time Machine|0

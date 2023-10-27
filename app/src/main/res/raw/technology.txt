@@ -67,3 +67,88 @@ tech66|Which company is known for its gaming platform, Steam, and its digital di
 tech67|What does "BIOS" stand for in the context of computer systems?|Basic Input/Output System|Binary Input/Output System|Business Information Output System|Basic Integrated Operating System|0
 tech68|Which company is known for its cloud-based email and productivity software, including Gmail and Google Docs?|Microsoft|Apple|Google|IBM|2
 tech69|What technology is commonly used for wireless communication between devices over short distances, often used for connecting headphones and speakers?|NFC|Bluetooth|Wi-Fi|GPS|1
+tech70|Which company created the first version of the Windows operating system?|Apple|Microsoft|IBM|Google|1
+tech71|What is the term used for a software application that runs in a web browser?|Desktop Application|Web Service|Mobile App|Web App|3
+tech72|What does "RAM" stand for in the context of computer hardware?|Random Access Memory|Read Access Memory|Running Application Memory|Remote Access Machine|0
+tech73|Which programming language is known for its use in web development and its ‘rails’ framework?|Python|Ruby|Java|JavaScript|1
+tech74|What technology is used to record transactions in a verifiable and permanent way, often associated with cryptocurrencies?|Cloud Computing|Blockchain|Database|Encryption|1
+tech75|Which company is known for its popular gaming console, PlayStation?|Microsoft|Nintendo|Sony|Sega|2
+tech76|What is the name of the programming language primarily used for statistical computing and graphics?|Python|R|Java|C++|1
+tech77|Which company is known for developing the Android operating system?|Apple|Microsoft|Google|IBM|2
+tech78|What does "GPU" stand for in the context of computer hardware?|General Processing Unit|Graphics Processing Unit|Graphical Performance Unit|Gaming Processor Unit|1
+tech79|Which programming language is well-known for its use in scientific computing, data analysis, and machine learning?|Ruby|Python|JavaScript|Swift|1
+tech80|What is the name of the technology used to create virtual, augmented, or mixed reality experiences?|3D Modeling|VR/AR|Artificial Intelligence|Machine Learning|1
+tech81|Which company is famous for its productivity software suite including Word, Excel, and PowerPoint?|Apple|Google|Microsoft|Adobe|2
+tech82|What is the term used for the distribution model where applications are hosted by a vendor or service provider and made available to customers over a network?|On-premise|Cloud Computing|SaaS|PaaS|2
+tech83|What does "HTTP" stand for in website addresses?|Hypertext Transfer Protocol|High Tech Transmission Protocol|Hypertext Technology Protocol|Hyperlink and Text Transfer Protocol|0
+tech84|Which company is known for its professional networking platform, LinkedIn?|Facebook|Google|Microsoft|Twitter|2
+tech85|What is the primary function of an antivirus software?|Internet Browsing|Virus and Malware Removal|File Management|User Authentication|1
+tech86|What does "IoT" stand for in the context of connected devices?|Internet of Technology|Internet of Things|Intranet of Things|Integration of Technology|1
+tech87|What is the term used for a set of practices that combines software development and IT operations?|Agile|Scrum|DevOps|CI/CD|2
+tech88|Which company is known for its e-commerce platform and its Prime membership service?|eBay|Walmart|Amazon|Alibaba|2
+tech89|What technology is used for secure and transparent financial transactions in cryptocurrencies?|Blockchain|Encryption|Cloud Computing|Database|0
+tech90|What is the term used for software that allows users to browse the web?|Operating System|Web Server|Web Browser|Application|2
+tech91|Which programming language is primarily used for server-side web development and is known for its speed and efficiency?|JavaScript|Python|Ruby|Node.js|3
+tech92|What does "AI" stand for in the context of intelligent machines?|Artificial Internet|Automated Intelligence|Artificial Intelligence|Automated Interaction|2
+tech93|What is the primary purpose of a firewall in computer networks?|Data Storage|User Authentication|Network Security|Software Installation|2
+tech94|Which company is known for its digital payment system, PayPal?|eBay|Google|Microsoft|Amazon|0
+tech95|What is the term used for software that is provided free of charge, but money may be charged for additional features, services, or virtual goods?|Freeware|Open Source|Shareware|Adware|2
+tech96|Which programming language is well-suited for developing iOS and macOS applications?|Java|C#|Swift|Kotlin|2
+tech97|What technology is used for connecting and communicating with devices over short distances using radio waves, typically in smartphones?|Wi-Fi|Bluetooth|NFC|LTE|1
+tech98|What is the primary function of a compiler in programming?|Debugging|Code Translation|Error Checking|Version Control|1
+tech99|Which company is famous for its search engine and Android operating system?|Apple|Microsoft|Google|Amazon|2
+tech100|What does "OS" stand for in the context of computer systems?|Operating System|Open Source|Online Service|Output System|0
+tech101|Which company is known for its online video streaming service, Netflix?|Amazon|Hulu|Disney|Netflix|3
+tech102|What is the term used for a type of software that is designed to help people perform a certain type of task?|Operating System|Application Software|System Software|Utility Software|1
+tech103|What does "SSD" stand for in the context of computer storage?|Solid State Drive|Super Storage Device|Solid Storage Disk|Speedy System Disk|0
+tech104|Which programming language is used extensively in web development and is known for its versatility and ease of use?|C++|JavaScript|Ruby|Swift|1
+tech105|What technology is used for transmitting voice and multimedia over the Internet?|VoIP|Bluetooth|Wi-Fi|NFC|0
+tech106|Which company is known for its virtualization and cloud infrastructure solutions?|Oracle|Microsoft|VMware|IBM|2
+tech107|What is the term used for the ability of a computer program to learn and adapt to new data without being explicitly programmed?|Machine Learning|Artificial Intelligence|Neural Networks|Deep Learning|0
+tech108|Which company is known for its graphic design software, Adobe Photoshop?|Microsoft|Apple|Google|Adobe|3
+tech109|What is the primary purpose of an API (Application Programming Interface) in software development?|Data Storage|Network Security|Application Integration|User Interface Design|2
+tech110|What does "BIOS" stand for in the context of computing?|Basic Integrated Operating System|Basic Input/Output System|Binary Input/Output System|Basic Internal Operating Software|1
+tech111|Which programming language is known for its simplicity and is often recommended for beginners?|C++|Python|Java|JavaScript|1
+tech112|What is the term used for the practice of examining large sets of data to uncover hidden patterns, correlations, and other insights?|Data Mining|Data Analysis|Big Data|Machine Learning|0
+tech113|Which company is famous for its online marketplace, eBay?|Amazon|Walmart|Alibaba|eBay|3
+tech114|What does "IP" stand for in the context of networking?|Internet Provider|Internet Protocol|Information Processing|Intranet Protocol|1
+tech115|What is the primary function of an operating system in a computer?|Data Analysis|Network Security|Managing Hardware and Software Resources|Software Development|2
+tech116|Which programming language is well-known for its use in systems programming and its performance?|C++|Python|Java|JavaScript|0
+tech117|What is the term used for a collection of interconnected computers and devices?|Database|Network|System|Cluster|1
+tech118|What technology is used for analyzing and visualizing data to help companies make informed decisions?|Data Science|Machine Learning|Artificial Intelligence|Business Intelligence|3
+tech119|What is the term used for software that is designed to disrupt, damage, or gain unauthorized access to computer systems?|Antivirus|Malware|Firewall|Encryption|1
+tech120|Which programming language is used primarily for data analysis, statistical modeling, and bioinformatics?|R|Python|Java|C++|0
+tech121|What does "URL" stand for in the context of web addresses?|Unified Resource Locator|Uniform Resource Locator|Universal Resource Link|Unique Resource Link|1
+tech122|Which company is famous for its Windows operating system and Office suite of productivity software?|Apple|Microsoft|Google|Amazon|1
+tech123|Which programming language is well-suited for web development and is known for its simplicity and readability?|C++|JavaScript|Ruby|Python|2
+tech124|Which company is known for its video conferencing tool, Zoom?|Microsoft|Cisco|Zoom Video Communications|Google|2
+tech125|What is the term used for a type of malicious software that encrypts a user’s files and demands payment for the decryption key?|Virus|Ransomware|Malware|Spyware|1
+tech126|Which programming language is known for its use in web development, particularly on the server-side?|JavaScript|Ruby|Python|PHP|3
+tech127|What does "VPN" stand for in the context of networking?|Virtual Private Network|Very Private Network|Vital Protection Network|Variable Path Network|0
+tech128|Which company is famous for its video-sharing platform, YouTube?|Facebook|Amazon|Google|Microsoft|2
+tech129|What is the term used for the model where software is licensed on a subscription basis and is centrally hosted?|SaaS|PaaS|IaaS|On-premise|0
+tech130|What does "XML" stand for in the context of web development?|eXtensible Markup Language|eXecutable Multiple Language|eXtra Modern Link|eXclusive Machine Language|0
+tech131|Which company is known for its cloud-based customer relationship management (CRM) software?|Microsoft|Oracle|Salesforce|IBM|2
+tech132|What is the primary function of a database in software applications?|User Authentication|Data Storage|Network Security|Software Installation|1
+tech133|Which programming language is well-known for its use in web development and its ‘Django’ framework?|Ruby|Python|JavaScript|Java|1
+tech134|Which company is famous for its cloud computing platform, Microsoft Azure?|Amazon|IBM|Microsoft|Oracle|2
+tech135|What is the term used for a small piece of data sent from a website and stored on a user’s computer by the user's web browser?|Cookie|Cache|Session|Token|0
+tech136|What technology is used for creating a secure connection over the Internet to protect data and privacy?|VPN|Wi-Fi|Bluetooth|NFC|0
+tech137|Which programming language is well-known for its use in artificial intelligence and its ‘SciPy’ library?|C++|JavaScript|Python|Ruby|2
+tech138|What does "CMS" stand for in the context of web development?|Content Management System|Computer Management System|Content Moderation System|Computer Monitoring System|0
+tech139|Which company is known for its professional creative software such as Illustrator and Premiere Pro?|Microsoft|Adobe|Apple|Google|1
+tech140|What is the term used for a malicious activity where an attacker makes a network or service unavailable to its intended users?|Distributed Denial of Service|Virus|Ransomware|Malware|0
+tech141|Which programming language is known for its use in game development and high-performance applications?|Python|JavaScript|C++|Java|2
+tech142|What does "IoE" stand for in the context of connected devices?|Internet of Everything|Internet of Electronics|Integration of Everything|Integration of Electronics|0
+tech143|Which company is famous for its line of personal computers and operating system, macOS?|Microsoft|IBM|Apple|Dell|2
+tech144|What is the term used for a system used to manage and track the work of a team of developers?|Version Control System|Task Management System|Project Management System|Bug Tracking System|2
+tech145|Which programming language is well-suited for numerical computing and scientific research?|C++|Java|Matlab|Python|2
+tech146|What does "API" stand for in the context of software development?|Application Program Interface|Application Programming Interface|Automated Program Interface|Automated Programming Interface|1
+tech147|Which company is known for its suite of graphic design and video editing software, Creative Cloud?|Microsoft|Apple|Adobe|Corel|2
+tech148|What is the term used for the practice of testing a software application under controlled conditions to check for bugs or performance issues?|Quality Assurance|Bug Tracking|Software Testing|User Testing|2
+tech149|Which programming language is known for its use in backend development and its ‘Express’ framework?|JavaScript|Python|Ruby|PHP|0
+tech150|What does "SaaS" stand for in the context of cloud computing?|Software as a Service|Storage as a Service|System as a Service|Security as a Service|0
+tech151|Which company is famous for its voice-controlled smart assistant, Alexa?|Apple|Google|Microsoft|Amazon|3
+tech152|What is the term used for the continuous process of developing and deploying a software application?|Continuous Integration|Continuous Delivery|Agile Development|DevOps|1
+tech153|Which programming language is well-suited for developing mobile applications for Android?|Java|C#|Swift|Kotlin|3
+tech154|What does "IoS" stand for in the context of operating systems?|Internet Operating System|Input/Output System|iPhone Operating System|Integrated Operating System|2

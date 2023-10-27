@@ -73,3 +73,89 @@ sports72|What is the term for a zero score in bowling on an individual hole?|Bir
 sports73|In which sport is the "Hand of God" incident famous?|Soccer|Basketball|Cricket|Rugby|0
 sports74|Who is known as "The Black Mamba" in the world of basketball?|Kobe Bryant|LeBron James|Michael Jordan|Kareem Abdul-Jabbar|0
 sports75|In which sport do teams compete for the America's Cup?|Tennis|Golf|Yachting|Cricket|2
+sports76|Which country won the UEFA European Championship in 2004?|France|Greece|Spain|Portugal|1
+sports77|In which sport would you perform a Fosbury Flop?|Gymnastics|Diving|High Jump|Pole Vault|2
+sports78|Who won the FIFA Ballon d'Or in 2013?|Lionel Messi|Cristiano Ronaldo|Franck Ribéry|Andres Iniesta|1
+sports79|Which country won the first Rugby World Cup in 1987?|Australia|South Africa|New Zealand|England|2
+sports80|Who is the all-time leading goal scorer in the FIFA Women's World Cup?|Abby Wambach|Marta|Birgit Prinz|Michelle Akers|1
+sports81|What is the maximum score possible in a standard game of 10-pin bowling?|200|300|400|500|1
+sports82|Who is the only tennis player to have won each of the four Grand Slam tournaments at least six times?|Serena Williams|Steffi Graf|Margaret Court|Rod Laver|0
+sports83|In which sport would you perform a pike?|Diving|Gymnastics|High Jump|Synchronized Swimming|0
+sports84|What is the national sport of South Korea?|Tae Kwon Do|Archery|Baseball|Soccer|0
+sports85|Who is the most successful team in the history of the FIFA World Cup?|Brazil|Germany|Italy|Argentina|0
+sports86|In which sport would you see a “safety”?|Soccer|American Football|Ice Hockey|Basketball|1
+sports87|Which country won the most gold medals at the 2008 Beijing Olympics?|USA|China|Russia|Germany|1
+sports88|What is the term for a score of one under par on a golf hole?|Birdie|Bogey|Eagle|Par|0
+sports89|Who is the all-time leading run-scorer in Test cricket?|Brian Lara|Sachin Tendulkar|Ricky Ponting|Jacques Kallis|1
+sports90|Which sport features the Larry O’Brien Championship Trophy?|Baseball|Basketball|Ice Hockey|American Football|1
+sports91|Who won the Golden Boot for being the top goal scorer at the 2018 FIFA World Cup?|Harry Kane|Lionel Messi|Cristiano Ronaldo|Kylian Mbappé|0
+sports92|In which sport do players compete for the Ashes?|Soccer|Cricket|Golf|Tennis|1
+sports93|Which country hosted the 2014 FIFA World Cup?|South Africa|Brazil|Germany|Russia|1
+sports94|Who is known as the "King of Clay" in the tennis world?|Roger Federer|Novak Djokovic|Rafael Nadal|Andy Murray|2
+sports95|In which sport would you find the terms “spare” and “strike”?|Bowling|Golf|Tennis|Baseball|0
+sports96|Who has the most Grand Slam titles in women's tennis?|Serena Williams|Margaret Court|Steffi Graf|Martina Navratilova|1
+sports97|What is the term for a hole-in-one in disc golf?|Ace|Birdie|Eagle|Albatross|0
+sports98|Which country won the 2003 Rugby World Cup?|Australia|New Zealand|South Africa|England|3
+sports99|Who holds the record for the most goals scored in a calendar year in football?|Lionel Messi|Cristiano Ronaldo|Pele|Gerd Muller|0
+sports100|What is the name of the trophy awarded to the winner of the Super Bowl?|Lombardi Trophy|Heisman Trophy|Stanley Cup|Claret Jug|0
+sports101|Which sport features the Calcutta Cup?|Cricket|Rugby|Soccer|Golf|1
+sports102|Who is the only athlete ever to play in a Super Bowl and a World Series?|Bo Jackson|Deion Sanders|Michael Jordan|Jim Brown|1
+sports103|In which sport would you perform a somersault?|Diving|Gymnastics|Trampoline|All of the above|3
+sports104|Which country won the most medals at the 2016 Rio Olympics?|USA|China|Russia|Great Britain|0
+sports105|Who is the only basketball player to score 100 points in a single NBA game?|Michael Jordan|Wilt Chamberlain|Kobe Bryant|LeBron James|1
+sports106|In which sport is the term "love" used?|Tennis|Golf|Cricket|Rugby|0
+sports107|Which country won the first FIFA Women's World Cup in 1991?|USA|China|Norway|Germany|0
+sports108|What is the term for four consecutive strikes in bowling?|Four-bagger|Turkey|Hambone|Strikeout|2
+sports109|Who is the all-time leading scorer in Women's International soccer?|Marta|Abby Wambach|Birgit Prinz|Christine Sinclair|3
+sports110|In which sport is the Presidents Cup contested?|Soccer|Golf|Cricket|Tennis|1
+sports111|Which sport features the Ryder Cup?|Soccer|Golf|Cricket|Tennis|1
+sports112|Who is the all-time leading points scorer in NBA history?|Kareem Abdul-Jabbar|LeBron James|Kobe Bryant|Michael Jordan|0
+sports113|In which sport do players compete for the Davis Cup?|Soccer|Golf|Cricket|Tennis|3
+sports114|Which country won the most gold medals at the 2012 London Olympics?|USA|China|Great Britain|Russia|0
+sports115|What is the term for scoring three goals in a game in soccer?|Hat-trick|Triple|Three-bagger|Treble|0
+sports116|Which country won the 2018 Women's Hockey World Cup?|Netherlands|Australia|USA|England|0
+sports117|In which sport is the term “bunker” used?|Golf|Tennis|Cricket|Soccer|0
+sports118|What is the term for a strike followed by a spare in two consecutive frames in bowling?|Strikeout|Spare Change|Strike Spare|Spare Strike|2
+sports119|Who is the only player to have won the NBA Finals MVP award while being on the losing team?|Jerry West|LeBron James|Michael Jordan|Magic Johnson|0
+sports120|What is the term for a player’s total number of strokes in a round of golf?|Score|Total|Sum|Count|0
+sports121|In which sport do teams compete for the Solheim Cup?|Golf|Tennis|Soccer|Cricket|0
+sports122|Who is the all-time leading goal scorer in Men's International soccer?|Cristiano Ronaldo|Lionel Messi|Pele|Miroslav Klose|0
+sports123|What is the term for a zero score in tennis?|Love|Zero|Nil|None|0
+sports124|Which country won the 2019 Women's Soccer World Cup?|USA|Netherlands|Germany|England|0
+sports125|In which sport would you find a “dead ball”?|Soccer|Cricket|Tennis|Baseball|1
+sports126|What is the term for a hole played in three strokes under par in golf?|Albatross|Eagle|Birdie|Double Eagle|0
+sports127|In which sport is the term “stalemate” used?|Chess|Soccer|Golf|Tennis|0
+sports128|What is the term for a penalty stroke in golf?|Stroke|Penalty|Drop|Hazard|0
+sports129|Who holds the record for the most home runs in a single MLB season?|Barry Bonds|Mark McGwire|Sammy Sosa|Babe Ruth|0
+sports130|In which sport is the term “alley-oop” used?|Basketball|Soccer|Tennis|Volleyball|0
+sports131|Who is the all-time leading goal scorer in the NHL?|Wayne Gretzky|Gordie Howe|Jaromir Jagr|Brett Hull|0
+sports132|In which sport would you find a “scrum”?|Soccer|Rugby|Football|Hockey|1
+sports133|Who is the all-time leading run scorer in One Day Internationals (ODI) cricket?|Sachin Tendulkar|Virat Kohli|Ricky Ponting|Sanath Jayasuriya|0
+sports134|In which sport is the term “free throw” used?|Basketball|Soccer|Tennis|Volleyball|0
+sports135|Which country won the most medals at the 2004 Athens Olympics?|USA|China|Russia|Australia|0
+sports136|Who is the all-time leading scorer in the UEFA Champions League?|Cristiano Ronaldo|Lionel Messi|Raul|Robert Lewandowski|0
+sports137|In which sport do teams compete for the Claret Jug?|Cricket|Golf|Tennis|Rugby|1
+sports138|What is the term for a home run with the bases loaded in baseball?|Grand Slam|Home Run Derby|Full House|Homer|0
+sports139|In which sport is the term “triple-double” used?|Basketball|Soccer|Tennis|Volleyball|0
+sports140|Who won the most gold medals at the 2000 Sydney Olympics?|USA|China|Russia|Australia|0
+sports141|In which sport would you perform a “gainer”?|Diving|Gymnastics|Trampoline|Swimming|0
+sports142|Which country won the 2016 Men's Hockey World Cup?|Australia|Netherlands|India|Argentina|3
+sports143|Who is the only athlete to have won a gold medal in both the Summer and Winter Olympics?|Eddie Eagan|Clara Hughes|Christa Luding-Rothenburger|Lauryn Williams|0
+sports144|What is the term for a perfect game in bowling?|300|Strikeout|Perfect 10|Full House|0
+sports145|In which sport do teams compete for the Web Ellis Cup?|Soccer|Rugby|Cricket|Tennis|1
+sports146|Who is the all-time leading wicket-taker in Test cricket?|Shane Warne|Muttiah Muralitharan|Anil Kumble|Glenn McGrath|1
+sports147|In which sport is the term “eagle” used?|Golf|Tennis|Soccer|Cricket|0
+sports148|What is the term for a three-strikeout inning in baseball?|Golden Sombrero|Immaculate Inning|Hat Trick|Triple Play|1
+sports149|In which sport would you find the “pommel horse”?|Gymnastics|Equestrian|Polo|Rodeo|0
+sports150|In which sport is the term “dunk” used?|Basketball|Soccer|Tennis|Volleyball|0
+sports151|What is the term for a strike followed by a spare in the same frame in bowling?|Strike-Spare|Spare-Strike|Strikeout|Split|0
+sports152|Who won the Golden Boot for being the top goal scorer at the 2002 FIFA World Cup?|Ronaldo|Rivaldo|Miroslav Klose|Oliver Kahn|0
+sports153|In which sport is the Stanley Cup awarded?|Soccer|Basketball|Ice Hockey|American Football|2
+sports154|Which country won the 2006 FIFA World Cup?|France|Brazil|Italy|Germany|2
+sports155|Who is the all-time leading scorer in Men's International soccer?|Cristiano Ronaldo|Lionel Messi|Pele|Ali Daei|3
+sports156|Which country won the most medals at the 2008 Beijing Paralympics?|USA|China|Great Britain|Australia|1
+sports157|In which sport would you find a “quarterback”?|Soccer|Basketball|American Football|Baseball|2
+sports158|Who won the Golden Boot for being the top goal scorer at the 2014 FIFA World Cup?|James Rodriguez|Thomas Muller|Lionel Messi|Neymar|0
+sports159|Who is the all-time leading wicket-taker in One Day Internationals (ODI) cricket?|Wasim Akram|Muttiah Muralitharan|Waqar Younis|Anil Kumble|1
+sports160|In which sport is the term “slam dunk” used?|Basketball|Soccer|Tennis|Volleyball|0
+sports161|What is the term for a score of two under par on a golf hole?|Birdie|Bogey|Eagle|Par|2
