@@ -67,6 +67,7 @@ public class GameOverActivity extends AppCompatActivity {
         mainMenuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                GameOptionsActivity.resetState();
                 startActivity(new Intent(getApplicationContext(),MainActivity.class));
             }
         });

@@ -842,33 +842,27 @@ public class GameActivity extends AppCompatActivity {
 
 
     int selectQuestionImageResourceId(Question question) {
-        executor.execute(new Runnable() {
-            @Override
-            public void run() {
-
-            }
-        });
         String resourceName = "";
         for (Category category: GameOptionsActivity.selectedCategories) {
             if (question.categoryId.contains(category.categoryId)) {
                 switch (currentIncrement) {
                     case 100:
-                        resourceName = category.categoryId + "0";
+                        resourceName = category.categoryId + "0" + randomImgOffset();
                         break;
                     case 150:
-                        resourceName = category.categoryId + "1";
+                        resourceName = category.categoryId + "1" + randomImgOffset();
                         break;
 
                     case 200:
-                        resourceName = category.categoryId + "2";
+                        resourceName = category.categoryId + "2" + randomImgOffset();
                         break;
 
                     case 300:
-                        resourceName = category.categoryId + "3";
+                        resourceName = category.categoryId + "3" + randomImgOffset();
                         break;
 
                     case 400:
-                        resourceName = category.categoryId + "4";
+                        resourceName = category.categoryId + "4" + randomImgOffset();
                         break;
 
                 }
@@ -876,6 +870,15 @@ public class GameActivity extends AppCompatActivity {
             }
         }
         return 0; //Indicates Error
+    }
+
+    private String randomImgOffset () {
+        int number = (int) (Math.random()*2);
+        if (number == 0) {
+            return "0";
+        } else {
+            return "";
+        }
     }
 
 
