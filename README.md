@@ -2,9 +2,9 @@
 A trivia game developed for Android mobile devices. Developed using Android Studio, written primarily in Java.
 
 <p >
-  <img src="etc/screenshot1.jpg" alt="Image 1" width="280" height = "550" style="margin-right: 40px;"/>
-  <img src="etc/screenshot2.jpg" alt="Image 2" width="280" height = "550" style="margin-right: 40px;"/>
-  <img src="etc/screenshot3.jpg" alt="Image 3" width="280" height = "550"/>
+  <img src="etc/screenshot1.jpg" alt="Image 1" width="250" height = "500" style="margin-right: 40px;"/>
+  <img src="etc/screenshot2.jpg" alt="Image 2" width="250" height = "500" style="margin-right: 40px;"/>
+  <img src="etc/screenshot3.jpg" alt="Image 3" width="250" height = "500"/>
 </p>
 
 ## To run
