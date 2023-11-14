@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.unquote"
+    namespace = "com.mahdshahzad.triviam"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.unquote"
+        applicationId = "com.mahdshahzad.triviam"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

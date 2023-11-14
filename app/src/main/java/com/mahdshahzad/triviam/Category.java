@@ -1,4 +1,4 @@
-package com.example.unquote;
+package com.mahdshahzad.triviam;
 
 public class Category {
     public String categoryName;

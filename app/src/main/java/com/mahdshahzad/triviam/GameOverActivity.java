@@ -1,4 +1,4 @@
-package com.example.unquote;
+package com.mahdshahzad.triviam;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -11,7 +11,6 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.widget.ProgressBar;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.VideoView;

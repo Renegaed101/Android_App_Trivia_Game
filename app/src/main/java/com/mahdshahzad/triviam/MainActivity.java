@@ -1,4 +1,4 @@
-package com.example.unquote;
+package com.mahdshahzad.triviam;
 
 import androidx.appcompat.app.AppCompatActivity;
 
