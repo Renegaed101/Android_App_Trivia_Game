@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Unquote"
+rootProject.name = "TriviaM"
 include(":app")

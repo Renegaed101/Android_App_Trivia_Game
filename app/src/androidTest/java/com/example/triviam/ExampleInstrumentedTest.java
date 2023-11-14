@@ -1,4 +1,4 @@
-package com.example.unquote;
+package com.example.triviam;
 
 import android.content.Context;
 

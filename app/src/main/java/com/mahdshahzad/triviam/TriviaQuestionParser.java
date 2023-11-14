@@ -1,4 +1,4 @@
-package com.example.unquote;
+package com.mahdshahzad.triviam;
 
 import android.content.res.Resources;
 import android.util.Pair;
