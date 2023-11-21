@@ -29,7 +29,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
     HorizontalScrollView selectedCategories;
     LinearLayout selectedCategoriesLayout;
     TextView numberCategoriesTextView;
-    int dynamicWidth;
+    private int dynamicWidth;
 
 
     // Constructor

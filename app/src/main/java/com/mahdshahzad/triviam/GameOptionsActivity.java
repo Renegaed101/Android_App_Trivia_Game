@@ -51,10 +51,6 @@ public class GameOptionsActivity extends AppCompatActivity {
     ConstraintSet specificCategoriesConstraintSet;
     Transition transition;
 
-    // Seems to be a bug with transitionManager and using responsiveText, this is used to fix it.
-    boolean transitionTextSizeBugFix = false;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -100,13 +96,6 @@ public class GameOptionsActivity extends AppCompatActivity {
             @Override
             public void onTransitionEnd(Transition transition) {
                 setButtonText();
-                if (!transitionTextSizeBugFix && !allCategoriesSelected) {
-                    transitionTextSizeBugFix = true;
-                    specCatButton.performClick();
-                }
-                if (allCategoriesSelected) {
-                    transitionTextSizeBugFix = false;
-                }
             }
 
             @Override
@@ -302,6 +291,11 @@ public class GameOptionsActivity extends AppCompatActivity {
         TransitionManager.beginDelayedTransition(gameOptionsConstraintLayout, transition);
         specificCategoriesConstraintSet.applyTo(gameOptionsConstraintLayout);
         numberQuestionButtonUpdate();
+        setNumCategories();
+        if (numCategories != 0) {
+            numSelectedCatTextView.setText("Categories: " + String.valueOf(numCategories));
+            numSelectedCatTextView.setVisibility(View.VISIBLE);
+        }
     }
 
     private void setAllCategoriesConstraintLayout() {
@@ -341,6 +335,8 @@ public class GameOptionsActivity extends AppCompatActivity {
         questionsButton20.setText("20");
         allCatButton.setText("All Categories");
         specCatButton.setText("Specific Categories");
+        allCatButton.requestLayout(); // Fixes redraw error
+        specCatButton.requestLayout(); //Fixes redraw error
     }
 
     public static void resetState() {
