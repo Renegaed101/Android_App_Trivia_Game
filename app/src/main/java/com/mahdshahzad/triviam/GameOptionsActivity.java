@@ -100,8 +100,6 @@ public class GameOptionsActivity extends AppCompatActivity {
             @Override
             public void onTransitionEnd(Transition transition) {
                 setButtonText();
-                //updateButtonTextSize(specCatButton);
-                //updateButtonTextSize(allCatButton);
                 if (!transitionTextSizeBugFix && !allCategoriesSelected) {
                     transitionTextSizeBugFix = true;
                     specCatButton.performClick();
@@ -343,18 +341,6 @@ public class GameOptionsActivity extends AppCompatActivity {
         questionsButton20.setText("20");
         allCatButton.setText("All Categories");
         specCatButton.setText("Specific Categories");
-    }
-
-    private void updateButtonTextSize(Button button) {
-        if (button != null) {
-            TextViewCompat.setAutoSizeTextTypeUniformWithConfiguration(
-                    button,
-                    8, // Min text size
-                    36, // Max text size, adjust as needed
-                    1,  // Step granularity
-                    TypedValue.COMPLEX_UNIT_SP
-            );
-        }
     }
 
     public static void resetState() {

@@ -7,8 +7,8 @@
 
     <Button
         android:id="@+id/includeCategoryButton"
-        android:layout_width="0dp"
-        android:layout_height="160dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:backgroundTint="#00BCD4"
@@ -33,16 +33,22 @@
 
     <TextView
         android:id="@+id/categoryNameTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:fontFamily="@font/atma_light"
         android:text="Animals"
+        android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="24sp"
         android:textStyle="bold"
+        app:autoSizeMaxTextSize="100sp"
+        app:autoSizeMinTextSize="8sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
         app:layout_constraintBottom_toBottomOf="@+id/includeCategoryButton"
         app:layout_constraintEnd_toEndOf="@+id/includeCategoryButton"
-        app:layout_constraintStart_toStartOf="@+id/includeCategoryButton" />
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="@+id/includeCategoryButton"
+        app:layout_constraintWidth_percent="0.8" />
 
     <ImageButton
         android:id="@+id/categoryRemoveButton"

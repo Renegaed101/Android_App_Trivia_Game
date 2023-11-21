@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,6 +29,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
     HorizontalScrollView selectedCategories;
     LinearLayout selectedCategoriesLayout;
     TextView numberCategoriesTextView;
+    int dynamicWidth;
 
 
     // Constructor
@@ -38,6 +40,18 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
         selectedCategories = ((Activity)parentContext).findViewById(R.id.selectedCategoriesScrollView);
         selectedCategoriesLayout = selectedCategories.findViewById(R.id.selectedCategoriesLayout);
         numberCategoriesTextView = ((Activity)parentContext).findViewById(R.id.numberOfSelectedCategoriesTextView);
+
+        // Get the screen width in pixels
+        DisplayMetrics displayMetrics = resources.getDisplayMetrics();
+        int screenWidth = displayMetrics.widthPixels;
+        int numberOfColumns = 2; // Number of columns in the grid
+        int padding = 0; // Assuming 16dp padding on each side
+
+        // Convert padding from dp to pixels
+        int paddingInPx = (int) (padding * displayMetrics.density);
+
+        // Calculate the dynamic width
+        dynamicWidth = (screenWidth / numberOfColumns) - (paddingInPx * 2);
     }
 
     // Create new views (invoked by the layout manager)
@@ -52,6 +66,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
         TextView categoryNameTextView;
         Button includeButton;
         ImageView categoryImageView;
+        CardView categoryCardView;
 
         public CategoryViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -59,6 +74,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
             categoryNameTextView = itemView.findViewById(R.id.categoryNameTextView);
             includeButton = itemView.findViewById(R.id.includeCategoryButton);
             categoryImageView = itemView.findViewById(R.id.categoryImageView);
+            categoryCardView = itemView.findViewById(R.id.categoryCardView);
 
         }
     }
@@ -68,6 +84,11 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
     @Override
     public void onBindViewHolder(@NonNull CategoryViewHolder holder, int position) {
         Category category = categoryList.get(position);
+
+        ViewGroup.LayoutParams layoutParams = holder.categoryCardView.getLayoutParams();
+        layoutParams.width = dynamicWidth;
+        layoutParams.height = dynamicWidth - 32; //To keep categoryImage aspect ratio close to 1:1
+        holder.categoryCardView.setLayoutParams(layoutParams);
 
         holder.categoryNameTextView.setText(category.categoryName);
         holder.categoryNameTextView.setTextColor(resources.getColor(category.textColourId));
@@ -94,6 +115,12 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
         Button includeButton = clone.findViewById(R.id.includeCategoryButton);
         ImageView categoryImageView = clone.findViewById(R.id.categoryImageView);
         ImageButton removeCategoryButton = clone.findViewById(R.id.categoryRemoveButton);
+        CardView categoryCardView = clone.findViewById(R.id.categoryCardView);
+
+        ViewGroup.LayoutParams layoutParams = categoryCardView.getLayoutParams();
+        layoutParams.width = (dynamicWidth*3)/4;
+        layoutParams.height = ((dynamicWidth - 32)*3)/4; //To keep categoryImage aspect ratio close to 1:1
+        categoryCardView.setLayoutParams(layoutParams);
 
         categoryNameTextView.setText(category.categoryName);
         categoryNameTextView.setTextColor(resources.getColor(category.textColourId));
