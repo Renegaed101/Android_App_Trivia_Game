@@ -124,8 +124,10 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/multiplierTextCardView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.04"
+        app:layout_constraintWidth_percent="0.35"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="-8dp"
         android:alpha="0.8"
@@ -139,16 +141,20 @@
 
         <TextView
             android:id="@+id/multiplierTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginStart="8dp"
             android:layout_marginTop="2dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="2dp"
             android:elevation="3dp"
             android:text="Multiplier Inactive"
+            android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="16sp"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
             app:layout_constraintBottom_toTopOf="@+id/ll_main_first_row_buttons"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/music_toggle_game"
@@ -198,8 +204,10 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.42"
+        app:layout_constraintHeight_percent="0.06"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:alpha="0.8"
@@ -211,14 +219,18 @@
 
         <TextView
             android:id="@+id/scoreTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_vertical"
+            android:text="Score:10000"
             android:textColor="@color/white"
-            android:textSize="34sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform" />
 
     </androidx.cardview.widget.CardView>
 

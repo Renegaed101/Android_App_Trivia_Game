@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.transition.ChangeBounds;
 import android.transition.Transition;
 import android.transition.TransitionManager;
+import android.util.TypedValue;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -19,6 +20,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintSet;
+import androidx.core.widget.TextViewCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -48,7 +50,6 @@ public class GameOptionsActivity extends AppCompatActivity {
     ConstraintSet allCategoriesConstraintSet;
     ConstraintSet specificCategoriesConstraintSet;
     Transition transition;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -199,11 +200,10 @@ public class GameOptionsActivity extends AppCompatActivity {
                 setSpecificCategoriesConstraintLayout();
                 setCatButtonSelected(specCatButton);
                 setCatButtonNotSelected(allCatButton);
-                allCatButton.setTextSize(19);
-                specCatButton.setTextSize(19);
                 questionsButton20.setTextSize(30);
                 questionsButton40.setTextSize(30);
                 questionsButton60.setTextSize(30);
+                setCatButtonSelected(specCatButton);
             });
 
             allCatButton.setOnClickListener(view -> {
@@ -211,8 +211,6 @@ public class GameOptionsActivity extends AppCompatActivity {
                 setAllCategoriesConstraintLayout();
                 setCatButtonSelected(allCatButton);
                 setCatButtonNotSelected(specCatButton);
-                allCatButton.setTextSize(34);
-                specCatButton.setTextSize(34);
                 questionsButton20.setTextSize(60);
                 questionsButton40.setTextSize(60);
                 questionsButton60.setTextSize(60);
@@ -293,6 +291,11 @@ public class GameOptionsActivity extends AppCompatActivity {
         TransitionManager.beginDelayedTransition(gameOptionsConstraintLayout, transition);
         specificCategoriesConstraintSet.applyTo(gameOptionsConstraintLayout);
         numberQuestionButtonUpdate();
+        setNumCategories();
+        if (numCategories != 0) {
+            numSelectedCatTextView.setText("Categories: " + String.valueOf(numCategories));
+            numSelectedCatTextView.setVisibility(View.VISIBLE);
+        }
     }
 
     private void setAllCategoriesConstraintLayout() {
@@ -332,6 +335,8 @@ public class GameOptionsActivity extends AppCompatActivity {
         questionsButton20.setText("20");
         allCatButton.setText("All Categories");
         specCatButton.setText("Specific Categories");
+        allCatButton.requestLayout(); // Fixes redraw error
+        specCatButton.requestLayout(); //Fixes redraw error
     }
 
     public static void resetState() {
