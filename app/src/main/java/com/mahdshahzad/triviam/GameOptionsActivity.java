@@ -1,11 +1,13 @@
 package com.mahdshahzad.triviam;
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.transition.ChangeBounds;
 import android.transition.Transition;
 import android.transition.TransitionManager;
+import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.animation.Animation;
@@ -64,7 +66,6 @@ public class GameOptionsActivity extends AppCompatActivity {
         specCatButton = findViewById(R.id.specCatButton);
         allCatButton = findViewById(R.id.allCatButton);
         Button startGameButton = findViewById(R.id.startGameButton);
-        TextView categoriesText = findViewById(R.id.selectCategoriesTextView);
         pulse = AnimationUtils.loadAnimation(this,R.anim.pulse_animation);
         recyclerView = findViewById(R.id.categoryRecyclerView);
         horizontalScrollView = findViewById(R.id.selectedCategoriesScrollView);
@@ -230,8 +231,14 @@ public class GameOptionsActivity extends AppCompatActivity {
         categoryList.add(new Category("Technology",R.raw.technology,R.drawable.categorytechnology,R.color.blue,R.color.white,"tech"));
 
         RecyclerView categoryRecyclerView = findViewById(R.id.categoryRecyclerView);
-        CategoryAdapter adapter = new CategoryAdapter(categoryList,this);
-        categoryRecyclerView.setLayoutManager(new GridLayoutManager(this,2));
+        int columns;
+        if (isTablet()) {
+            columns = 3;
+        } else {
+            columns = 2;
+        }
+        CategoryAdapter adapter = new CategoryAdapter(categoryList,this, columns);
+        categoryRecyclerView.setLayoutManager(new GridLayoutManager(this, columns));
         categoryRecyclerView.setAdapter(adapter);
 
     }
@@ -337,6 +344,7 @@ public class GameOptionsActivity extends AppCompatActivity {
         specCatButton.setText("Specific Categories");
         allCatButton.requestLayout(); // Fixes redraw error
         specCatButton.requestLayout(); //Fixes redraw error
+        selectedCatTextView.requestLayout();
     }
 
     public static void resetState() {
@@ -344,6 +352,16 @@ public class GameOptionsActivity extends AppCompatActivity {
         for (Category i: categoryList) {
             i.included = false;
         }
+    }
+
+    private boolean isTablet() {
+        // Calculate screen size
+        DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
+        float screenWidthDp = displayMetrics.widthPixels / displayMetrics.density;
+        float screenHeightDp = displayMetrics.heightPixels / displayMetrics.density;
+        double screenDiagonalDp = Math.sqrt(Math.pow(screenWidthDp, 2) + Math.pow(screenHeightDp, 2));
+        // Tablets are typically over 600 dp in diagonal
+        return screenDiagonalDp >= 950;
     }
 
     @Override

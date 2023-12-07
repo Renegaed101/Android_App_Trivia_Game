@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <VideoView
         android:id="@+id/gameVideoView"
         android:layout_width="fill_parent"
@@ -19,8 +20,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
+        app:layout_constraintVertical_bias="1.0"
+        tools:visibility="gone" />
 
     <ImageButton
         android:id="@+id/music_toggle_game"
@@ -71,7 +72,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@id/tv_main_questions_remaining_count"
-        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintWidth_percent="0.20"
         app:rippleColor="@color/white" />
 
     <LinearLayout
@@ -89,8 +90,11 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-
             android:scaleX="0.95"
+            app:autoSizeMaxTextSize="24sp"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
             app:rippleColor="@color/white"
             tools:text="Answer 0" />
 
@@ -99,7 +103,10 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-
+            app:autoSizeMaxTextSize="24sp"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
             android:scaleX="0.95"
             app:rippleColor="@color/white"
             tools:text="Answer 1" />
@@ -122,6 +129,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:scaleX="0.95"
+            app:autoSizeMaxTextSize="24sp"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
             app:rippleColor="@color/white"
             tools:text="Answer 2" />
 
@@ -131,6 +142,10 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:scaleX="0.95"
+            app:autoSizeMaxTextSize="24sp"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
             app:rippleColor="@color/white"
             tools:text="Answer 3" />
 
@@ -172,7 +187,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="gone" />
 
     <TextView
         android:id="@+id/restartGameTextView"

@@ -33,7 +33,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
 
 
     // Constructor
-    public CategoryAdapter(List<Category> categoryList, Context context) {
+    public CategoryAdapter(List<Category> categoryList, Context context, int numberOfColumns) {
         this.categoryList = categoryList;
         this.resources = context.getResources();
         this.parentContext = context;
@@ -44,7 +44,6 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
         // Get the screen width in pixels
         DisplayMetrics displayMetrics = resources.getDisplayMetrics();
         int screenWidth = displayMetrics.widthPixels;
-        int numberOfColumns = 2; // Number of columns in the grid
         int padding = 0; // Assuming 16dp padding on each side
 
         // Convert padding from dp to pixels
