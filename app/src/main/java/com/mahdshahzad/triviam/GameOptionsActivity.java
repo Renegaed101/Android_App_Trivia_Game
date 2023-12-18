@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -26,6 +27,13 @@ import androidx.core.widget.TextViewCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -38,6 +46,7 @@ public class GameOptionsActivity extends AppCompatActivity {
     public static List<Category> selectedCategories;
     private String cantStartMessage;
     private boolean allCategoriesSelected = false;
+
     Button questionsButton20;
     Button questionsButton40;
     Button questionsButton60;
@@ -52,12 +61,27 @@ public class GameOptionsActivity extends AppCompatActivity {
     ConstraintSet allCategoriesConstraintSet;
     ConstraintSet specificCategoriesConstraintSet;
     Transition transition;
+    AdView topAdView;
+    AdView bottomAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_game_options);
+
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+            @Override
+            public void onInitializationComplete(InitializationStatus initializationStatus) { }
+        });
+
+        topAdView = findViewById(R.id.adViewSetupTop);
+        bottomAdView = findViewById(R.id.adViewSetupBottom);
+
+        AdRequest adRequestBottom = new AdRequest.Builder().build();
+        AdRequest adRequestTop = new AdRequest.Builder().build();
+        bottomAdView.loadAd(adRequestBottom);
+        topAdView.loadAd(adRequestTop);
 
         ImageButton playPauseButton = findViewById(R.id.music_toggle_game_options);
         questionsButton20 = findViewById(R.id.questionsButton20);
