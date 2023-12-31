@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/selectCategoriesTextView" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/gameOptionsTitleTextView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
@@ -157,7 +157,7 @@
         app:layout_constraintEnd_toStartOf="@+id/startGameButton"
         app:layout_constraintHeight_percent="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/gameOptionsTitleTextView" />
 
     <TextView
         android:id="@+id/selectCategoriesTextView"
@@ -272,5 +272,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/questionsButton40" />
 
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewSetupBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewSetupTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="ca-app-pub-3940256099942544/6300978111" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

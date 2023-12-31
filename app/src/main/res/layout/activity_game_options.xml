@@ -27,11 +27,12 @@
         android:id="@+id/music_toggle_game_options"
         android:layout_width="30dp"
         android:layout_height="30dp"
+        android:layout_marginTop="16dp"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
         android:src="@drawable/volume_up_24px"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/adViewSetupTop" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/categoryRecyclerView"
@@ -46,10 +47,9 @@
         app:layout_constraintTop_toBottomOf="@+id/selectCategoriesTextView" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/gameOptionsTitleTextView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintHeight_percent="0.07"
         android:text="Set-Up Phase"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -58,6 +58,7 @@
         app:autoSizeStepGranularity="1sp"
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toStartOf="@+id/startGameButton"
+        app:layout_constraintHeight_percent="0.07"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/music_toggle_game_options" />
 
@@ -129,7 +130,6 @@
         android:id="@+id/startGameButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="8dp"
         android:backgroundTint="@color/white"
@@ -142,7 +142,7 @@
         app:autoSizeTextType="uniform"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/gameOptionsVideoView"
+        app:layout_constraintTop_toBottomOf="@+id/music_toggle_game_options"
         app:layout_constraintWidth_percent="0.3"
         app:rippleColor="#979A9A" />
 
@@ -164,7 +164,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/gameOptionsTitleTextView" />
 
     <TextView
         android:id="@+id/selectCategoriesTextView"
@@ -242,7 +242,6 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="32dp"
-        android:layout_marginBottom="32dp"
         android:fontFamily="@font/atma_light"
         android:text="Specific Categories"
         android:textStyle="bold"
@@ -251,11 +250,11 @@
         app:autoSizeStepGranularity="1sp"
         app:autoSizeTextType="uniform"
         app:cornerRadius="32dp"
-        app:layout_constraintBottom_toBottomOf="@+id/gameOptionsVideoView"
         app:layout_constraintEnd_toEndOf="@+id/allCatButton"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/allCatButton"
-        app:layout_constraintTop_toBottomOf="@+id/allCatButton" />
+        app:layout_constraintTop_toBottomOf="@+id/allCatButton"
+        app:layout_constraintBottom_toTopOf="@id/adViewSetupBottom"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -278,5 +277,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/questionsButton40" />
 
+    <FrameLayout
+        android:id="@+id/adViewSetupBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/specCatButton" />
+
+    <FrameLayout
+        android:id="@+id/adViewSetupTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/music_toggle_game_options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
