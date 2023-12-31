@@ -1,6 +1,5 @@
 package com.mahdshahzad.triviam;
 
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -8,7 +7,6 @@ import android.transition.ChangeBounds;
 import android.transition.Transition;
 import android.transition.TransitionManager;
 import android.util.DisplayMetrics;
-import android.util.TypedValue;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -23,7 +21,6 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintSet;
-import androidx.core.widget.TextViewCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -46,7 +43,6 @@ public class GameOptionsActivity extends AppCompatActivity {
     public static List<Category> selectedCategories;
     private String cantStartMessage;
     private boolean allCategoriesSelected = false;
-
     Button questionsButton20;
     Button questionsButton40;
     Button questionsButton60;
@@ -61,8 +57,8 @@ public class GameOptionsActivity extends AppCompatActivity {
     ConstraintSet allCategoriesConstraintSet;
     ConstraintSet specificCategoriesConstraintSet;
     Transition transition;
-    AdView topAdView;
-    AdView bottomAdView;
+    FrameLayout bottomAdContainer;
+    FrameLayout topAdContainer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,13 +71,6 @@ public class GameOptionsActivity extends AppCompatActivity {
             public void onInitializationComplete(InitializationStatus initializationStatus) { }
         });
 
-        topAdView = findViewById(R.id.adViewSetupTop);
-        bottomAdView = findViewById(R.id.adViewSetupBottom);
-
-        AdRequest adRequestBottom = new AdRequest.Builder().build();
-        AdRequest adRequestTop = new AdRequest.Builder().build();
-        bottomAdView.loadAd(adRequestBottom);
-        topAdView.loadAd(adRequestTop);
 
         ImageButton playPauseButton = findViewById(R.id.music_toggle_game_options);
         questionsButton20 = findViewById(R.id.questionsButton20);
@@ -96,12 +85,20 @@ public class GameOptionsActivity extends AppCompatActivity {
         numSelectedCatTextView = findViewById(R.id.numberOfSelectedCategoriesTextView);
         selectedCatTextView = findViewById(R.id.selectCategoriesTextView);
         gameOptionsConstraintLayout = findViewById(R.id.gameOptionsConstraintLayout);
+        topAdContainer = findViewById(R.id.adViewSetupTop);
+        bottomAdContainer = findViewById(R.id.adViewSetupBottom);
 
         allCategoriesConstraintSet = new ConstraintSet();
         allCategoriesConstraintSet.clone(gameOptionsConstraintLayout);
 
         specificCategoriesConstraintSet = new ConstraintSet();
         specificCategoriesConstraintSet.clone(this,R.layout.activity_game_options_alternate);
+
+        DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
+        int screenWidth =  (int)(displayMetrics.widthPixels / displayMetrics.density);
+
+        createAd("ca-app-pub-3940256099942544/6300978111",topAdContainer,screenWidth);
+        createAd("ca-app-pub-3940256099942544/6300978111",bottomAdContainer,screenWidth);
 
         setButtonNotSelected(questionsButton20);
         setButtonNotSelected(questionsButton40);
@@ -387,6 +384,18 @@ public class GameOptionsActivity extends AppCompatActivity {
         // Tablets are typically over 600 dp in diagonal
         return screenDiagonalDp >= 950;
     }
+
+    private void createAd(String adUnitId, FrameLayout adContainer, int width) {
+        AdView adView = new AdView(this);
+        adView.setAdSize(AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(this,width));
+        adView.setAdUnitId(adUnitId);
+
+        adContainer.addView(adView);
+
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+    }
+
 
     @Override
     public void onPause() {

@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/selectCategoriesTextView" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/gameOptionsTitleTextView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Set-Up Phase"
@@ -164,7 +164,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/gameOptionsTitleTextView" />
 
     <TextView
         android:id="@+id/selectCategoriesTextView"
@@ -277,6 +277,25 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/questionsButton40" />
+
+    <FrameLayout
+        android:id="@+id/adViewSetupBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/specCatButton" />
+
+    <FrameLayout
+        android:id="@+id/adViewSetupTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/music_toggle_game_options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

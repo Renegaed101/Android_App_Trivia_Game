@@ -27,11 +27,12 @@
         android:id="@+id/music_toggle_game_options"
         android:layout_width="30dp"
         android:layout_height="30dp"
+        android:layout_marginTop="16dp"
         android:background="@android:color/transparent"
         android:scaleType="fitXY"
         android:src="@drawable/volume_up_24px"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/adViewSetupTop" />
+        app:layout_constraintTop_toBottomOf="@id/adViewSetupTop" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/categoryRecyclerView"
@@ -46,7 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/selectCategoriesTextView" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/gameOptionsTitleTextView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Set-Up Phase"
@@ -163,7 +164,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/gameOptionsTitleTextView" />
 
     <TextView
         android:id="@+id/selectCategoriesTextView"
@@ -249,11 +250,11 @@
         app:autoSizeStepGranularity="1sp"
         app:autoSizeTextType="uniform"
         app:cornerRadius="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/adViewSetupBottom"
         app:layout_constraintEnd_toEndOf="@+id/allCatButton"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/allCatButton"
-        app:layout_constraintTop_toBottomOf="@+id/allCatButton" />
+        app:layout_constraintTop_toBottomOf="@+id/allCatButton"
+        app:layout_constraintBottom_toTopOf="@id/adViewSetupBottom"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -276,29 +277,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/questionsButton40" />
 
-    <com.google.android.gms.ads.AdView
+    <FrameLayout
         android:id="@+id/adViewSetupBottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:adSize="SMART_BANNER"
-        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
         android:layout_marginTop="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/specCatButton" />
 
-    <com.google.android.gms.ads.AdView
+    <FrameLayout
         android:id="@+id/adViewSetupTop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:adSize="SMART_BANNER"
-        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
-        app:layout_constraintBottom_toTopOf="@id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/music_toggle_game_options"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/music_toggle_game_options"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
